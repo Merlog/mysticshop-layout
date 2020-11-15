@@ -1,9 +1,11 @@
-import Header from './components/header/Header';
+import Header from './components/Header';
+import OrderDetail from './pages/OrderDetail';
 
 export default function App() {
   return (
     <div>
       <Header />
+      <OrderDetail />
       <div class="container" >
         <div class="row">
 
