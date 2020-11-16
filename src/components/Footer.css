@@ -1,0 +1,14 @@
+.wrapper {
+  height: 120px;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  padding: 10px;
+}
+
+.text {
+  color: rgb(137, 137, 137);
+}
+
+.list {
+  list-style: none;
+}

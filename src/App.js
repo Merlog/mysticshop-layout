@@ -1,4 +1,5 @@
 import { Switch, Route, Redirect } from "react-router-dom";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
@@ -44,22 +45,16 @@ export default function App() {
           <UserSettings />
         </Route>
       </Switch>
-      <div class="container">
-        <div class="row">
-          <div class="col col-lg-3 ">
-            tralala
-            {/* <!-- LEVA NAVIGACE -->
-    <iframe src="navLeftMTG.html"
-      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-    <iframe src="navLeftProdukty.html"
-      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-    <!-- <iframe src="navLeftEdice.html"
-      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> --> */}
-          </div>
-          {/* <iframe src="CarouselModule.html"
-    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> */}
-        </div>
-      </div>
+      <Footer />
     </div>
+    // LEVA NAVIGACE
+    //   <iframe src="navLeftMTG.html"
+    //     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    //   <iframe src="navLeftProdukty.html"
+    //     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    //   <iframe src="navLeftEdice.html"
+    //     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    //   <iframe src="CarouselModule.html"
+    //   onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
   );
 }
