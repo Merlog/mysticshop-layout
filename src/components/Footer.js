@@ -11,14 +11,6 @@ export default function Footer() {
   return (
     <div className="wrapper py-3 px-5 w-100">
       <div className="row footer mb-3">
-        <div className="col-4 links d-flex">
-          <NavLink to="/Contact" exact>
-            <a className="text">Kontaktujte nás</a>
-          </NavLink>
-          <NavLink to="/BussinessConditions" exact>
-            <a className="text">Obchodní podmínky</a>
-          </NavLink>
-        </div>
         <div className="col-4 social d-flex">
           <img
             src={Facebook}
@@ -48,6 +40,14 @@ export default function Footer() {
             height="36px"
             className="mx-2"
           />
+        </div>
+        <div className="col-4 links d-flex">
+          <NavLink to="/Contact" exact>
+            <a className="text">Kontaktujte nás</a>
+          </NavLink>
+          <NavLink to="/BussinessConditions" exact>
+            <a className="text">Obchodní podmínky</a>
+          </NavLink>
         </div>
         <div className="col-4 payment d-flex">
           <img
