@@ -10,6 +10,8 @@ import OrderDetail from "./pages/OrderDetail";
 import OrderList from "./pages/OrderList";
 import RegistrationForm from "./pages/RegistrationForm";
 import UserSettings from "./pages/UserSettings";
+import Contact from "./pages/Contact";
+import BussinessConditions from "./pages/BussinessConditions";
 
 export default function App() {
   return (
@@ -43,6 +45,12 @@ export default function App() {
         </Route>
         <Route path="/UserSettings">
           <UserSettings />
+        </Route>
+        <Route path="/Contact">
+          <Contact />
+        </Route>
+        <Route path="/BussinessConditions">
+          <BussinessConditions />
         </Route>
       </Switch>
       <Footer />
