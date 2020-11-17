@@ -4,7 +4,7 @@ import "./Header.css";
 export default function Header() {
   return (
     <div className="fixed-top w-100 headerWrapper">
-      <div className="container">
+      <div className="container" style={{ display: "none" }}>
         <div className="row">
           <div className="col">
             <div className="row">

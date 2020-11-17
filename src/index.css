@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+/* VYŘEŠIT BARVY A TUDÍŽ OUTLINE INPUTŮ */
+/* .form-control:focus {
+  border-color: #80ffa6;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 55, 0.25);
+} */
+
 html,
 body {
   /* background-color: #f8f9fa!important; */
@@ -19,6 +25,15 @@ body {
 }
 body {
   position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 /* nvm coment */
 @media (min-width: 1260px) {
