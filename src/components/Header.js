@@ -91,7 +91,7 @@ export default function Header() {
                   <img src={logo} alt="logo" />
                 </a>
               </div>
-              <div className="col-6 my-3">
+              <div className="col-5 my-3">
                 <form className="form-inline my-2 my-lg-0">
                   <input
                     className="form-control mr-sm-2 customW400"
@@ -109,7 +109,7 @@ export default function Header() {
                   Bonus: 20 bodů
                 </a>
               </div>
-              <div className="col-2 pt30">
+              <div className="col-3 pt30">
                 <a className="Kosik" href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,6 @@
 export default function Cart3() {
   return (
-    <div class="container" style={{ marginTop: "360px" }}>
+    <div class="container" >
       <div class="row">
         <div class="col-md-12 my-4 order-md-1">
           <ul class="nav mb-5">

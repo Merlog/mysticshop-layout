@@ -1,6 +1,6 @@
 export default function FullSearch() {
   return (
-    <div class="container" style={{ marginTop: "360px" }}>
+    <div class="container">
       <div class="row">
         <h5 class="text-center">Prodej karet - vyhledávání</h5>
         <span class="border border-dark p-3">

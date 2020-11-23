@@ -1,7 +1,7 @@
 export default function OrderList() {
   // chybí onclick na každý řádek (na danou položku), který otevře (route) na order detail s danou objednávkou
   return (
-    <div class="container" style={{ marginTop: "360px" }}>
+    <div class="container">
       <div class="row">
        <div class="col-12 mb-5">
           <h4 class="text-center">Přehled objednávek</h4>

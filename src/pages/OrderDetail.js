@@ -1,6 +1,6 @@
 export default function OrderDetail() {
   return (
-    <div className="container" style={{marginTop: "360px"}}>
+    <div className="container">
       <div className="row">
         <div className="col-12">
           <a className="cartPageLink" href="#"> Zpět </a>
