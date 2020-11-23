@@ -1,5 +1,4 @@
 export default function OrderList() {
-  // chybí onclick na každý řádek (na danou položku), který otevře (route) na order detail s danou objednávkou
   return (
     <div class="container">
       <div class="row">
