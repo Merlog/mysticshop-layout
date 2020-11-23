@@ -1,10 +1,9 @@
-import "./RegistrationForm.css";
 import { NavLink } from "react-router-dom";
 
 export default function RegistrationForm() {
   return (
-    <div class="row RegistrationForm_wrapper d-flex justify-content-center align-items-center">
-      <div class="col-12 RegistrationForm_innerWrapper p-4">
+    <div class="row d-flex justify-content-center align-items-center my-3">
+      <div class="col-8 p-4">
         <div className="row">
           <div className="col mb-3">
             <h5 class="text-center">Registrační údaje</h5>
