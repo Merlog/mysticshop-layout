@@ -1,4 +1,5 @@
 import "./RegistrationForm.css";
+import { NavLink } from "react-router-dom";
 
 export default function RegistrationForm() {
   return (
@@ -126,7 +127,8 @@ export default function RegistrationForm() {
             <div class="col-6 my-4 form-group">
               <input type="checkbox" value="" id="defaultCheck1" />
               <label class="font-weight-bolder pl-2" for="defaultCheck1">
-                Souhlasím s obchodními podmínkami
+                Souhlasím s  
+                <NavLink to="/BussinessConditions" exact> obchodními podmínkami</NavLink>
               </label>
             </div>
           </div>
