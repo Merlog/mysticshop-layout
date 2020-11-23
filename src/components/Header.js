@@ -1,10 +1,47 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+import logo from './../assets/logo1.png'
 
 export default function Header() {
   return (
     <div className="fixed-top w-100 headerWrapper">
-      <div className="container" style={{ display: "none" }}>
+      <div className="row temorarymenu">
+        <div className="col">
+          <ul>
+            <NavLink to="/Homepage" exact>
+              Homepage
+        </NavLink>
+            <NavLink to="/OrderDetail" exact>
+              Order Detail
+        </NavLink>
+            <NavLink to="/ContactForm" exact>
+              Contact Form
+        </NavLink>
+            <NavLink to="/Cart1" exact>
+              Cart1
+        </NavLink>
+            <NavLink to="/Cart2" exact>
+              Cart2
+        </NavLink>
+            <NavLink to="/Cart3" exact>
+              Cart3
+        </NavLink>
+            <NavLink to="/RegistrationForm" exact>
+              Registration Form
+        </NavLink>
+            <NavLink to="/FullSearch" exact>
+              Full Search
+        </NavLink>
+            <NavLink to="/OrderList" exact>
+              Order List
+        </NavLink>
+            <NavLink to="/UserSettings" exact>
+              User Settings
+        </NavLink>
+          </ul>
+        </div>
+      </div>
+      <div className="container" >
         <div className="row">
           <div className="col">
             <div className="row">
@@ -51,7 +88,7 @@ export default function Header() {
             <div className="row navMidle">
               <div className="col-2">
                 <a className="navbar-brand" href="#">
-                  <img src="../../assets/logo (kopie).png" alt="logo" />
+                  <img src={logo} alt="logo" />
                 </a>
               </div>
               <div className="col-6 my-3">
@@ -125,39 +162,6 @@ export default function Header() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-          <ul>
-            <NavLink to="/OrderDetail" exact>
-              Order Detail
-            </NavLink>
-            <NavLink to="/ContactForm" exact>
-              Contact Form
-            </NavLink>
-            <NavLink to="/Cart1" exact>
-              Cart1
-            </NavLink>
-            <NavLink to="/Cart2" exact>
-              Cart2
-            </NavLink>
-            <NavLink to="/Cart3" exact>
-              Cart3
-            </NavLink>
-            <NavLink to="/RegistrationForm" exact>
-              Registration Form
-            </NavLink>
-            <NavLink to="/FullSearch" exact>
-              Full Search
-            </NavLink>
-            <NavLink to="/OrderList" exact>
-              Order List
-            </NavLink>
-            <NavLink to="/UserSettings" exact>
-              User Settings
-            </NavLink>
-          </ul>
         </div>
       </div>
     </div>

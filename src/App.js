@@ -1,6 +1,7 @@
 import { Switch, Route, Redirect } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import HomepagePage from './pages/HomepagePage';
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
 import Cart3 from "./pages/Cart3";
@@ -19,6 +20,9 @@ export default function App() {
       <Header />
       <Redirect to={`${process.env.PUBLIC_URL}/`} />
       <Switch>
+        <Route path="/Homepage">
+          <HomepagePage />
+        </Route>
         <Route path="/OrderDetail">
           <OrderDetail />
         </Route>

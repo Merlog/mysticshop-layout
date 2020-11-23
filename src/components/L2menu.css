@@ -1,0 +1,25 @@
+.wrapper {
+  height: 120px;
+  background-color: rgb(32, 32, 32);
+}
+
+.links {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.social {
+  justify-content: center;
+  align-items: center;
+}
+
+.payment {
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: rgb(137, 137, 137);
+}
