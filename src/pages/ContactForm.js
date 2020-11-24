@@ -2,11 +2,14 @@ export default function ContactForm() {
   return (
     <div class="row d-flex justify-content-center align-items-center my-4">
       <div class="col-5 p-4">
-        <div className="row">
-          <div className="col mb-3">
-            <h5 class="text-center">Kontaktní formulář</h5>
+        <div class="row">
+          <div class="col-2 py-4">
+            <a href="#" class="btn btn-outline-success btn-sm align-baseline"> Zpět </a>
+            </div> 
+            <div class="col-8 text-center py-4">
+            <h5>Kontaktní formulář</h5>
           </div>
-        </div>
+        </div> 
         <form>
           <div class="form-row">
             <div class="form-group col-12">
