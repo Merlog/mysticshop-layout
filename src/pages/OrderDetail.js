@@ -3,10 +3,14 @@ export default function OrderDetail() {
     <div class="container">
       <div class="row">
         <div class="col-10 offset-1">
-
           <div class="row">
             <div class="col-2 py-4">
-              <a href="/#" class="btn btn-outline-success btn-sm align-baseline"> Zpět </a>
+              <a
+                href="/#"
+                class="btn btn-outline-success btn-sm align-baseline"
+              >
+                Zpět
+              </a>
             </div>
             <div class="col-8 text-center py-4">
               <h4>Objednávka č. 111111</h4>
@@ -18,16 +22,30 @@ export default function OrderDetail() {
               <div class="border border-dark p-2 pl-4">
                 <div>Datum: 1. 1. 2020</div>
                 <div>Stav: zaplacená</div>
-                <div>Sledování: <a href="/#">odkaz na sledování</a></div>
+                {true && (
+                  <div>
+                    Sledování: <a href="/#">odkaz na sledování</a>
+                  </div>
+                )}
               </div>
             </div>
             <div class="col-4 offset-4 my-4">
               <div class="border border-dark p-2 pl-4">
-                <div><h6 class="mb-3">Fakturační údaje:</h6></div>
-                <div><p>Jméno a příjmení</p></div>
-                <div><p>Ulice a č. p.</p></div>
-                <div><p>PSČ a obec</p></div>
-                <div><p>Stát</p></div>
+                <div>
+                  <h6 class="mb-3">Fakturační údaje:</h6>
+                </div>
+                <div>
+                  <p>Jméno a příjmení</p>
+                </div>
+                <div>
+                  <p>Ulice a č. p.</p>
+                </div>
+                <div>
+                  <p>PSČ a obec</p>
+                </div>
+                <div>
+                  <p>Stát</p>
+                </div>
               </div>
             </div>
           </div>
@@ -110,5 +128,5 @@ export default function OrderDetail() {
         </div>
       </div>
     </div>
-  )
+  );
 }
