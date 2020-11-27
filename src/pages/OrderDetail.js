@@ -1,25 +1,25 @@
 export default function OrderDetail() {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-10 offset-1">
-          <div class="row">
-            <div class="col-2 py-4">
+    <div className="container">
+      <div className="row">
+        <div className="col-10 offset-1">
+          <div className="row">
+            <div className="col-2 py-4">
               <a
                 href="/#"
-                class="btn btn-outline-success btn-sm align-baseline"
+                className="btn btn-outline-success btn-sm align-baseline"
               >
                 Zpět
               </a>
             </div>
-            <div class="col-8 text-center py-4">
+            <div className="col-8 text-center py-4">
               <h4>Objednávka č. 111111</h4>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-4 my-4">
-              <div class="border border-dark p-2 pl-4">
+          <div className="row">
+            <div className="col-4 my-4">
+              <div className="border border-dark p-2 pl-4">
                 <div>Datum: 1. 1. 2020</div>
                 <div>Stav: zaplacená</div>
                 {true && (
@@ -29,10 +29,10 @@ export default function OrderDetail() {
                 )}
               </div>
             </div>
-            <div class="col-4 offset-4 my-4">
-              <div class="border border-dark p-2 pl-4">
+            <div className="col-4 offset-4 my-4">
+              <div className="border border-dark p-2 pl-4">
                 <div>
-                  <h6 class="mb-3">Fakturační údaje:</h6>
+                  <h6 className="mb-3">Fakturační údaje:</h6>
                 </div>
                 <div>
                   <p>Jméno a příjmení</p>
@@ -50,11 +50,11 @@ export default function OrderDetail() {
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <h6 class="my-2 font-weight-bold">Zboží z katalogu</h6>
-              <table class="table table-sm">
-                <thead class="thead-dark">
+          <div className="row">
+            <div className="col-12">
+              <h6 className="my-2 font-weight-bold">Zboží z katalogu</h6>
+              <table className="table table-sm">
+                <thead className="thead-dark">
                   <tr>
                     <th scope="col">Kód</th>
                     <th scope="col">Název položky</th>
@@ -76,11 +76,11 @@ export default function OrderDetail() {
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <h6 class="my-2 font-weight-bold">Kusovky</h6>
-              <table class="table table-sm">
-                <thead class="thead-dark">
+          <div className="row">
+            <div className="col-12">
+              <h6 className="my-2 font-weight-bold">Kusovky</h6>
+              <table className="table table-sm">
+                <thead className="thead-dark">
                   <tr>
                     <th scope="col">Kód</th>
                     <th scope="col">Název položky</th>
@@ -102,11 +102,11 @@ export default function OrderDetail() {
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <h6 class="my-2 font-weight-bold">Souhrn</h6>
-              <table class="table">
-                <thead class="thead-dark">
+          <div className="row">
+            <div className="col-12">
+              <h6 className="my-2 font-weight-bold">Souhrn</h6>
+              <table className="table">
+                <thead className="thead-dark">
                   <tr>
                     <th scope="col">Doprava</th>
                     <th scope="col">Platba</th>
@@ -119,7 +119,7 @@ export default function OrderDetail() {
                     <td>Zásilkova ČR</td>
                     <td>Kartou online</td>
                     <td>4 444 Kč</td>
-                    <td class="font-weight-bold">5 023 Kč</td>
+                    <td className="font-weight-bold">5 023 Kč</td>
                   </tr>
                 </tbody>
               </table>

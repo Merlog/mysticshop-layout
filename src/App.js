@@ -1,4 +1,4 @@
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomepagePage from "./pages/HomepagePage";
@@ -72,7 +72,7 @@ export default function App() {
         </div>
       </div>
       <Header />
-      <div class="container main">
+      <div className="container main">
         <Switch>
           <Route path="/" exact>
             <HomepagePage />

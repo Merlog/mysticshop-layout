@@ -1,13 +1,13 @@
 export default function Cart2() {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12  my-4">
-          <ul class="nav mb-5">
-            <li class="nav-item">
-              <a class="cartPageLink disabled" href="/#">
-                <span class="cartPageNumber">1</span>
-                <button type="button" class="btn disabled">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12  my-4">
+          <ul className="nav mb-5">
+            <li className="nav-item">
+              <a className="cartPageLink disabled" href="/#">
+                <span className="cartPageNumber">1</span>
+                <button type="button" className="btn disabled">
                   Košík
                 </button>
               </a>
@@ -16,7 +16,7 @@ export default function Cart2() {
               width="1em"
               height="1em"
               viewBox="0 0 16 16"
-              class="bi bi-arrow-right cartPageArrow"
+              className="bi bi-arrow-right cartPageArrow"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -29,10 +29,10 @@ export default function Cart2() {
                 d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"
               />
             </svg>
-            <li class="nav-item">
-              <a class="cartPageLink" href="/#">
-                <span class="cartPageNumber">2</span>
-                <button type="button" class="btn">
+            <li className="nav-item">
+              <a className="cartPageLink" href="/#">
+                <span className="cartPageNumber">2</span>
+                <button type="button" className="btn">
                   Doprava a platba
                 </button>
               </a>
@@ -41,7 +41,7 @@ export default function Cart2() {
               width="1em"
               height="1em"
               viewBox="0 0 16 16"
-              class="bi bi-arrow-right cartPageArrow"
+              className="bi bi-arrow-right cartPageArrow"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -54,10 +54,10 @@ export default function Cart2() {
                 d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"
               />
             </svg>
-            <li class="nav-item">
-              <a class="disabled cartPageLink" href="/#">
-                <span class="cartPageNumber">3</span>
-                <button type="button" class="btn disabled">
+            <li className="nav-item">
+              <a className="disabled cartPageLink" href="/#">
+                <span className="cartPageNumber">3</span>
+                <button type="button" className="btn disabled">
                   Souhrn
                 </button>
               </a>
@@ -65,252 +65,252 @@ export default function Cart2() {
           </ul>
         </div>
 
-        <div class="col-md-8 order-md-1">
-          <div class="row">
-            <div class="col-md-6">
-              <h4 class="mb-3">Způsob dopravy</h4>
-              <div class="custom-control custom-radio">
+        <div className="col-md-8 order-md-1">
+          <div className="row">
+            <div className="col-md-6">
+              <h4 className="mb-3">Způsob dopravy</h4>
+              <div className="custom-control custom-radio">
                 <input
                   type="radio"
                   id="customRadio1"
                   name="customRadio"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   checked
                 />
-                <label class="custom-control-label" for="customRadio1">
-                  Zásilkovna - ČR <div class="d-inline-block">80 Kč</div>
+                <label className="custom-control-label" for="customRadio1">
+                  Zásilkovna - ČR <div className="d-inline-block">80 Kč</div>
                 </label>
               </div>
-              <div class="custom-control custom-radio">
+              <div className="custom-control custom-radio">
                 <input
                   type="radio"
                   id="customRadio2"
                   name="customRadio"
-                  class="custom-control-input"
+                  className="custom-control-input"
                 />
-                <label class="custom-control-label" for="customRadio2">
+                <label className="custom-control-label" for="customRadio2">
                   Zásilkovna - Slovensko{" "}
-                  <div class="d-inline-block">100 Kč</div>
+                  <div className="d-inline-block">100 Kč</div>
                 </label>
               </div>
-              <div class="custom-control custom-radio">
+              <div className="custom-control custom-radio">
                 <input
                   type="radio"
                   id="customRadio3"
                   name="customRadio"
-                  class="custom-control-input"
+                  className="custom-control-input"
                 />
-                <label class="custom-control-label" for="customRadio3">
+                <label className="custom-control-label" for="customRadio3">
                   Zásilkovna - Výdejní místo{" "}
-                  <div class="d-inline-block">60 Kč</div>
+                  <div className="d-inline-block">60 Kč</div>
                 </label>
               </div>
             </div>
-            <div class="col-md-6">
-              <h4 class="mb-3">Způsob platby</h4>
-              <div class="custom-control custom-radio">
+            <div className="col-md-6">
+              <h4 className="mb-3">Způsob platby</h4>
+              <div className="custom-control custom-radio">
                 <input
                   id="credit"
                   name="paymentMethod"
                   type="radio"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   checked
                   required
                 />
-                <label class="custom-control-label" for="credit">
+                <label className="custom-control-label" for="credit">
                   Kartou online
                 </label>
               </div>
-              <div class="custom-control custom-radio">
+              <div className="custom-control custom-radio">
                 <input
                   id="debit"
                   name="paymentMethod"
                   type="radio"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   required
                 />
-                <label class="custom-control-label" for="debit">
+                <label className="custom-control-label" for="debit">
                   Převodem
                 </label>
               </div>
-              <div class="custom-control custom-radio">
+              <div className="custom-control custom-radio">
                 <input
                   id="paypal"
                   name="paymentMethod"
                   type="radio"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   required
                 />
-                <label class="custom-control-label" for="paypal">
+                <label className="custom-control-label" for="paypal">
                   PayPal
                 </label>
               </div>
             </div>
           </div>
-          <hr class="mb-4" />
-          <div class="row">
-            <div class="col-md-8">
+          <hr className="mb-4" />
+          <div className="row">
+            <div className="col-md-8">
               <p>Máte u nás účet? Přihlaste se a my vše vyplníme za Vás.</p>
             </div>
-            <div class="col-md-4">
-              <button type="button" class="btn btn-primary btn-sm">
+            <div className="col-md-4">
+              <button type="button" className="btn btn-primary btn-sm">
                 Přihlásit se
               </button>
             </div>
-            <div class="col-md-8">
+            <div className="col-md-8">
               <p>
                 Ještě nemáte účet? Registrujte se a získejte všechny výhody.
               </p>
             </div>
-            <div class="col-md-4">
-              <button type="button" class="btn btn-primary btn-sm">
+            <div className="col-md-4">
+              <button type="button" className="btn btn-primary btn-sm">
                 Vytvořit nový účet
               </button>
             </div>
-            <div class="col-md-12">
+            <div className="col-md-12">
               <p>
                 Nepřejete si se registrovat? V tom případě vyplňte údaje níže
                 pro nákup bez registrace.
               </p>
             </div>
           </div>
-          <hr class="mb-4" />
+          <hr className="mb-4" />
           <h5>Kontaktní údaje</h5>
-          <form class="needs-validation" novalidate>
-            <div class="row">
-              <div class="col-md-6 mb-3">
+          <form className="needs-validation" novalidate>
+            <div className="row">
+              <div className="col-md-6 mb-3">
                 <label for="firstName">Jméno</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="firstName"
                   placeholder=""
                   value=""
                   required
                 />
-                <div class="invalid-feedback">
+                <div className="invalid-feedback">
                   Valid first name is required.
                 </div>
               </div>
-              <div class="col-md-6 mb-3">
+              <div className="col-md-6 mb-3">
                 <label for="lastName">Příjmení</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="lastName"
                   placeholder=""
                   value=""
                   required
                 />
-                <div class="invalid-feedback">Valid last name is required.</div>
+                <div className="invalid-feedback">Valid last name is required.</div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6 mb-3">
+            <div className="row">
+              <div className="col-md-6 mb-3">
                 <label for="phone">Telefon</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="phone"
                   placeholder=""
                   value=""
                   required
                 />
-                <div class="invalid-feedback">
+                <div className="invalid-feedback">
                   Valid phone number is required.
                 </div>
               </div>
-              <div class="col-md-6 mb-3">
+              <div className="col-md-6 mb-3">
                 <label for="email">E-mail</label>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="email"
                   placeholder="you@example.com"
                 />
-                <div class="invalid-feedback">
+                <div className="invalid-feedback">
                   Please enter a valid email address for shipping updates.
                 </div>
               </div>
             </div>
-            <hr class="mb-4" />
+            <hr className="mb-4" />
             <h5>Fakturační údaje</h5>
-            <div class="mb-3">
+            <div className="mb-3">
               <label for="address">Ulice a č. p.</label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="address"
                 placeholder="1234 Main St"
                 required
               />
-              <div class="invalid-feedback">
+              <div className="invalid-feedback">
                 Please enter your shipping address.
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-5 mb-3">
+            <div className="row">
+              <div className="col-md-5 mb-3">
                 <label for="address2">Obec</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="address2"
                   placeholder="Apartment or suite"
                 />
               </div>
-              <div class="col-md-2 mb-3">
+              <div className="col-md-2 mb-3">
                 <label for="zip">Zip</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="zip"
                   placeholder=""
                   required
                 />
-                <div class="invalid-feedback">Zip code required.</div>
+                <div className="invalid-feedback">Zip code required.</div>
               </div>
-              <div class="col-md-5 mb-3">
+              <div className="col-md-5 mb-3">
                 <label for="country">Stát</label>
                 <select
-                  class="custom-select d-block w-100"
+                  className="custom-select d-block w-100"
                   id="country"
                   required
                 >
                   <option>Česká Republika</option>
                   <option>Slovensko</option>
                 </select>
-                <div class="invalid-feedback">
+                <div className="invalid-feedback">
                   Please select a valid country.
                 </div>
               </div>
-              <hr class="mb-4" />
+              <hr className="mb-4" />
             </div>
-            <hr class="mb-4" />
-            <div class="custom-control custom-checkbox">
+            <hr className="mb-4" />
+            <div className="custom-control custom-checkbox">
               <input
                 type="checkbox"
-                class="custom-control-input"
+                className="custom-control-input"
                 id="same-address"
               />
-              <label class="custom-control-label" for="same-address">
+              <label className="custom-control-label" for="same-address">
                 Zaslat zboží na jinou adresu
               </label>
             </div>
-            <hr class="mb-4" />
+            <hr className="mb-4" />
             <h5>Poznámky</h5>
-            <div class="input-group">
+            <div className="input-group">
               <textarea
                 id="notes"
-                class="form-control"
+                className="form-control"
                 aria-label="With textarea"
               ></textarea>
             </div>
-            <hr class="mb-4" />
-            <div class="d-flex justify-content-between my-4">
-              <button type="button" class="btn btn-primary">
+            <hr className="mb-4" />
+            <div className="d-flex justify-content-between my-4">
+              <button type="button" className="btn btn-primary">
                 Zpět do košíku
               </button>
-              <button type="button" class="btn btn-primary">
+              <button type="button" className="btn btn-primary">
                 Pokračovat v objednávce
               </button>
             </div>

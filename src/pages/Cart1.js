@@ -5,22 +5,22 @@ import "./Cart.css"
 
 export default function Cart1() {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-10 offset-1">
-          <div class="row">
-            <div class="col-12 py-4">
+    <div className="container">
+      <div className="row">
+        <div className="col-10 offset-1">
+          <div className="row">
+            <div className="col-12 py-4">
               <a
-                class="bg-success text-white px-2 py-1 mr-2 rounded text-decoration-none"
+                className="bg-success text-white px-2 py-1 mr-2 rounded text-decoration-none"
                 href="/#"
               >
-                <span class="mr-1">1. Košík</span>
+                <span className="mr-1">1. Košík</span>
               </a>
               <svg
                 width="1em"
                 height="1em"
                 viewBox="0 0 16 16"
-                class="bi bi-arrow-right cartPageArrow"
+                className="bi bi-arrow-right cartPageArrow"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -34,16 +34,16 @@ export default function Cart1() {
                 />
               </svg>
               <a
-                class="bg-success text-white px-2 py-1 mx-2 rounded text-decoration-none"
+                className="bg-success text-white px-2 py-1 mx-2 rounded text-decoration-none"
                 href="/#"
               >
-                <span class="mr-1">2. Doprava a platba</span>
+                <span className="mr-1">2. Doprava a platba</span>
               </a>
               <svg
                 width="1em"
                 height="1em"
                 viewBox="0 0 16 16"
-                class="bi bi-arrow-right cartPageArrow"
+                className="bi bi-arrow-right cartPageArrow"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -57,25 +57,25 @@ export default function Cart1() {
                 />
               </svg>
               <a
-                class="bg-success text-white px-2 py-1 ml-2 rounded text-decoration-none"
+                className="bg-success text-white px-2 py-1 ml-2 rounded text-decoration-none"
                 href="/#"
               >
-                <span class="mr-1">3. Souhrn</span>
+                <span className="mr-1">3. Souhrn</span>
               </a>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12 py-4">
-              <span class="mr-2">Položek v košíku:</span>
-              <span class="text-success font-weight-bold">2</span>
+          <div className="row">
+            <div className="col-12 py-4">
+              <span className="mr-2">Položek v košíku:</span>
+              <span className="text-success font-weight-bold">2</span>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <table class="table table-sm">
-                <thead class="thead-dark">
+          <div className="row">
+            <div className="col-12">
+              <table className="table table-sm">
+                <thead className="thead-dark">
                   <tr>
                     <th scope="col"></th>
                     <th scope="col">Název položky</th>
@@ -91,7 +91,7 @@ export default function Cart1() {
                     </td>
                     <td>Booster</td>
                     <td>
-                      <input type="number" min="1" class="w-25" />
+                      <input type="number" min="1" className="w-25" />
                     </td>
                     <td>155 Kč</td>
                     <td>
@@ -106,7 +106,7 @@ export default function Cart1() {
                     </td>
                     <td>Karta xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
                     <td>
-                      <input type="number" min="1" class="w-25" />
+                      <input type="number" min="1" className="w-25" />
                     </td>
                     <td>355 Kč</td>
                     <td>
@@ -120,58 +120,58 @@ export default function Cart1() {
             </div>
           </div>
 
-          <div class="summary_wrapper">
-            <div class="summary_inner">
-              <div class="row summary">
-                <div class="col-12 d-flex justify-content-between">
+          <div className="summary_wrapper">
+            <div className="summary_inner">
+              <div className="row summary">
+                <div className="col-12 d-flex justify-content-between">
                   <div>Cena bez DPH</div>
                   <div>4 444 Kč</div>
                 </div>
               </div>
 
-              <div class="row summary">
-                <div class="col-12 d-flex justify-content-between">
+              <div className="row summary">
+                <div className="col-12 d-flex justify-content-between">
                   <div>Cena s DPH</div>
                   <div>5 222 Kč</div>
                 </div>
               </div>
             </div>
 
-            <div class="row summary">
-              <div class="col-12 d-flex justify-content-between">
+            <div className="row summary">
+              <div className="col-12 d-flex justify-content-between">
                 <div>Slevový kupón XXZZYYWW</div>
                 <div>- 82 Kč</div>
               </div>
             </div>
 
-            <div class="row summary">
-              <div class="col-12 d-flex justify-content-between">
+            <div className="row summary">
+              <div className="col-12 d-flex justify-content-between">
                 <div>Cena po slevě vč. DPH</div>
-                <div class="price">5 140 Kč</div>
+                <div className="price">5 140 Kč</div>
               </div>
             </div>
           </div>
 
-          <div class="row mt-4">
-            <div class="col-3">
+          <div className="row mt-4">
+            <div className="col-3">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="Zadejte slevový kód"
               />
             </div>
             <div>
-              <button type="submit" class="btn btn-secondary">
+              <button type="submit" className="btn btn-secondary">
                 Uplatnit
               </button>
             </div>
           </div>
 
-          <div class="d-flex justify-content-between my-4">
-            <button type="button" class="btn btn-success">
+          <div className="d-flex justify-content-between my-4">
+            <button type="button" className="btn btn-success">
               Zpět k nakupování
             </button>
-            <button type="button" class="btn btn-success">
+            <button type="button" className="btn btn-success">
               Pokračovat v objednávce
             </button>
           </div>

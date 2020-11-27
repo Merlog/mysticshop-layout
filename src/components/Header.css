@@ -88,19 +88,3 @@ a.Kosik {
   width:400px !important;
 }
 
-.temporary {
-  background-color: #111; 
-  position:absolute;
-  top:300px;
-  left:0;
-  display:flex;
-  flex-direction: column;
-  padding: 30px 10px;
-}
-
-.temporary a {
-  font-size: 14px;
-  font-weight:600;
-  padding: 5px 20px;
-  color: #fff;
-}  

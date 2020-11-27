@@ -8,9 +8,9 @@ import New from "./../components/New";
 
 export default function HomepagePage() {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col col-lg-3 ">
+    <div className="container">
+      <div className="row">
+        <div className="col col-lg-3 ">
           <L1menu />
           <L2menu />
           <L3menu />
