@@ -1,3 +1,8 @@
+import Delete from "../assets/delete.svg";
+import ProductImage1 from "../assets/booster.jpg";
+import ProductImage2 from "../assets/giftbox.jpg"
+import "./Cart.css"
+
 export default function Cart1() {
   return (
     <div class="container">
@@ -82,7 +87,7 @@ export default function Cart1() {
                 <tbody>
                   <tr>
                     <td>
-                      <img src="./assets/booster.jpg" />
+                      <img src={ProductImage1} alt="product image" width="30px" height="30px" />
                     </td>
                     <td>Booster</td>
                     <td>
@@ -90,32 +95,14 @@ export default function Cart1() {
                     </td>
                     <td>155 Kč</td>
                     <td>
-                      {" "}
                       <button>
-                        <svg
-                          width="1.5em"
-                          height="1.5em"
-                          color="red"
-                          viewBox="0 0 16 16"
-                          class="bi bi-x"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"
-                          />
-                        </svg>
+                        <img src={Delete} alt="delete"></img>
                       </button>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src="./assets/booster.jpg" />
+                    <img src={ProductImage2} alt="product image" width="30px" height="30px" />
                     </td>
                     <td>Karta xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
                     <td>
@@ -123,26 +110,8 @@ export default function Cart1() {
                     </td>
                     <td>355 Kč</td>
                     <td>
-                      {" "}
                       <button>
-                        <svg
-                          width="1.5em"
-                          height="1.5em"
-                          color="red"
-                          viewBox="0 0 16 16"
-                          class="bi bi-x"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"
-                          />
-                        </svg>
+                      <img src={Delete} alt="delete"></img>
                       </button>
                     </td>
                   </tr>
@@ -151,40 +120,39 @@ export default function Cart1() {
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <table class="table table-striped table-dark table-sm">
-                <tbody>
-                  <tr>
-                    <td>Cena bez DPH</td>
-                    <td>4 444 Kč</td>
-                  </tr>
-                  <tr class="font-weight-bold">
-                    <td>Cena s DPH</td>
-                    <td>5 222 Kč</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="summary_wrapper">
+            <div class="summary_inner">
+          <div class="row summary">
+            <div class="col-12 d-flex justify-content-between">
+            <div>Cena bez DPH</div>
+            <div>4 444 Kč</div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <table class="table table-striped table-dark table-sm">
-                <tbody>
-                  <tr>
-                    <td>Slevový kupón XXZZYYWW</td>
-                    <td>- 82 Kč</td>
-                  </tr>
-                  <tr class="font-weight-bold">
-                    <td>Cena po slevě vč. DPH</td>
-                    <td>5 140 Kč</td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="row summary">
+            <div class="col-12 d-flex justify-content-between">
+            <div>Cena s DPH</div>
+            <div>5 222 Kč</div>
             </div>
           </div>
-          <div class="row">
+          </div>
+
+          <div class="row summary">
+            <div class="col-12 d-flex justify-content-between">
+            <div>Slevový kupón XXZZYYWW</div>
+                    <div>- 82 Kč</div>
+            </div>
+          </div>
+
+          <div class="row summary">
+            <div class="col-12 d-flex justify-content-between">
+            <div>Cena po slevě vč. DPH</div>
+                    <div class="price">5 140 Kč</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="row mt-4">
             <div class="col-3">
               <input
                 type="text"

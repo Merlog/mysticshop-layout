@@ -1,0 +1,18 @@
+.summary {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding: 5px;
+}
+
+.summary_wrapper {
+  margin: 0 15px;
+}
+
+.summary_inner {
+  margin-bottom: 20px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}

@@ -1,6 +1,6 @@
 export default function Cart3() {
   return (
-    <div class="container" >
+    <div class="container">
       <div class="row">
         <div class="col-md-12 my-4 order-md-1">
           <ul class="nav mb-5">
@@ -71,12 +71,20 @@ export default function Cart3() {
           </h4>
           <ul class="list-group mb-3">
             <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <img src="./assets/booster.jpg" class="cartProductImage" />
+              <img
+                src="./assets/booster.jpg"
+                class="cartProductImage"
+                alt="product image"
+              />
               <h6 class="my-0 cartProductName">Název produktu</h6>
               <span class="cartProductPrice">100 Kč</span>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <img src="./assets/booster_pack.jpg" class="cartProductImage" />
+              <img
+                src="./assets/booster_pack.jpg"
+                class="cartProductImage"
+                alt="product image"
+              />
               <h6 class="my-0 cartProductName">Název dalšího produktu</h6>
               <span class="cartProductPrice">200 Kč</span>
             </li>
