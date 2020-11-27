@@ -6,12 +6,12 @@ export default function RegistrationForm() {
       <div class="col-8 p-4">
         <div class="row">
           <div class="col-2 py-4">
-            <a href="#" class="btn btn-outline-success btn-sm align-baseline"> Zpět </a>
-            </div> 
-            <div class="col-8 text-center py-4">
+            <a href="/#" class="btn btn-outline-success btn-sm align-baseline"> Zpět </a>
+          </div>
+          <div class="col-8 text-center py-4">
             <h5>Registrační údaje</h5>
           </div>
-        </div> 
+        </div>
         <form>
           <div class="form-row">
             <div class="form-group col-12">
@@ -129,7 +129,7 @@ export default function RegistrationForm() {
             <div class="col-6 my-4 form-group">
               <input type="checkbox" value="" id="defaultCheck1" />
               <label class="font-weight-bolder pl-2" for="defaultCheck1">
-                Souhlasím s  
+                Souhlasím s
                 <NavLink to="/BussinessConditions" exact> obchodními podmínkami</NavLink>
               </label>
             </div>

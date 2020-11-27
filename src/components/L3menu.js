@@ -1,9 +1,10 @@
-import "./L2menu.css";
+import "./Menu.css";
 
 export default function L2menu() {
   return (
     <nav className="nav flex-column navEdice">
-      <a className="nav-link" href="#">
+      <span className="nav-link headline" href="/#">Edice</span>
+      <a className="nav-link" href="/#">
         <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-tree-fill" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd"
@@ -11,24 +12,24 @@ export default function L2menu() {
           <path d="M7 13h2v3H7v-3z" />
         </svg>
     Promo karty</a>
-      <a className="nav-link" href="#">Core Set 2021</a>
-      <a className="nav-link" href="#">Ikoria: Lair of Behemoths</a>
-      <a className="nav-link" href="#">Theros Beyond Death</a>
-      <a className="nav-link" href="#">Theros Beyond Death (Alternate)</a>
-      <a className="nav-link" href="#">Throne of Eldraine</a>
-      <a className="nav-link" href="#">Throne of Eldraine (Alternate)</a>
-      <a className="nav-link" href="#">Core Set 2020</a>
-      <a className="nav-link" href="#">Modern Horizons</a>
-      <a className="nav-link" href="#">War of the Spark</a>
-      <a className="nav-link" href="#">Ravnica Allegiance</a>
-      <a className="nav-link" href="#">Ultimate Masters</a>
-      <a className="nav-link" href="#">Guilds of Ravnica</a>
-      <a className="nav-link" href="#">Core Set 2019</a>
-      <a className="nav-link" href="#">Battlebond</a>
-      <a className="nav-link" href="#">Dominaria</a>
-      <a className="nav-link" href="#">Masters 25</a>
-      <a className="nav-link" href="#">Rivals of Ixalan</a>
-      <a className="nav-link" href="#">Unstable</a>
+      <a className="nav-link" href="/#">Core Set 2021</a>
+      <a className="nav-link" href="/#">Ikoria: Lair of Behemoths</a>
+      <a className="nav-link" href="/#">Theros Beyond Death</a>
+      <a className="nav-link" href="/#">Theros Beyond Death (Alternate)</a>
+      <a className="nav-link" href="/#">Throne of Eldraine</a>
+      <a className="nav-link" href="/#">Throne of Eldraine (Alternate)</a>
+      <a className="nav-link" href="/#">Core Set 2020</a>
+      <a className="nav-link" href="/#">Modern Horizons</a>
+      <a className="nav-link" href="/#">War of the Spark</a>
+      <a className="nav-link" href="/#">Ravnica Allegiance</a>
+      <a className="nav-link" href="/#">Ultimate Masters</a>
+      <a className="nav-link" href="/#">Guilds of Ravnica</a>
+      <a className="nav-link" href="/#">Core Set 2019</a>
+      <a className="nav-link" href="/#">Battlebond</a>
+      <a className="nav-link" href="/#">Dominaria</a>
+      <a className="nav-link" href="/#">Masters 25</a>
+      <a className="nav-link" href="/#">Rivals of Ixalan</a>
+      <a className="nav-link" href="/#">Unstable</a>
     </nav>
   );
 }

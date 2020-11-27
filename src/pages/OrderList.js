@@ -5,9 +5,9 @@ export default function OrderList() {
         <div class="col-8 offset-2">
           <div class="row">
             <div class="col-2 py-4">
-              <a href="#" class="btn btn-outline-success btn-sm align-baseline"> Zpět </a>
-              </div> 
-              <div class="col-8 text-center py-4">
+              <a href="/#" class="btn btn-outline-success btn-sm align-baseline"> Zpět </a>
+            </div>
+            <div class="col-8 text-center py-4">
               <h4>Přehled objednávek</h4>
             </div>
           </div>

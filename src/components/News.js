@@ -19,7 +19,7 @@ export default function Carousel() {
 
             <h5 className="card-price">cena 99</h5>
             <div className="card-btn">
-              <a href="#" className="btn btn-primary btn-sm">Detail</a>
+              <a href="/#" className="btn btn-primary btn-sm">Detail</a>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function Carousel() {
 
             <h5 className="card-price">cena 2799</h5>
             <div className="card-btn">
-              <a href="#" className="btn btn-primary btn-sm">Detail</a>
+              <a href="/#" className="btn btn-primary btn-sm">Detail</a>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function Carousel() {
 
             <h5 className="card-price">cena 449</h5>
             <div className="card-btn">
-              <a href="#" className="btn btn-primary btn-sm">Detail</a>
+              <a href="/#" className="btn btn-primary btn-sm">Detail</a>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Carousel() {
 
             <h5 className="card-price">cena 449</h5>
             <div className="card-btn">
-              <a href="#" className="btn btn-primary btn-sm">Detail</a>
+              <a href="/#" className="btn btn-primary btn-sm">Detail</a>
             </div>
           </div>
         </div>

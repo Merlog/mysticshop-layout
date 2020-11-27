@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* VYŘEŠIT BARVY A TUDÍŽ OUTLINE INPUTŮ */
+/* .form-control:focus {
+  border-color: #80ffa6;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 55, 0.25);
+} */
+
+html,
+body {
+  /* background-color: #f8f9fa!important; */
+  background-color: #f3f3f3;
+}
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* nvm coment */
+.main {
+  min-height:70vh;
+  margin-top: 170px;
+  padding: 30px 0 40px;
+}
+@media (min-width: 1260px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+.container {
+  max-width: 1240px;
+}
+.card-img-top {
+  height: auto;
+  width: 180px;
+  margin: 15px auto;
+}
+
+.customW400 {
+  width: 400px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+

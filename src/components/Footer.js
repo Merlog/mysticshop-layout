@@ -43,10 +43,10 @@ export default function Footer() {
         </div>
         <div className="col-4 links d-flex">
           <NavLink to="/Contact" exact>
-            <a className="text">Kontaktujte nás</a>
+            <a className="text" href="/#">Kontaktujte nás</a>
           </NavLink>
           <NavLink to="/BussinessConditions" exact>
-            <a className="text">Obchodní podmínky</a>
+            <a className="text" href="/#">Obchodní podmínky</a>
           </NavLink>
         </div>
         <div className="col-4 payment d-flex">

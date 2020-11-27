@@ -22,7 +22,7 @@ export default function New() {
         </div>
         <div className="col-2  produktItem__cena">
 
-          <a href="#" className="btn btn-primary">detail</a>
+          <a href="/#" className="btn btn-primary">detail</a>
         </div>
       </div>
     </div>

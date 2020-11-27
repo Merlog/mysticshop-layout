@@ -2,10 +2,10 @@ import "./Products.css";
 import BoosterPack from './../assets/booster_pack.jpg';
 import Booster from './../assets/booster.jpg';
 import Duel from './../assets/duel.jpg';
-import Obal from './../assets/obal.jpg';
-import image1 from './../assets/1809.jpg';
-import image2 from './../assets/1894.jpg';
-import image3 from './../assets/1944.jpg';
+// import Obal from './../assets/obal.jpg';
+// import image1 from './../assets/1809.jpg';
+// import image2 from './../assets/1894.jpg';
+// import image3 from './../assets/1944.jpg';
 
 
 
@@ -21,7 +21,7 @@ export default function Products() {
                 Core Set 2021 booster</h5>
               <h5 className="card-price">cena 99</h5>
               <div className="card-btn">
-                <a href="#" className="btn btn-primary btn-sm">Detail</a>
+                <a href="/#" className="btn btn-primary btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function Products() {
                 Core Set 2021 booster box</h5>
               <h5 className="card-price">cena 2799</h5>
               <div className="card-btn">
-                <a href="#" className="btn btn-primary btn-sm">Detail</a>
+                <a href="/#" className="btn btn-primary btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function Products() {
                 Duel Decks: Elves Vs. Inventors</h5>
               <h5 className="card-price">cena 449</h5>
               <div className="card-btn">
-                <a href="#" className="btn btn-primary btn-sm">Detail</a>
+                <a href="/#" className="btn btn-primary btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Products() {
                 Duel Decks: Elves Vs. Inventors</h5>
               <h5 className="card-price">cena 449</h5>
               <div className="card-btn">
-                <a href="#" className="btn btn-primary btn-sm">Detail</a>
+                <a href="/#" className="btn btn-primary btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Products() {
           </div>
           <div className="col-3  produktItem__cena">
             <h6>cena 99</h6>
-            <a href="#" className="btn btn-primary">Koupit</a>
+            <a href="/#" className="btn btn-primary">Koupit</a>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ export default function Products() {
           </div>
           <div className="col-3  produktItem__cena">
             <h6>cena 99</h6>
-            <a href="#" className="btn btn-primary">Koupit</a>
+            <a href="/#" className="btn btn-primary">Koupit</a>
           </div>
         </div>
 
@@ -122,7 +122,7 @@ export default function Products() {
           </div>
           <div className="col-3  produktItem__cena">
             <h6>cena 99</h6>
-            <a href="#" className="btn btn-primary">Koupit</a>
+            <a href="/#" className="btn btn-primary">Koupit</a>
           </div>
         </div>
       </div>

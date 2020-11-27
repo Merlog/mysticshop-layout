@@ -941,7 +941,7 @@ export default function FullSearch() {
             <div class="row py-2">
               <div class="col-2"></div>
               <div class="col-10">
-                <a class="btn btn-primary mx-1" href="#" role="button">
+                <a class="btn btn-primary mx-1" href="/#" role="button">
                   Vyhledej
                 </a>
                 <button class="btn btn-primary mx-1" type="submit">
