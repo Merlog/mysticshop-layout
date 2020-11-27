@@ -74,7 +74,7 @@ export default function Cart3() {
               <img
                 src="./assets/booster.jpg"
                 class="cartProductImage"
-                alt="product image"
+                alt="product"
               />
               <h6 class="my-0 cartProductName">Název produktu</h6>
               <span class="cartProductPrice">100 Kč</span>
@@ -83,7 +83,7 @@ export default function Cart3() {
               <img
                 src="./assets/booster_pack.jpg"
                 class="cartProductImage"
-                alt="product image"
+                alt="product"
               />
               <h6 class="my-0 cartProductName">Název dalšího produktu</h6>
               <span class="cartProductPrice">200 Kč</span>

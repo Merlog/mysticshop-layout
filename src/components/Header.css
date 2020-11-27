@@ -1,10 +1,8 @@
 
-
-/* HEADER TOP */
-.headerWrapper {
+.headerTop {
   background-color: #333333;
-  /* border-bottom: solid 1px #666666; */
 }
+
 .headerWrapper .nav-tabs {
   border-bottom: 0px solid #dee2e6;
 }
@@ -83,7 +81,9 @@ a.Kosik {
   fill: #fff;
 }
 
-
+.headerLast {
+  background-color: #222;
+}
 .customW400 {
   width:400px !important;
 }

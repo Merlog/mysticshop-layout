@@ -87,7 +87,7 @@ export default function Cart1() {
                 <tbody>
                   <tr>
                     <td>
-                      <img src={ProductImage1} alt="product image" width="30px" height="30px" />
+                      <img src={ProductImage1} alt="product" width="30px" height="30px" />
                     </td>
                     <td>Booster</td>
                     <td>
@@ -102,7 +102,7 @@ export default function Cart1() {
                   </tr>
                   <tr>
                     <td>
-                    <img src={ProductImage2} alt="product image" width="30px" height="30px" />
+                      <img src={ProductImage2} alt="product" width="30px" height="30px" />
                     </td>
                     <td>Karta xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
                     <td>
@@ -111,7 +111,7 @@ export default function Cart1() {
                     <td>355 Kč</td>
                     <td>
                       <button>
-                      <img src={Delete} alt="delete"></img>
+                        <img src={Delete} alt="delete"></img>
                       </button>
                     </td>
                   </tr>
@@ -122,34 +122,34 @@ export default function Cart1() {
 
           <div class="summary_wrapper">
             <div class="summary_inner">
-          <div class="row summary">
-            <div class="col-12 d-flex justify-content-between">
-            <div>Cena bez DPH</div>
-            <div>4 444 Kč</div>
-            </div>
-          </div>
+              <div class="row summary">
+                <div class="col-12 d-flex justify-content-between">
+                  <div>Cena bez DPH</div>
+                  <div>4 444 Kč</div>
+                </div>
+              </div>
 
-          <div class="row summary">
-            <div class="col-12 d-flex justify-content-between">
-            <div>Cena s DPH</div>
-            <div>5 222 Kč</div>
+              <div class="row summary">
+                <div class="col-12 d-flex justify-content-between">
+                  <div>Cena s DPH</div>
+                  <div>5 222 Kč</div>
+                </div>
+              </div>
             </div>
-          </div>
-          </div>
 
-          <div class="row summary">
-            <div class="col-12 d-flex justify-content-between">
-            <div>Slevový kupón XXZZYYWW</div>
-                    <div>- 82 Kč</div>
+            <div class="row summary">
+              <div class="col-12 d-flex justify-content-between">
+                <div>Slevový kupón XXZZYYWW</div>
+                <div>- 82 Kč</div>
+              </div>
             </div>
-          </div>
 
-          <div class="row summary">
-            <div class="col-12 d-flex justify-content-between">
-            <div>Cena po slevě vč. DPH</div>
-                    <div class="price">5 140 Kč</div>
+            <div class="row summary">
+              <div class="col-12 d-flex justify-content-between">
+                <div>Cena po slevě vč. DPH</div>
+                <div class="price">5 140 Kč</div>
+              </div>
             </div>
-          </div>
           </div>
 
           <div class="row mt-4">
