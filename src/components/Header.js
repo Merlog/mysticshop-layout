@@ -14,9 +14,10 @@ export default function Header() {
         <div className="container">
           <div className="row">
             <div className="col d-flex justify-content-end">
-              <ul className="list-unstyled list-inline pt-1">
+              <ul className="list-unstyled list-inline pt-2">
                 <li className="dropdown dropdown-small list-inline-item currency">
                   <a
+                    href
                     className={`linkcurrency${currency ? " active" : ""}`}
                     onClick={() => {
                       setCurrency(true);
@@ -26,6 +27,7 @@ export default function Header() {
                   </a>
                   /
                   <a
+                    href
                     className={`linkcurrency${!currency ? " active" : ""}`}
                     onClick={() => {
                       setCurrency(false);
@@ -112,7 +114,7 @@ export default function Header() {
                 <ul className="nav nav-tabs">
                   <li className="nav-item">
                     <NavLink to="/#" exact>
-                      Home
+                      Domů
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -127,7 +129,7 @@ export default function Header() {
                   </li>
                   <li className="nav-item">
                     <NavLink to="/LoyaltyDiscount" exact>
-                      Věrnostní sleva ???
+                      Věrnostní sleva
                     </NavLink>
                   </li>
                   <li className="nav-item">

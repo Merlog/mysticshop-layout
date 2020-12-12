@@ -1,29 +1,120 @@
-import "./Menu.css";
+import "./leftMenu.css";
+import { NavLink } from "react-router-dom";
 
 export default function L2menu() {
   return (
-    <nav className="nav flex-column navEdice">
-      <span className="nav-link headline" href="/#">Katalog zboží</span>
-      <a className="nav-link" href="/#">Alba</a>
-      <a className="nav-link" href="/#">Bazar</a>
-      <a className="nav-link" href="/#">Boxy na karty</a>
-      <a className="nav-link" href="/#">Herní podložky</a>
-      <a className="nav-link" href="/#">Knížky</a>
+    <nav className="nav flex-column L1menu">
+      <div className="nav-link headline">Katalog zboží</div>
+      <NavLink className="nav-link" to="/#">
+        Alba
+      </NavLink>
+      <NavLink className="nav-link" to="/#">
+        Bazar
+      </NavLink>
+      <NavLink className="nav-link" to="/#">
+        Boxy na karty
+      </NavLink>
+      <NavLink className="nav-link" to="/#">
+        Herní podložky
+      </NavLink>
+      <NavLink className="nav-link" to="/#">
+        Knížky
+      </NavLink>
       <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="/#" role="button" aria-haspopup="true" aria-expanded="false">Kostky</a>
+        <a
+          className="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="/#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Kostky
+        </a>
         <div className="dropdown-menu">
-          <a className="dropdown-item" href="/#">Action</a>
-          <a className="dropdown-item" href="/#">Another action</a>
-          <a className="dropdown-item" href="/#">Something else here</a>
-          <div className="dropdown-divider"></div>
-          <a className="dropdown-item" href="/#">Separated link</a>
+          <NavLink className="nav-link" to="/#">
+            Příklad 1
+          </NavLink>
+          <NavLink className="nav-link" to="/#">
+            Příklad 2
+          </NavLink>
+          <NavLink className="nav-link" to="/#">
+            Příklad 3
+          </NavLink>
         </div>
       </li>
-      <a className="nav-link" href="/#">Krabičky</a>
-      <a className="nav-link" href="/#">Magic:The Gathering</a>
-      <a className="nav-link" href="/#">Obaly na karty</a>
-      <a className="nav-link" href="/#">Ostatní doplňky</a>
+      <li className="nav-item dropdown">
+        <a
+          className="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="/#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Krabičky
+        </a>
+        <div className="dropdown-menu">
+          <NavLink className="nav-link" to="/#">
+            Příklad 1
+          </NavLink>
+          <NavLink className="nav-link" to="/#">
+            Příklad 2
+          </NavLink>
+          <NavLink className="nav-link" to="/#">
+            Příklad 3
+          </NavLink>
+        </div>
+      </li>
+      <li className="nav-item dropdown">
+        <a
+          className="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="/#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Magic: The Gathering
+        </a>
+        <div className="dropdown-menu">
+          <NavLink className="nav-link" to="/#">
+            Příklad 1
+          </NavLink>
+          <NavLink className="nav-link" to="/#">
+            Příklad 2
+          </NavLink>
+          <NavLink className="nav-link" to="/#">
+            Příklad 3
+          </NavLink>
+        </div>
+      </li>
+      <li className="nav-item dropdown">
+        <a
+          className="nav-link dropdown-toggle"
+          data-toggle="dropdown"
+          href="/#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Obaly na karty
+        </a>
+        <div className="dropdown-menu">
+          <NavLink className="nav-link" to="/#">
+            Příklad 1
+          </NavLink>
+          <NavLink className="nav-link" to="/#">
+            Příklad 2
+          </NavLink>
+          <NavLink className="nav-link" to="/#">
+            Příklad 3
+          </NavLink>
+        </div>
+      </li>
+      <NavLink className="nav-link" to="/#">
+        Ostatní doplňky
+      </NavLink>
     </nav>
-
   );
 }

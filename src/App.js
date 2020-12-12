@@ -1,5 +1,5 @@
 import { Switch, Route } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -29,7 +29,7 @@ export default function App() {
           similique?
         </div>
       </div>
-      <div className="row temporary">
+      {/* <div className="row temporary">
         <div>
           <NavLink to="/" exact>
             Homepage
@@ -80,7 +80,7 @@ export default function App() {
             User Settings
           </NavLink>
         </div>
-      </div>
+      </div> */}
       <Header />
       <div className="container main">
         <Switch>

@@ -41,46 +41,6 @@ a:hover {
   font-weight: bold;
 }
 
-.navEdice {
-  border: 1px solid #eaeaea;
-  background-color: #ffffff;
-  margin-bottom: 15px;
-}
-.navEdice li {
-  transition: all 0.3s ease 0s;
-  position: relative;
-  width: 100%;
-  border-bottom: 1px solid #eaeaea;
-}
-.navEdice a {
-  padding: 13px 15px;
-  color: #666666;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.2px;
-  font-size: 14px;
-  border-bottom: 1px solid #eaeaea;
-}
-.navEdice a:hover {
-  background-color: #f1f1f1;
-}
-
-.itemBox .card-title {
-  height: 40px;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-.itemBox .card-price {
-  text-align: right;
-  font-size: 14px;
-}
-.itemBox .card-body {
-  padding-top: 0px;
-}
-.itemBox .card-btn {
-  text-align: right;
-}
-
 .bonus {
   display: flex;
   align-items: center;
@@ -148,7 +108,8 @@ a.Kosik {
 }
 
 .searchButton {
-  background-color: #59b20e;
+  background: #59b20e;
+  background: linear-gradient(to bottom, #59b20e 0%, #038004 100%);
   position: absolute;
   right: 0;
   border: none;
@@ -170,4 +131,8 @@ a.Kosik {
   font-size: 16px;
   font-weight: 600;
   margin-left: 2px;
+}
+
+.mainLogo {
+  background: #dadada;
 }

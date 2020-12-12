@@ -5,7 +5,7 @@ import image3 from "./../assets/images/carousel-img/1944.jpg";
 
 export default function Carousel() {
   return (
-    <div className="row ">
+    <div className="row">
       <div className="col-12">
         <div
           id="carouselExampleCaptions"

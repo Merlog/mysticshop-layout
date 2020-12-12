@@ -1,0 +1,29 @@
+.L1menu {
+  border: 1px solid #f3f3f3;
+  background-color: white;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.headline {
+  background: #59b20e;
+  background: linear-gradient(to bottom, #59b20e 0%, #038004 100%);
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+.L1menu a {
+  color: #666666;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.L1menu a:last-child {
+  border-bottom: none;
+}
+
+.L1menu a:hover {
+  background-color: #f3f3f3;
+}

@@ -1,3 +1,23 @@
-.News .title {
-  padding-bottom: 15px;
+.news {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 25px;
+}
+
+.news h2 {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: auto;
+  width: 100%;
+}
+
+.newsText {
+  margin-top: 10px;
+}
+
+.more {
+  display: flex;
+  align-items: flex-end;
 }

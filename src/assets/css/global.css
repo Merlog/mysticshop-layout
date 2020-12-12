@@ -1,17 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 /* VYŘEŠIT BARVY A TUDÍŽ OUTLINE INPUTŮ */
 /* .form-control:focus {
   border-color: #80ffa6;
@@ -20,32 +6,27 @@ code {
 
 html,
 body {
+  font-family: "Open Sans", sans-serif;
   background-color: #f3f3f3;
+  font-size: 13px;
 }
+
 body {
   position: relative;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-a {
+a,
+button {
   cursor: pointer;
 }
 
 input:focus,
-button:focus {
+button:focus,
+.btn:focus {
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
 }
-/* nvm coment */
 
 .topAlert {
   background-color: #68ac45;
@@ -58,36 +39,17 @@ button:focus {
   padding: 10px;
 }
 
-.main {
-  min-height: 70vh;
-  margin-top: 250px;
-  padding: 30px 0 40px;
-}
-@media (min-width: 1260px) {
-  .container {
-    max-width: 1240px;
-  }
-}
 .container {
   max-width: 1240px;
 }
-.card-img-top {
-  height: auto;
-  width: 100%;
-  margin: 15px auto;
-}
-.mainLogo {
-  background: #dadada;
-}
-.customW400 {
-  width: 400px;
+
+.main {
+  min-height: 70vh;
+  margin-top: 100px;
+  padding: 30px 0 40px;
 }
 
-.pt30 {
-  padding-top: 20px;
-}
-
-.temporary {
+/* .temporary {
   background-color: #111;
   position: absolute;
   top: 250px;
@@ -102,4 +64,4 @@ button:focus {
   font-weight: 600;
   padding: 5px 20px;
   color: #fff;
-}
+} */
