@@ -1,5 +1,4 @@
 .wrapper {
-  height: 120px;
   background-color: #222323;
 }
 
@@ -23,6 +22,7 @@
   font-size: 14px;
   color: white;
   text-transform: uppercase;
+  padding: 8px 0;
 }
 
 .copyright {

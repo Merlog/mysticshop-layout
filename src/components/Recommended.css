@@ -13,6 +13,10 @@
   width: 100%;
 }
 
+.card {
+  border-color: #58b20e49;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;

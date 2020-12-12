@@ -98,6 +98,10 @@ a.Kosik {
   color: white;
 }
 
+.list-inline-item a:hover {
+  color: #59b20e;
+}
+
 .dropdown-menu li a {
   color: black;
 }

@@ -42,15 +42,11 @@ export default function Footer() {
           />
         </div>
         <div className="col-4 links d-flex">
-          <NavLink to="/Contact" exact>
-            <a className="text" href="/#">
-              Kontaktujte nás
-            </a>
+          <NavLink to="/Contact" exact className="text">
+            Kontaktujte nás
           </NavLink>
-          <NavLink to="/BussinessConditions" exact>
-            <a className="text" href="/#">
-              Obchodní podmínky
-            </a>
+          <NavLink to="/BussinessConditions" exact className="text">
+            Obchodní podmínky
           </NavLink>
         </div>
         <div className="col-4 payment d-flex">
@@ -72,7 +68,8 @@ export default function Footer() {
       </div>
       <div className="row copyright d-flex">
         <div className="col-12 copyright text-center font-italic font-weight-lighter">
-          2020 &copy; design Kateřina Faustenová &amp; Jakub Fides
+          2020 &copy; copyright
+          {/* design Kateřina Faustenová &amp; Jakub Fides */}
         </div>
       </div>
     </div>
