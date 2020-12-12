@@ -1,50 +1,62 @@
-
 import "./Header.css";
-import logo from './../assets/logo1.png'
+import logo from "./../assets/logo1.png";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
+  const [loggedIn, setLoggedIn] = useState(true);
   return (
     <div className="header">
       <div className="fixed-top w-100 headerWrapper headerTop">
-        <div className="container" >
+        <div className="container">
           <div className="row">
-            <div className="col">
-              <ul className="nav justify-content-end headerTop">
-                <select>
-                  <option selected>CZK</option>
-                  <option value="1">EUR</option>
-                </select>
-                <li className="nav-item dropdown">
+            <div className="col d-flex justify-content-end">
+              <ul className="list-unstyled list-inline pt-1">
+                <li className="dropdown dropdown-small list-inline-item">
                   <a
-                    className="nav-link dropdown-toggle"
+                    class="dropdown-toggle"
+                    data-hover="dropdown"
                     data-toggle="dropdown"
-                    href="/#"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                   >
-                    Muj účet
-                    </a>
-                  <div className="dropdown-menu">
-                    <a className="nav-link active" href="/#">
-                      Muj účet
-                      </a>
-                    <a className="nav-link active" href="/#">
-                      Moje Objednávky
-                      </a>
-                    <a className="nav-link active" href="/#">
-                      Bonus body
-                      </a>
-                    <a className="nav-link active" href="/#">
-                      Odhlasit
-                      </a>
-                  </div>
+                    <span class="value">CZK</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a>EUR</a>
+                    </li>
+                  </ul>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/#">
-                    Log out
-                    </a>
-                </li>
+                {loggedIn && (
+                  <>
+                    <li className="list-inline-item">
+                      <NavLink to="/MyAccount" exact>
+                        Můj účet
+                      </NavLink>
+                    </li>
+                    <li className="list-inline-item">
+                      <a
+                        onClick={() => {
+                          setLoggedIn(false);
+                        }}
+                      >
+                        Odhlásit se
+                      </a>
+                    </li>
+                  </>
+                )}
+                {!loggedIn && (
+                  <>
+                    <li className="list-inline-item">
+                      <a
+                        onClick={() => {
+                          setLoggedIn(true);
+                        }}
+                      >
+                        Přihlásit se
+                      </a>
+                    </li>
+                  </>
+                )}
               </ul>
             </div>
           </div>
@@ -64,13 +76,13 @@ export default function Header() {
                 />
                 <button className="btn btn-dark my-2 my-sm-0" type="submit">
                   Search
-                  </button>
+                </button>
               </form>
             </div>
             <div className="col-2 pt30">
               <a className="" href="/#">
                 Bonus: 20 bodů
-                </a>
+              </a>
             </div>
             <div className="col-3 pt30">
               <a className="Kosik" href="/#">
@@ -84,15 +96,13 @@ export default function Header() {
                   <path d="M14 36c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4zm-12-32v4h4l7.19 15.17-2.7 4.9c-.31.58-.49 1.23-.49 1.93 0 2.21 1.79 4 4 4h24v-4h-23.15c-.28 0-.5-.22-.5-.5 0-.09.02-.17.06-.24l1.79-3.26h14.9c1.5 0 2.81-.83 3.5-2.06l7.15-12.98c.16-.28.25-.61.25-.96 0-1.11-.9-2-2-2h-29.57l-1.9-4h-6.53zm32 32c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4z" />
                   <path d="M0 0h48v48h-48z" fill="none" />
                 </svg>
-                  Košík: 159 kč
-                </a>
+                Košík: 159 kč
+              </a>
             </div>
           </div>
-
-
         </div>
         <div className="w-100 headerWrapper headerLast">
-          <div className="container" >
+          <div className="container">
             <div className="row">
               <div className="col col-lg-12">
                 <ul className="nav nav-tabs headerBottom">

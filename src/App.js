@@ -16,10 +16,19 @@ import RegistrationForm from "./pages/RegistrationForm";
 import UserSettings from "./pages/UserSettings";
 import Contact from "./pages/Contact";
 import BussinessConditions from "./pages/BussinessConditions";
+import MyAccount from "./pages/MyAccount";
 
 export default function App() {
   return (
     <div>
+      <div className="row topAlert">
+        <div className="col-10 offset-1">
+          Lista s upozornenim - zkusebni text ---- Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quidem voluptatibus, magni totam, ullam
+          eaque autem ut commodi ea repellendus, aliquid asperiores tenetur
+          similique?
+        </div>
+      </div>
       <div className="row temporary">
         <div>
           <NavLink to="/Homepage" exact>
@@ -110,6 +119,9 @@ export default function App() {
           </Route>
           <Route path="/BussinessConditions" exact>
             <BussinessConditions />
+          </Route>
+          <Route path="/MyAccount" exact>
+            <MyAccount />
           </Route>
         </Switch>
       </div>

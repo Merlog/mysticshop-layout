@@ -1,0 +1,26 @@
+  /* 
+  
+  COLORS:
+
+  #f3f3f3   light grey - background of the content
+  #333333   middle grey - top part of the header
+  #222323   dark grey - tabs in the header (main navigation)
+  #666666   grey - text in menus and footer
+
+  #ffffff   white - left menu background and text in main upper tabs in header
+
+  #59b20e   green - search button, kosik v headeru, active tab in the header (main nav), left menu nadpisy casti/kategorii
+  #68ac45   lighter green - slabsi zelena (napr. na mensi prvky jako potvrzovaci buttony, zvyrazneni neceho, atd.)
+
+  FONT: 
+  
+  'Open Sans', sans-serif
+
+  SIZES:
+
+  12px    horni veci v headru (prevodnik, ucet, atd.)
+  13px    main size in body, text in menus and footer, tabs in header capitalized
+  14px    nazvy produktu
+  16px    nazvy kategorii/sekci na hlavni strance
+  
+  */

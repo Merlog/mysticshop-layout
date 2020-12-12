@@ -1,7 +1,7 @@
-export default function BussinessConditions() {
+export default function MyAccount() {
   return (
     <div>
-      Obchodní podmínky
+      Můj účet
       <a href="/#" className="btn btn-outline-success btn-sm align-baseline">
         Zpět
       </a>

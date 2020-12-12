@@ -1,3 +1,6 @@
+a:hover {
+  text-decoration: none;
+}
 
 .headerTop {
   background-color: #333333;
@@ -84,7 +87,19 @@ a.Kosik {
 .headerLast {
   background-color: #222;
 }
+
 .customW400 {
-  width:400px !important;
+  width: 400px !important;
 }
 
+.list-inline-item a {
+  color: white;
+}
+
+.dropdown-menu li a {
+  color: black;
+}
+
+.dropdown-menu {
+  background-attachment: red;
+}
