@@ -14,13 +14,14 @@
 .headerTabs a {
   font-size: 14px;
   text-transform: uppercase;
-  padding: 0 15px;
+  padding: 0 18px;
   color: white;
   line-height: 42px;
   letter-spacing: 1px;
 }
 
 .headerTabs a:hover, .headerTabs a.active  {
+  color: white;
   background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
 }
 

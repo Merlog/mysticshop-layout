@@ -1,7 +1,4 @@
 import "./Header.css";
-import logo from "./../assets/logo1.png";
-import cart from "./../assets/svg/cart-material.svg";
-import Search from "./../assets/svg/search-material.svg";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import HeaderTabs from './HeaderTabs';
@@ -50,7 +47,7 @@ export default function Header() {
                         onClick={() => {
                           setLoggedIn(false);
                         }}
-
+                        href="#"
                       >
                         Odhlásit se
                       </a>
@@ -64,7 +61,7 @@ export default function Header() {
                         onClick={() => {
                           setLoggedIn(true);
                         }}
-
+                        href="#"
                       >
                         Přihlásit se
                       </a>
