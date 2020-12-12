@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [loggedIn, setLoggedIn] = useState(true);
+  const [currency, setCurrency] = useState(true);
   return (
     <div className="header">
       <div className="fixed-top w-100 headerWrapper headerTop">
@@ -12,19 +13,14 @@ export default function Header() {
           <div className="row">
             <div className="col d-flex justify-content-end">
               <ul className="list-unstyled list-inline pt-1">
-                <li className="dropdown dropdown-small list-inline-item">
-                  <a
-                    class="dropdown-toggle"
-                    data-hover="dropdown"
-                    data-toggle="dropdown"
-                  >
-                    <span class="value">CZK</span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a>EUR</a>
-                    </li>
-                  </ul>
+                <li className="dropdown dropdown-small list-inline-item currency">
+
+                  <a className={`linkcurrency${currency ? " active" : ''}`} onClick={() => {
+                    setCurrency(true);
+                  }}>CZK</a>/<a className={`linkcurrency${!currency ? " active" : ''}`} onClick={() => {
+                    setCurrency(false);
+                  }}>EUR</a>
+
                 </li>
                 {loggedIn && (
                   <>
@@ -38,6 +34,7 @@ export default function Header() {
                         onClick={() => {
                           setLoggedIn(false);
                         }}
+                        href="/"
                       >
                         Odhlásit se
                       </a>
@@ -51,6 +48,7 @@ export default function Header() {
                         onClick={() => {
                           setLoggedIn(true);
                         }}
+                        href="/"
                       >
                         Přihlásit se
                       </a>

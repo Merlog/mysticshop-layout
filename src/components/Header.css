@@ -27,7 +27,19 @@ a:hover {
   padding: 0;
 }
 
+.currency {
+  color:#888;
+}
 
+.currency .linkcurrency {
+  padding: 0 6px;
+  color:#888;
+}
+
+.currency .active {
+  color:#57b00c;
+  font-weight:bold;
+}
 
 .navEdice {
   border: 1px solid #eaeaea;
