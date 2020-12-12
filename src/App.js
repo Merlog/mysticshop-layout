@@ -31,7 +31,7 @@ export default function App() {
       </div>
       <div className="row temporary">
         <div>
-          <NavLink to="/Homepage" exact>
+          <NavLink to="/" exact>
             Homepage
           </NavLink>
         </div>

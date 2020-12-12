@@ -1,7 +1,7 @@
 /* PRODUCT BOXES */
 
 .productsBoxes {
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 .productsBoxes .Box {
   padding-left: 5px;
@@ -23,9 +23,6 @@
   height: auto;
 }
 
-.produktItem__text {
-  padding-top: 15px;
-}
 .produktItem__cena {
   padding-top: 15px;
 }
@@ -41,10 +38,11 @@
 }
 
 .novinka img {
-  width: 200px;
+  min-width: 200px;
+  padding: 20px 0;
 }
 .novinka .produktItem__text {
-  padding: 50px 0;
+  padding: 20px 0 20px 20px;
 }
 
 .novinka .produktItem__cena {
@@ -53,10 +51,21 @@
   margin-bottom: 40px;
 }
 
+.novinka .more {
+  display:flex;
+  justify-content:flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  font-weight:bold;
+}
+.novinka .more a {
+  margin-right:20px;
+}
+
 .News {
   padding: 30px;
   background-color: #fff;
-  margin: 20px -10px;
+  margin: 20px 0px;
 }
 
 .detail {

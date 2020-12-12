@@ -72,7 +72,7 @@ export default function Footer() {
       </div>
       <div className="row copyright d-flex">
         <div className="col-12 text text-center font-italic font-weight-lighter">
-          2020 &copy; Kateřina Faustenová &amp; Jakub Fides
+          2020 &copy; design Kateřina Faustenová &amp; Jakub Fides
         </div>
       </div>
     </div>

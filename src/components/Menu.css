@@ -1,7 +1,12 @@
 
 .headline {
   background: green;
+  background: linear-gradient(to bottom, #5ab20d 0%,#038004 100%);
   font-weight: 700;
-  font-size:14px;
+  font-size:16px;
   color:#fff;
+}
+
+.svg {
+  margin-right:10px;
 }

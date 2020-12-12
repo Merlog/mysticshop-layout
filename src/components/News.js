@@ -1,4 +1,4 @@
-import "./Carousel.css";
+import "./News.css";
 import BoosterPack from "./../assets/images/product-img/booster_pack.jpg";
 import Booster from "./../assets/images/product-img/booster.jpg";
 import Duel from "./../assets/images/product-img/duel.jpg";
@@ -7,7 +7,7 @@ import Obal from "./../assets/images/product-img/obal.jpg";
 export default function Carousel() {
   return (
     <div className="row News">
-      <div className="col-12">
+      <div className="col-12 title">
         <h2>Doporucene produkty</h2>
       </div>
       <div className="col-3 Box">

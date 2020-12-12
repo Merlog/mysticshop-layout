@@ -11,7 +11,7 @@ a:hover {
 }
 
 .headerWrapper a {
-  color: black;
+  color: white;
 }
 
 .headerTop {
@@ -24,13 +24,10 @@ a:hover {
 }
 
 .navMidle {
-  padding: 0 0 10px;
+  padding: 0;
 }
 
-.headerBottom a {
-  padding: 0.3rem 1rem;
-  background: #222;
-}
+
 
 .navEdice {
   border: 1px solid #eaeaea;
@@ -72,20 +69,74 @@ a:hover {
   text-align: right;
 }
 
+.bonus {
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+
+.cart {
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .Kosik {
-  padding: 10px 20px;
+  padding: 0px 20px;
   font-size: 20px;
   background-color: rgb(124, 2, 2);
 }
+
+.Kosik:hover {
+  background-color: #ad0606;
+}
 a.Kosik {
   color: #fff;
+  text-decoration: none;
 }
 .cart-ico {
   fill: #fff;
 }
 
+.searchButton{
+  background: linear-gradient(to bottom, #5ab20d 0%,#038004 100%);
+}
+
+
+
 .headerLast {
-  background-color: #222;
+  background: linear-gradient(to bottom, #262727 0%, #222323 100%);
+  height:42px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.headerLast a {
+  line-height: 42px;
+}
+
+.headerLast .nav-tabs .nav-link {
+  border: 0px solid transparent;
+  border-right: 1px solid #222;
+  text-transform: uppercase;
+  border-radius:0 ;
+  padding: 0 15px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.headerLast .nav-tabs .nav-item {
+  margin-bottom: 0px;
+}
+
+.headerLast .nav-tabs .nav-link:hover {
+  background: linear-gradient(to bottom, #5ab20d 0%,#038004 100%);
+}
+
+.headerLast .nav-tabs .nav-link.active {
+  background: linear-gradient(to bottom, #5ab20d 0%,#038004 100%);
 }
 
 .customW400 {

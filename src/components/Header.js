@@ -62,7 +62,7 @@ export default function Header() {
           </div>
           <div className="row navMidle">
             <div className="col-2">
-              <a className="navbar-brand" href="/#">
+              <a className="navbar-brand mainLogo" href="/#">
                 <img src={logo} alt="logo" />
               </a>
             </div>
@@ -74,17 +74,17 @@ export default function Header() {
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <button className="btn btn-dark my-2 my-sm-0" type="submit">
-                  Search
-                </button>
+                <button className="btn btn-dark my-2 my-sm-0 searchButton" type="submit">
+                  Hledat
+                  </button>
               </form>
             </div>
-            <div className="col-2 pt30">
+            <div className="col-2 bonus">
               <a className="" href="/#">
                 Bonus: 20 bodů
               </a>
             </div>
-            <div className="col-3 pt30">
+            <div className="col-3 cart">
               <a className="Kosik" href="/#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

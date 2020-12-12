@@ -52,8 +52,8 @@ a {
 }
 
 .main {
-  min-height: 70vh;
-  margin-top: 130px;
+  min-height:70vh;
+  margin-top: 140px;
   padding: 30px 0 40px;
 }
 @media (min-width: 1260px) {
@@ -66,16 +66,18 @@ a {
 }
 .card-img-top {
   height: auto;
-  width: 180px;
+  width: 100%;
   margin: 15px auto;
 }
-
+.mainLogo {
+  background: #dadada;
+}
 .customW400 {
   width: 400px;
 }
 
 .pt30 {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .temporary {
