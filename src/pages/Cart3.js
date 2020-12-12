@@ -72,8 +72,8 @@ export default function Cart3() {
           <ul className="list-group mb-3">
             <li className="list-group-item d-flex justify-content-between lh-condensed">
               <img
-                src="./assets/booster.jpg"
-                className="cartProductImage"
+                src="./assets/product-img/booster.jpg"
+                class="cartProductImage"
                 alt="product"
               />
               <h6 className="my-0 cartProductName">Název produktu</h6>
@@ -81,8 +81,8 @@ export default function Cart3() {
             </li>
             <li className="list-group-item d-flex justify-content-between lh-condensed">
               <img
-                src="./assets/booster_pack.jpg"
-                className="cartProductImage"
+                src="./assets/product-img/booster_pack.jpg"
+                class="cartProductImage"
                 alt="product"
               />
               <h6 className="my-0 cartProductName">Název dalšího produktu</h6>

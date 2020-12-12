@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
-import Facebook from "../assets/social/facebook.svg";
-import Twitter from "../assets/social/twitter.svg";
-import Instagram from "../assets/social/instagram.svg";
-import Pinterest from "../assets/social/pinterest.svg";
-import Maestro from "../assets/payment/maestro.svg";
-import Visa from "../assets/payment/visa.svg";
+import Facebook from "../assets/svg/social/facebook.svg";
+import Twitter from "../assets/svg/social/twitter.svg";
+import Instagram from "../assets/svg/social/instagram.svg";
+import Pinterest from "../assets/svg/social/pinterest.svg";
+import Maestro from "../assets/svg/payment/maestro.svg";
+import Visa from "../assets/svg/payment/visa.svg";
 
 export default function Footer() {
   return (

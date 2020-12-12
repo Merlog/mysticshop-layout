@@ -1,7 +1,7 @@
-import Delete from "../assets/delete.svg";
-import ProductImage1 from "../assets/booster.jpg";
-import ProductImage2 from "../assets/giftbox.jpg"
-import "./Cart.css"
+import Delete from "../assets/svg/delete.svg";
+import ProductImage1 from "../assets/images/product-img/booster.jpg";
+import ProductImage2 from "../assets/images/product-img/giftbox.jpg";
+import "./Cart.css";
 
 export default function Cart1() {
   return (
@@ -87,7 +87,12 @@ export default function Cart1() {
                 <tbody>
                   <tr>
                     <td>
-                      <img src={ProductImage1} alt="product" width="30px" height="30px" />
+                      <img
+                        src={ProductImage1}
+                        alt="product"
+                        width="30px"
+                        height="30px"
+                      />
                     </td>
                     <td>Booster</td>
                     <td>
@@ -102,7 +107,12 @@ export default function Cart1() {
                   </tr>
                   <tr>
                     <td>
-                      <img src={ProductImage2} alt="product" width="30px" height="30px" />
+                      <img
+                        src={ProductImage2}
+                        alt="product"
+                        width="30px"
+                        height="30px"
+                      />
                     </td>
                     <td>Karta xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
                     <td>
@@ -120,34 +130,34 @@ export default function Cart1() {
             </div>
           </div>
 
-          <div className="summary_wrapper">
-            <div className="summary_inner">
-              <div className="row summary">
-                <div className="col-12 d-flex justify-content-between">
+          <div class="summary_wrapper">
+            <div class="summary_inner">
+              <div class="row summary">
+                <div class="col-12 d-flex justify-content-between">
                   <div>Cena bez DPH</div>
                   <div>4 444 Kč</div>
                 </div>
               </div>
 
-              <div className="row summary">
-                <div className="col-12 d-flex justify-content-between">
+              <div class="row summary">
+                <div class="col-12 d-flex justify-content-between">
                   <div>Cena s DPH</div>
                   <div>5 222 Kč</div>
                 </div>
               </div>
             </div>
 
-            <div className="row summary">
-              <div className="col-12 d-flex justify-content-between">
+            <div class="row summary">
+              <div class="col-12 d-flex justify-content-between">
                 <div>Slevový kupón XXZZYYWW</div>
                 <div>- 82 Kč</div>
               </div>
             </div>
 
-            <div className="row summary">
-              <div className="col-12 d-flex justify-content-between">
+            <div class="row summary">
+              <div class="col-12 d-flex justify-content-between">
                 <div>Cena po slevě vč. DPH</div>
-                <div className="price">5 140 Kč</div>
+                <div class="price">5 140 Kč</div>
               </div>
             </div>
           </div>

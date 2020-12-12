@@ -1,8 +1,9 @@
 import { Switch, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomepagePage from "./pages/HomepagePage";
-import { NavLink } from "react-router-dom";
 
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
