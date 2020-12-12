@@ -1,10 +1,10 @@
-  /* 
+/* 
   
   COLORS:
 
   #f3f3f3   light grey - background of the content
   #333333   middle grey - top part of the header
-  #222323   dark grey - tabs in the header (main navigation)
+  #222323   dark grey - tabs in the header (main navigation) + footer background
   #666666   grey - text in menus and footer
 
   #ffffff   white - left menu background and text in main upper tabs in header
@@ -19,8 +19,8 @@
   SIZES:
 
   12px    horni veci v headru (prevodnik, ucet, atd.)
-  13px    main size in body, text in menus and footer, tabs in header capitalized
-  14px    nazvy produktu
+  13px    main size in body, text in menus, footer copyright text
+  14px    nazvy produktu, tabs in header uppercase, text in footer uppercase
   16px    nazvy kategorii/sekci na hlavni strance
-  
+
   */

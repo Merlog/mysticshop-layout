@@ -113,33 +113,24 @@ a.Kosik {
 .headerLast {
   background: linear-gradient(to bottom, #262727 0%, #222323 100%);
   height: 42px;
-  font-weight: bold;
   font-size: 14px;
 }
 
-.headerLast a {
+.headerLast .nav-tabs .nav-item a {
   line-height: 42px;
 }
 
-.headerLast .nav-tabs .nav-link {
-  border: 0px solid transparent;
-  border-right: 1px solid #222;
+.headerLast .nav-tabs a {
   text-transform: uppercase;
-  border-radius: 0;
   padding: 0 15px;
-  color: #fff;
-  letter-spacing: 1px;
+  color: white;
 }
 
-.headerLast .nav-tabs .nav-item {
-  margin-bottom: 0px;
-}
-
-.headerLast .nav-tabs .nav-link:hover {
+.headerLast .nav-tabs a:hover {
   background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
 }
 
-.headerLast .nav-tabs .nav-link.active {
+.headerLast .nav-tabs a.active {
   background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
 }
 

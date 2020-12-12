@@ -16,13 +16,23 @@ export default function Header() {
             <div className="col d-flex justify-content-end">
               <ul className="list-unstyled list-inline pt-1">
                 <li className="dropdown dropdown-small list-inline-item currency">
-
-                  <a className={`linkcurrency${currency ? " active" : ''}`} onClick={() => {
-                    setCurrency(true);
-                  }}>CZK</a>/<a className={`linkcurrency${!currency ? " active" : ''}`} onClick={() => {
-                    setCurrency(false);
-                  }}>EUR</a>
-
+                  <a
+                    className={`linkcurrency${currency ? " active" : ""}`}
+                    onClick={() => {
+                      setCurrency(true);
+                    }}
+                  >
+                    CZK
+                  </a>
+                  /
+                  <a
+                    className={`linkcurrency${!currency ? " active" : ""}`}
+                    onClick={() => {
+                      setCurrency(false);
+                    }}
+                  >
+                    EUR
+                  </a>
                 </li>
                 {loggedIn && (
                   <>
@@ -99,34 +109,38 @@ export default function Header() {
           <div className="container">
             <div className="row">
               <div className="col col-lg-12">
-                <ul className="nav nav-tabs headerBottom">
+                <ul className="nav nav-tabs">
                   <li className="nav-item">
-                    <a className="nav-link active" href="/#">
+                    <NavLink to="/#" exact>
                       Home
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/#">
+                    <NavLink to="/BonusProgram" exact>
                       Bonusový program
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/#">
+                    <NavLink to="/CardGames" exact>
                       Karetní hry
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/#">
+                    <NavLink to="/LoyaltyDiscount" exact>
                       Věrnostní sleva ???
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/#">
+                    <NavLink to="/HowTo" exact>
                       Jak nakupovat
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/#">
+                    <a
+                      href="http://www.mysticshop.cz/blog/"
+                      target="blank"
+                      exact
+                    >
                       Blog Mudrc
                     </a>
                   </li>
