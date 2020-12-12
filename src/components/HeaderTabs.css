@@ -1,0 +1,26 @@
+
+.headerTabs {
+  background: linear-gradient(to bottom, #262727 0%, #222323 100%);
+}
+
+.headerTabs .nav-tabs {
+  border-bottom: 0px solid #dee2e6;
+}
+
+.headerTabs .nav-tabs .nav-item {
+  margin-bottom: 0px; 
+}
+
+.headerTabs a {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  color: white;
+  line-height: 42px;
+  letter-spacing: 1px;
+}
+
+.headerTabs a:hover, .headerTabs a.active  {
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
+}
+
