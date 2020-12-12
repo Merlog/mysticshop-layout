@@ -28,17 +28,17 @@ a:hover {
 }
 
 .currency {
-  color:#888;
+  color: #888;
 }
 
 .currency .linkcurrency {
   padding: 0 6px;
-  color:#888;
+  color: #888;
 }
 
 .currency .active {
-  color:#57b00c;
-  font-weight:bold;
+  color: #57b00c;
+  font-weight: bold;
 }
 
 .navEdice {
@@ -82,19 +82,17 @@ a:hover {
 }
 
 .bonus {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
-
-
 
 .cart {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+
 .Kosik {
   padding: 0px 20px;
   font-size: 20px;
@@ -112,15 +110,9 @@ a.Kosik {
   fill: #fff;
 }
 
-.searchButton{
-  background: linear-gradient(to bottom, #5ab20d 0%,#038004 100%);
-}
-
-
-
 .headerLast {
   background: linear-gradient(to bottom, #262727 0%, #222323 100%);
-  height:42px;
+  height: 42px;
   font-weight: bold;
   font-size: 14px;
 }
@@ -133,7 +125,7 @@ a.Kosik {
   border: 0px solid transparent;
   border-right: 1px solid #222;
   text-transform: uppercase;
-  border-radius:0 ;
+  border-radius: 0;
   padding: 0 15px;
   color: #fff;
   letter-spacing: 1px;
@@ -144,15 +136,11 @@ a.Kosik {
 }
 
 .headerLast .nav-tabs .nav-link:hover {
-  background: linear-gradient(to bottom, #5ab20d 0%,#038004 100%);
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
 }
 
 .headerLast .nav-tabs .nav-link.active {
-  background: linear-gradient(to bottom, #5ab20d 0%,#038004 100%);
-}
-
-.customW400 {
-  width: 400px !important;
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
 }
 
 .list-inline-item a {
@@ -163,6 +151,32 @@ a.Kosik {
   color: black;
 }
 
-.dropdown-menu {
-  background-attachment: red;
+.searchWrapper {
+  position: relative;
+  outline: none;
+}
+
+.searchButton {
+  background-color: #59b20e;
+  position: absolute;
+  right: 0;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.searchButton img svg path {
+  color: white;
+}
+
+.cartItems {
+  background-color: #222323;
+  padding: 5px;
+  margin: 0 8px;
+}
+
+.cartAmount {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 2px;
 }
