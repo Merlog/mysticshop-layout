@@ -27,27 +27,11 @@ button:focus,
   border: none !important;
 }
 
-.topAlert {
-  background-color: #68ac45;
-  font-size: 13px;
-  z-index: 11111;
-  color: white;
-  text-align: center;
-  /* z nejakeho duvodu musi mit relative, jinak neni vubec videt */
-  position: relative;
-  padding: 10px;
-  margin: 0;
-}
-
 .container {
   max-width: 1240px;
 }
 
-.main {
-  min-height: 70vh;
-  margin-top: 100px;
-  padding: 30px 0;
-}
+
 
 /* clears the 'X' from Internet Explorer */
 input[type="search"]::-ms-clear {
@@ -69,22 +53,3 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-.temporary {
-  background-color: #333333;
-  position: absolute;
-  top: 190px;
-  left: 0;
-  width: 130px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 6px;
-}
-
-.temporary div {
-  padding: 2px 0;
-}
-
-.temporary a {
-  font-size: 13px;
-  color: #fff;
-}

@@ -9,6 +9,15 @@ export default function Header() {
   const [currency, setCurrency] = useState(true);
   return (
     <div className="fixed-top w-100 headerWrapper">
+      <div className="w-100 topAlert">
+        <div className="container">
+          Lista s upozornenim - zkusebni text ---- Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quidem voluptatibus, magni totam, ullam
+          eaque autem ut commodi ea repellendus, aliquid asperiores tenetur
+          similique?, aliquid asperiores tenetur
+          similique?
+            </div>
+      </div>
       <div className="container">
         <div className="row">
           <div className="col d-flex justify-content-end">

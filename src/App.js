@@ -1,6 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import "./App.css";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -22,21 +23,7 @@ import MyAccount from "./pages/MyAccount";
 export default function App() {
   const [message, setMessage] = useState(true);
   return (
-
-
     <div className={`app${message ? " appWithMessage" : ""}`}>
-      {message &&
-        (
-          <div className="w-100 topAlert">
-            <div className="container">
-              Lista s upozornenim - zkusebni text ---- Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quidem voluptatibus, magni totam, ullam
-              eaque autem ut commodi ea repellendus, aliquid asperiores tenetur
-              similique?
-            </div>
-          </div>
-        )
-      }
       <div className="row temporary">
         <div>
           <NavLink to="/" exact>
@@ -88,6 +75,15 @@ export default function App() {
             User Settings
           </NavLink>
         </div>
+        <a
+          href
+          className={`linkcurrency${message ? " active" : ""}`}
+          onClick={() => {
+            setMessage(!message);
+          }}
+        >
+          horni lista
+                </a>
       </div>
       <Header />
       <div className="container main">

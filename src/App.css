@@ -1,0 +1,56 @@
+
+.app {
+  position: relative;
+}
+
+.main {
+  min-height: 70vh;
+  margin-top: 150px;
+  padding: 30px 0;
+}
+
+.appWithMessage .main {
+  /* poresit fixni height pro message */
+  margin-top: 208px;
+}
+
+
+.temporary {
+  background-color: #333333;
+  position: absolute;
+  top: 190px;
+  left: 15px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 6px;
+}
+
+.temporary div {
+  padding: 2px 0;
+}
+
+.temporary a {
+  font-size: 13px;
+  color: #fff;
+}
+
+
+.topAlert {
+  background-color: #68ac45;
+  display: none;
+  font-size: 13px;
+  z-index: 11111;
+  color: white;
+  text-align: center;
+  /* z nejakeho duvodu musi mit relative, jinak neni vubec videt */
+  position: relative;
+  padding: 10px;
+  margin: 0;
+}
+
+
+.appWithMessage .topAlert {
+  display: block;
+}
+
