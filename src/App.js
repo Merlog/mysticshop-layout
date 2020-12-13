@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./App.css";
@@ -82,13 +82,14 @@ export default function App() {
             setMessage(!message);
           }}
         >
-          horni lista
-                </a>
+          Horní lišta
+        </a>
       </div>
       <Header />
       <div className="container main">
+        <Redirect to={`${process.env.PUBLIC_URL}/`} />
         <Switch>
-          <Route path="/" exact>
+          <Route path={`${process.env.PUBLIC_URL}/`} exact>
             <HomepagePage />
           </Route>
           <Route path="/OrderDetail" exact>
@@ -130,6 +131,6 @@ export default function App() {
         </Switch>
       </div>
       <Footer />
-    </div >
+    </div>
   );
 }

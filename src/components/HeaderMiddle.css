@@ -9,6 +9,8 @@
 .searchWrapper {
   position: relative;
   outline: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .searchWrapper input {
@@ -45,12 +47,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  line-height: 24px;
 }
 
 .cart {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  line-height: 24px;
+}
+
+.cart img {
+  vertical-align: text-bottom;
 }
 
 .cartItems {
