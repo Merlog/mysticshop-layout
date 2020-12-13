@@ -2,11 +2,11 @@
   padding-bottom: 10px;
 }
 
-.header a {
+.headerControls a {
   color: white;
 }
 
-.header a:hover {
+.headerControls a:hover {
   text-decoration: none;
   color: #59b20e;
 }

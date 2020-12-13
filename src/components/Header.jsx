@@ -8,73 +8,72 @@ export default function Header() {
   const [loggedIn, setLoggedIn] = useState(true);
   const [currency, setCurrency] = useState(true);
   return (
-    <div className="header">
-      <div className="fixed-top w-100 headerControls">
-        <div className="container headerTop">
-          <div className="row">
-            <div className="col d-flex justify-content-end">
-              <ul className="list-unstyled list-inline pt-2">
-                <li className="dropdown dropdown-small list-inline-item currency">
-                  <a
-                    href
-                    className={`linkcurrency${currency ? " active" : ""}`}
-                    onClick={() => {
-                      setCurrency(true);
-                    }}
-                  >
-                    CZK
+    <div className="fixed-top w-100 headerControls">
+      <div className="container">
+        <div className="row">
+          <div className="col d-flex justify-content-end">
+            <ul className="list-unstyled list-inline pt-2">
+              <li className="dropdown dropdown-small list-inline-item currency">
+                <a
+                  href
+                  className={`linkcurrency${currency ? " active" : ""}`}
+                  onClick={() => {
+                    setCurrency(true);
+                  }}
+                >
+                  CZK
                   </a>
                   /
                   <a
-                    href
-                    className={`linkcurrency${!currency ? " active" : ""}`}
-                    onClick={() => {
-                      setCurrency(false);
-                    }}
-                  >
-                    EUR
+                  href
+                  className={`linkcurrency${!currency ? " active" : ""}`}
+                  onClick={() => {
+                    setCurrency(false);
+                  }}
+                >
+                  EUR
                   </a>
-                </li>
-                {loggedIn && (
-                  <>
-                    <li className="list-inline-item">
-                      <NavLink to="/MyAccount" exact>
-                        Můj účet
+              </li>
+              {loggedIn && (
+                <>
+                  <li className="list-inline-item">
+                    <NavLink to="/MyAccount" exact>
+                      Můj účet
                       </NavLink>
-                    </li>
-                    <li className="list-inline-item">
-                      <a
-                        onClick={() => {
-                          setLoggedIn(false);
-                        }}
-                        href
-                      >
-                        Odhlásit se
+                  </li>
+                  <li className="list-inline-item">
+                    <a
+                      href
+                      onClick={() => {
+                        setLoggedIn(false);
+                      }}
+                    >
+                      Odhlásit se
                       </a>
-                    </li>
-                  </>
-                )}
-                {!loggedIn && (
-                  <>
-                    <li className="list-inline-item">
-                      <a
-                        onClick={() => {
-                          setLoggedIn(true);
-                        }}
-                        href
-                      >
-                        Přihlásit se
+                  </li>
+                </>
+              )}
+              {!loggedIn && (
+                <>
+                  <li className="list-inline-item">
+                    <a
+                      onClick={() => {
+                        setLoggedIn(true);
+                      }}
+                      href
+                    >
+                      Přihlásit se
                       </a>
-                    </li>
-                  </>
-                )}
-              </ul>
-            </div>
+                  </li>
+                </>
+              )}
+            </ul>
           </div>
-          <HeaderMiddle />
         </div>
-        <HeaderTabs />
+        <HeaderMiddle />
       </div>
+      <HeaderTabs />
     </div>
+
   );
 }
