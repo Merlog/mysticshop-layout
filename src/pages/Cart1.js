@@ -12,7 +12,7 @@ export default function Cart1() {
             <div className="col-12 py-4">
               <a
                 className="bg-success text-white px-2 py-1 mr-2 rounded text-decoration-none"
-                href="/#"
+                href="#"
               >
                 <span className="mr-1">1. Košík</span>
               </a>
@@ -35,7 +35,7 @@ export default function Cart1() {
               </svg>
               <a
                 className="bg-success text-white px-2 py-1 mx-2 rounded text-decoration-none"
-                href="/#"
+                href="#"
               >
                 <span className="mr-1">2. Doprava a platba</span>
               </a>
@@ -58,7 +58,7 @@ export default function Cart1() {
               </svg>
               <a
                 className="bg-success text-white px-2 py-1 ml-2 rounded text-decoration-none"
-                href="/#"
+                href="#"
               >
                 <span className="mr-1">3. Souhrn</span>
               </a>

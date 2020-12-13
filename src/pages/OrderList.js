@@ -8,7 +8,7 @@ export default function OrderList() {
           <div className="row">
             <div className="col-2 py-4">
               <a
-                href="/#"
+                href="#"
                 className="btn btn-outline-success btn-sm align-baseline"
               >
                 Zpět
@@ -38,7 +38,7 @@ export default function OrderList() {
                 <tbody>
                   <tr>
                     <th scope="row">
-                      <a href="/OrderDetail" className="link">
+                      <a href="/mysticshop/OrderDetail" className="link">
                         1111
                       </a>
                     </th>
@@ -48,7 +48,7 @@ export default function OrderList() {
                   </tr>
                   <tr>
                     <th scope="row">
-                      <a href="/OrderDetail" className="link">
+                      <a href="/mysticshop/OrderDetail" className="link">
                         2222
                       </a>
                     </th>
@@ -58,7 +58,7 @@ export default function OrderList() {
                   </tr>
                   <tr>
                     <th scope="row">
-                      <a href="/OrderDetail" className="link">
+                      <a href="/mysticshop/OrderDetail" className="link">
                         3333
                       </a>
                     </th>
@@ -68,7 +68,7 @@ export default function OrderList() {
                   </tr>
                   <tr>
                     <th scope="row">
-                      <a href="/OrderDetail" className="link">
+                      <a href="/mysticshop/OrderDetail" className="link">
                         3333
                       </a>
                     </th>
@@ -78,7 +78,7 @@ export default function OrderList() {
                   </tr>
                   <tr>
                     <th scope="row">
-                      <a href="/OrderDetail" className="link">
+                      <a href="/mysticshop/OrderDetail" className="link">
                         3333
                       </a>
                     </th>

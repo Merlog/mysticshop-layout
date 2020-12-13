@@ -4,7 +4,12 @@ export default function ContactForm() {
       <div className="col-5 p-4">
         <div className="row">
           <div className="col-2 py-4">
-            <a href="/#" className="btn btn-outline-success btn-sm align-baseline"> Zpět </a>
+            <a
+              href="#"
+              className="btn btn-outline-success btn-sm align-baseline"
+            >
+              Zpět
+            </a>
           </div>
           <div className="col-8 text-center py-4">
             <h5>Kontaktní formulář</h5>

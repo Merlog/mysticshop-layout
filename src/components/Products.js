@@ -17,7 +17,7 @@ export default function Products() {
                 <h5 className="card-title">Core Set 2021 booster</h5>
                 <h5 className="card-price">99 Kč</h5>
                 <div className="card-btn cardButton">
-                  <a href="/#" className="btn btn-sm">
+                  <a href="#" className="btn btn-sm">
                     Detail
                   </a>
                 </div>
@@ -36,7 +36,7 @@ export default function Products() {
                 <h5 className="card-title">Core Set 2021 booster box</h5>
                 <h5 className="card-price">2 799 Kč</h5>
                 <div className="card-btn cardButton">
-                  <a href="/#" className="btn btn-sm">
+                  <a href="#" className="btn btn-sm">
                     Detail
                   </a>
                 </div>
@@ -51,7 +51,7 @@ export default function Products() {
                 <h5 className="card-title">Duel Decks: Elves Vs. Inventors</h5>
                 <h5 className="card-price">449 Kč</h5>
                 <div className="card-btn cardButton">
-                  <a href="/#" className="btn btn-sm">
+                  <a href="#" className="btn btn-sm">
                     Detail
                   </a>
                 </div>
@@ -66,7 +66,7 @@ export default function Products() {
                 <h5 className="card-title">Duel Decks: Elves Vs. Inventors</h5>
                 <h5 className="card-price">449 Kč</h5>
                 <div className="card-btn cardButton">
-                  <a href="/#" className="btn btn-sm">
+                  <a href="#" className="btn btn-sm">
                     Detail
                   </a>
                 </div>
@@ -95,7 +95,7 @@ export default function Products() {
           </div>
           <div className="col-3  produktItem__cena">
             <h6>cena 99</h6>
-            <a href="/#" className="btn btn-primary">
+            <a href="#" className="btn btn-primary">
               Koupit
             </a>
           </div>
@@ -114,7 +114,7 @@ export default function Products() {
           </div>
           <div className="col-3  produktItem__cena">
             <h6>cena 99</h6>
-            <a href="/#" className="btn btn-primary">
+            <a href="#" className="btn btn-primary">
               Koupit
             </a>
           </div>
@@ -133,7 +133,7 @@ export default function Products() {
           </div>
           <div className="col-3  produktItem__cena">
             <h6>cena 99</h6>
-            <a href="/#" className="btn btn-primary">
+            <a href="#" className="btn btn-primary">
               Koupit
             </a>
           </div>

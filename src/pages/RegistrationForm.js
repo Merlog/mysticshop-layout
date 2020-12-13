@@ -7,11 +7,10 @@ export default function RegistrationForm() {
         <div className="row">
           <div className="col-2 py-4">
             <a
-              href="/#"
+              href="#"
               className="btn btn-outline-success btn-sm align-baseline"
             >
-              {" "}
-              Zpět{" "}
+              Zpět
             </a>
           </div>
           <div className="col-8 text-center py-4">

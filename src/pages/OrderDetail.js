@@ -6,7 +6,7 @@ export default function OrderDetail() {
           <div className="row">
             <div className="col-2 py-4">
               <a
-                href="/#"
+                href="#"
                 className="btn btn-outline-success btn-sm align-baseline"
               >
                 Zpět
@@ -24,7 +24,7 @@ export default function OrderDetail() {
                 <div>Stav: zaplacená</div>
                 {true && (
                   <div>
-                    Sledování: <a href="/#">odkaz na sledování</a>
+                    Sledování: <a href="#">odkaz na sledování</a>
                   </div>
                 )}
               </div>

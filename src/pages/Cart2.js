@@ -5,7 +5,7 @@ export default function Cart2() {
         <div className="col-md-12  my-4">
           <ul className="nav mb-5">
             <li className="nav-item">
-              <a className="cartPageLink disabled" href="/#">
+              <a className="cartPageLink disabled" href="#">
                 <span className="cartPageNumber">1</span>
                 <button type="button" className="btn disabled">
                   Košík
@@ -30,7 +30,7 @@ export default function Cart2() {
               />
             </svg>
             <li className="nav-item">
-              <a className="cartPageLink" href="/#">
+              <a className="cartPageLink" href="#">
                 <span className="cartPageNumber">2</span>
                 <button type="button" className="btn">
                   Doprava a platba
@@ -55,7 +55,7 @@ export default function Cart2() {
               />
             </svg>
             <li className="nav-item">
-              <a className="disabled cartPageLink" href="/#">
+              <a className="disabled cartPageLink" href="#">
                 <span className="cartPageNumber">3</span>
                 <button type="button" className="btn disabled">
                   Souhrn
@@ -202,7 +202,9 @@ export default function Cart2() {
                   value=""
                   required
                 />
-                <div className="invalid-feedback">Valid last name is required.</div>
+                <div className="invalid-feedback">
+                  Valid last name is required.
+                </div>
               </div>
             </div>
             <div className="row">

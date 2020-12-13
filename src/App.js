@@ -92,40 +92,40 @@ export default function App() {
           <Route path={`${process.env.PUBLIC_URL}/`} exact>
             <HomepagePage />
           </Route>
-          <Route path="/OrderDetail" exact>
+          <Route path="/mysticshop/OrderDetail" exact>
             <OrderDetail />
           </Route>
-          <Route path="/ContactForm" exact>
+          <Route path="/mysticshop/ContactForm" exact>
             <ContactForm />
           </Route>
-          <Route path="/Cart1" exact>
+          <Route path="/mysticshop/Cart1" exact>
             <Cart1 />
           </Route>
-          <Route path="/Cart2" exact>
+          <Route path="/mysticshop/Cart2" exact>
             <Cart2 />
           </Route>
-          <Route path="/Cart3" exact>
+          <Route path="/mysticshop/Cart3" exact>
             <Cart3 />
           </Route>
-          <Route path="/RegistrationForm" exact>
+          <Route path="/mysticshop/RegistrationForm" exact>
             <RegistrationForm />
           </Route>
-          <Route path="/FullSearch" exact>
+          <Route path="/mysticshop/FullSearch" exact>
             <FullSearch />
           </Route>
-          <Route path="/OrderList" exact>
+          <Route path="/mysticshop/OrderList" exact>
             <OrderList />
           </Route>
-          <Route path="/UserSettings" exact>
+          <Route path="/mysticshop/UserSettings" exact>
             <UserSettings />
           </Route>
-          <Route path="/Contact" exact>
+          <Route path="/mysticshop/Contact" exact>
             <Contact />
           </Route>
-          <Route path="/BussinessConditions" exact>
+          <Route path="/mysticshop/BussinessConditions" exact>
             <BussinessConditions />
           </Route>
-          <Route path="/MyAccount" exact>
+          <Route path="/mysticshop/MyAccount" exact>
             <MyAccount />
           </Route>
         </Switch>

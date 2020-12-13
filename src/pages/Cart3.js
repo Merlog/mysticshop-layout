@@ -5,7 +5,7 @@ export default function Cart3() {
         <div className="col-md-12 my-4 order-md-1">
           <ul className="nav mb-5">
             <li className="nav-item">
-              <a className="cartPageLink disabled" href="/#">
+              <a className="cartPageLink disabled" href="#">
                 <span className="cartPageNumber">1</span>
                 <button type="button" className="btn disabled">
                   Košík
@@ -30,7 +30,7 @@ export default function Cart3() {
               />
             </svg>
             <li className="nav-item">
-              <a className="cartPageLink disabled" href="/#">
+              <a className="cartPageLink disabled" href="#">
                 <span className="cartPageNumber">2</span>
                 <button type="button" className="btn disabled">
                   Doprava a platba
@@ -55,7 +55,7 @@ export default function Cart3() {
               />
             </svg>
             <li className="nav-item">
-              <a className="cartPageLink" href="/#">
+              <a className="cartPageLink" href="#">
                 <span className="cartPageNumber">3</span>
                 <button type="button" className="btn">
                   Souhrn

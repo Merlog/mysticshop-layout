@@ -14,10 +14,10 @@ export default function New() {
             <h4>Kompletní spoiler Avacyn Restored</h4>
             <h5>A je to zde!</h5>
             <p className="newsText">
-              <a href="/">Kompletní spoiler Avacyn Restored </a>
+              <a href="#">Kompletní spoiler Avacyn Restored </a>
               včetně obrázků je na světě. Prohlédni si už nyní karty, které
               rozbalíš nejdříve o víkendu.
-              <a href="/">
+              <a href="#">
                 Výhodné ceny pro předprodej produktů Avacyn Restored{" "}
               </a>
               platí již jen několik dní, proto si pospěš
@@ -25,7 +25,7 @@ export default function New() {
             </p>
           </div>
           <div className="col-1 more">
-            <a href="/#">Více...</a>
+            <a href="#">Více...</a>
           </div>
         </div>
       </div>
