@@ -1,10 +1,9 @@
-
 .app {
   position: relative;
 }
 
 .main {
-  min-height: 70vh;
+  min-height: calc(100vh - 150px);
   margin-top: 150px;
   padding: 30px 0;
 }
@@ -13,7 +12,6 @@
   /* poresit fixni height pro message */
   margin-top: 208px;
 }
-
 
 .temporary {
   background-color: #333333;
@@ -35,7 +33,6 @@
   color: #fff;
 }
 
-
 .topAlert {
   background-color: #68ac45;
   display: none;
@@ -49,8 +46,6 @@
   margin: 0;
 }
 
-
 .appWithMessage .topAlert {
   display: block;
 }
-
