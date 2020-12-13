@@ -5,31 +5,31 @@ export default function L2menu() {
   return (
     <nav className="nav flex-column L1menu">
       <div className="nav-link headline">Katalog zboží</div>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Alba
       </NavLink>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Bazar
       </NavLink>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Boxy na karty
       </NavLink>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Herní podložky
       </NavLink>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Knížky
       </NavLink>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Kostky
       </NavLink>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Krabičky
       </NavLink>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Magic: The Gathering
       </NavLink>
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Obaly na karty
       </NavLink>
       {/* <li className="nav-item dropdown">
@@ -44,13 +44,13 @@ export default function L2menu() {
           Kostky
         </a>
         <div className="dropdown-menu">
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 1
           </NavLink>
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 2
           </NavLink>
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 3
           </NavLink>
         </div>
@@ -67,13 +67,13 @@ export default function L2menu() {
           Krabičky
         </a>
         <div className="dropdown-menu">
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 1
           </NavLink>
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 2
           </NavLink>
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 3
           </NavLink>
         </div>
@@ -90,13 +90,13 @@ export default function L2menu() {
           Magic: The Gathering
         </a>
         <div className="dropdown-menu">
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 1
           </NavLink>
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 2
           </NavLink>
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 3
           </NavLink>
         </div>
@@ -113,18 +113,18 @@ export default function L2menu() {
           Obaly na karty
         </a>
         <div className="dropdown-menu">
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 1
           </NavLink>
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 2
           </NavLink>
-          <NavLink className="nav-link" to="/#">
+          <NavLink className="nav-link" to="#">
             Příklad 3
           </NavLink>
         </div>
       </li> */}
-      <NavLink className="nav-link" to="/#">
+      <NavLink className="nav-link" to="#">
         Ostatní doplňky
       </NavLink>
     </nav>
