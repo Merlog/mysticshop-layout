@@ -42,6 +42,22 @@
 .searchButton img svg path {
   color: white;
 }
+.bonusCartWraper {
+  display:flex;
+  align-items:flex-end;
+  height:46px;
+
+}
+
+.bonusCartWraper a {
+padding-top:0;
+padding-bottom:0;
+line-height: 24px;
+}
+.bonusCartWraper img {
+
+  vertical-align: text-bottom;
+}
 
 .bonus {
   display: flex;
@@ -62,9 +78,12 @@
 }
 
 .cartItems {
-  background-color: #222323;
+  background-color:#fff;
+  color:black;
   padding: 5px;
   margin: 0 8px;
+  position:relative;
+  top:-5px;
 }
 
 .cartAmount {

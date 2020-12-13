@@ -24,7 +24,7 @@ export default function HeaderMiddle() {
           </button>
         </form>
       </div>
-      <div className="col-3 d-flex flex-row justify-content-between">
+      <div className="col-3 d-flex flex-row justify-content-between bonusCartWraper">
         <div className="bonus">
           <NavLink to="/MyAccount" exact>
             <span>Bonus: </span>
