@@ -26,52 +26,52 @@ export default function App() {
     <div className={`app${message ? " appWithMessage" : ""}`}>
       <div className="row temporary">
         <div>
-          <NavLink to="/" exact>
+          <NavLink to="/mysticshop" exact>
             Homepage
           </NavLink>
         </div>
         <div>
-          <NavLink to="/OrderDetail" exact>
+          <NavLink to="/mysticshop/OrderDetail" exact>
             Order Detail
           </NavLink>
         </div>
         <div>
-          <NavLink to="/ContactForm" exact>
+          <NavLink to="/mysticshop/ContactForm" exact>
             Contact Form
           </NavLink>
         </div>
         <div>
-          <NavLink to="/Cart1" exact>
+          <NavLink to="/mysticshop/Cart1" exact>
             Cart1
           </NavLink>
         </div>
         <div>
-          <NavLink to="/Cart2" exact>
+          <NavLink to="/mysticshop/Cart2" exact>
             Cart2
           </NavLink>
         </div>
         <div>
-          <NavLink to="/Cart3" exact>
+          <NavLink to="/mysticshop/Cart3" exact>
             Cart3
           </NavLink>
         </div>
         <div>
-          <NavLink to="/RegistrationForm" exact>
+          <NavLink to="/mysticshop/RegistrationForm" exact>
             Registration Form
           </NavLink>
         </div>
         <div>
-          <NavLink to="/FullSearch" exact>
+          <NavLink to="/mysticshop/FullSearch" exact>
             Full Search
           </NavLink>
         </div>
         <div>
-          <NavLink to="/OrderList" exact>
+          <NavLink to="/mysticshop/OrderList" exact>
             Order List
           </NavLink>
         </div>
         <div>
-          <NavLink to="/UserSettings" exact>
+          <NavLink to="/mysticshop/UserSettings" exact>
             User Settings
           </NavLink>
         </div>

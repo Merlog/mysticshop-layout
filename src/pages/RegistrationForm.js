@@ -6,7 +6,13 @@ export default function RegistrationForm() {
       <div className="col-8 p-4">
         <div className="row">
           <div className="col-2 py-4">
-            <a href="/#" className="btn btn-outline-success btn-sm align-baseline"> Zpět </a>
+            <a
+              href="/#"
+              className="btn btn-outline-success btn-sm align-baseline"
+            >
+              {" "}
+              Zpět{" "}
+            </a>
           </div>
           <div className="col-8 text-center py-4">
             <h5>Registrační údaje</h5>
@@ -130,7 +136,10 @@ export default function RegistrationForm() {
               <input type="checkbox" value="" id="defaultCheck1" />
               <label className="font-weight-bolder pl-2" for="defaultCheck1">
                 Souhlasím s
-                <NavLink to="/BussinessConditions" exact> obchodními podmínkami</NavLink>
+                <NavLink to="/mysticshop/BussinessConditions" exact>
+                  {" "}
+                  obchodními podmínkami
+                </NavLink>
               </label>
             </div>
           </div>

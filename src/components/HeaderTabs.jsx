@@ -8,39 +8,23 @@ export default function HeaderTabs() {
         <div className="row">
           <div className="col col-lg-12">
             <ul className="nav nav-tabs">
-              <NavLink to="/#" exact>
-                <li className="nav-item">
-                  Domů
-                  </li>
+              <NavLink to="/mysticshop/#" exact>
+                <li className="nav-item">Domů</li>
               </NavLink>
-              <NavLink to="/BonusProgram" exact>
-                <li className="nav-item">
-                  Bonusový program
-                  </li>
+              <NavLink to="/mysticshop/BonusProgram" exact>
+                <li className="nav-item">Bonusový program</li>
               </NavLink>
-              <NavLink to="/CardGames" exact>
-                <li className="nav-item">
-                  Karetní hry
-                  </li>
+              <NavLink to="/mysticshop/CardGames" exact>
+                <li className="nav-item">Karetní hry</li>
               </NavLink>
-              <NavLink to="/LoyaltyDiscount" exact>
-                <li className="nav-item">
-                  Věrnostní sleva
-                  </li>
+              <NavLink to="/mysticshop/LoyaltyDiscount" exact>
+                <li className="nav-item">Věrnostní sleva</li>
               </NavLink>
-              <NavLink to="/HowTo" exact>
-                <li className="nav-item">
-                  Jak nakupovat
-                  </li>
+              <NavLink to="/mysticshop/HowTo" exact>
+                <li className="nav-item">Jak nakupovat</li>
               </NavLink>
-              <a
-                href="http://www.mysticshop.cz/blog/"
-                target="blank"
-                exact
-              >
-                <li className="nav-item">
-                  Blog Mudrc
-                  </li>
+              <a href="http://www.mysticshop.cz/blog/" target="blank" exact>
+                <li className="nav-item">Blog Mudrc</li>
               </a>
             </ul>
           </div>

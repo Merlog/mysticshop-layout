@@ -14,9 +14,8 @@ export default function Header() {
           Lista s upozornenim - zkusebni text ---- Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Quidem voluptatibus, magni totam, ullam
           eaque autem ut commodi ea repellendus, aliquid asperiores tenetur
-          similique?, aliquid asperiores tenetur
-          similique?
-            </div>
+          similique?, aliquid asperiores tenetur similique?
+        </div>
       </div>
       <div className="container">
         <div className="row">
@@ -46,7 +45,7 @@ export default function Header() {
               {loggedIn && (
                 <>
                   <li className="list-inline-item">
-                    <NavLink to="/MyAccount" exact>
+                    <NavLink to="/mysticshop/MyAccount" exact>
                       Můj účet
                     </NavLink>
                   </li>

@@ -42,10 +42,10 @@ export default function Footer() {
           />
         </div>
         <div className="col-4 links d-flex">
-          <NavLink to="/Contact" exact className="text">
+          <NavLink to="/mysticshop/Contact" exact className="text">
             Kontaktujte nás
           </NavLink>
-          <NavLink to="/BussinessConditions" exact className="text">
+          <NavLink to="/mysticshop/BussinessConditions" exact className="text">
             Obchodní podmínky
           </NavLink>
         </div>
