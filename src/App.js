@@ -20,9 +20,9 @@ import MyAccount from "./pages/MyAccount";
 
 export default function App() {
   return (
-    <div>
-      <div className="row topAlert">
-        <div className="col-10 offset-1">
+    <>
+      <div className="w-100 topAlert">
+        <div className="container">
           Lista s upozornenim - zkusebni text ---- Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Quidem voluptatibus, magni totam, ullam
           eaque autem ut commodi ea repellendus, aliquid asperiores tenetur
@@ -126,6 +126,6 @@ export default function App() {
         </Switch>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }

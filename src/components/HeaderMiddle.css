@@ -11,12 +11,16 @@
   outline: none;
 }
 
-.searchWrapper input{
+.searchWrapper input {
   height: 34px;
 }
 
 .searchWrapper .form-control {
   border: 0px solid #fff;
+}
+
+.search {
+  padding-right: 54px;
 }
 
 .searchButton {

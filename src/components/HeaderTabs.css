@@ -1,4 +1,3 @@
-
 .headerTabs {
   background: linear-gradient(to bottom, #262727 0%, #222323 100%);
 }
@@ -8,7 +7,7 @@
 }
 
 .headerTabs .nav-tabs .nav-item {
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
 }
 
 .headerTabs a {
@@ -20,8 +19,8 @@
   letter-spacing: 1px;
 }
 
-.headerTabs a:hover, .headerTabs a.active  {
+.headerTabs a:hover,
+.headerTabs a.active {
   color: white;
   background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
 }
-

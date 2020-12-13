@@ -1,8 +1,8 @@
 import "./Header.css";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import HeaderTabs from './HeaderTabs';
-import HeaderMiddle from './HeaderMiddle';
+import HeaderTabs from "./HeaderTabs";
+import HeaderMiddle from "./HeaderMiddle";
 
 export default function Header() {
   const [loggedIn, setLoggedIn] = useState(true);
@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="fixed-top w-100 headerControls">
-        <div className="container">
+        <div className="container headerTop">
           <div className="row">
             <div className="col d-flex justify-content-end">
               <ul className="list-unstyled list-inline pt-2">
@@ -47,7 +47,7 @@ export default function Header() {
                         onClick={() => {
                           setLoggedIn(false);
                         }}
-                        href="#"
+                        href
                       >
                         Odhlásit se
                       </a>
@@ -61,7 +61,7 @@ export default function Header() {
                         onClick={() => {
                           setLoggedIn(true);
                         }}
-                        href="#"
+                        href
                       >
                         Přihlásit se
                       </a>

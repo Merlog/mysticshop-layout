@@ -15,7 +15,7 @@ export default function HeaderMiddle() {
       <div className="col-6">
         <form className="form-inline my-2 searchWrapper">
           <input
-            className="form-control w-100"
+            className="form-control w-100 search"
             type="search"
             placeholder="Vyhledat"
           ></input>
