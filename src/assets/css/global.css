@@ -30,7 +30,7 @@ button:focus,
 .topAlert {
   background-color: #68ac45;
   font-size: 13px;
-  /* z-index: 11111; */
+  z-index: 11111;
   color: white;
   text-align: center;
   /* z nejakeho duvodu musi mit relative, jinak neni vubec videt */

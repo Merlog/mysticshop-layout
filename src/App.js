@@ -1,5 +1,6 @@
 import { Switch, Route } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -19,16 +20,23 @@ import BussinessConditions from "./pages/BussinessConditions";
 import MyAccount from "./pages/MyAccount";
 
 export default function App() {
+  const [message, setMessage] = useState(true);
   return (
-    <>
-      <div className="w-100 topAlert">
-        <div className="container">
-          Lista s upozornenim - zkusebni text ---- Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Quidem voluptatibus, magni totam, ullam
-          eaque autem ut commodi ea repellendus, aliquid asperiores tenetur
-          similique?
-        </div>
-      </div>
+
+
+    <div className={`app${message ? " appWithMessage" : ""}`}>
+      {message &&
+        (
+          <div className="w-100 topAlert">
+            <div className="container">
+              Lista s upozornenim - zkusebni text ---- Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quidem voluptatibus, magni totam, ullam
+              eaque autem ut commodi ea repellendus, aliquid asperiores tenetur
+              similique?
+            </div>
+          </div>
+        )
+      }
       <div className="row temporary">
         <div>
           <NavLink to="/" exact>
@@ -126,6 +134,6 @@ export default function App() {
         </Switch>
       </div>
       <Footer />
-    </>
+    </div >
   );
 }
