@@ -2,6 +2,7 @@
   background-color: #fff;
   margin: 15px 0;
   padding: 25px;
+
 }
 
 .news h2 {
@@ -10,15 +11,18 @@
 
 .card-img-top {
   height: auto;
-  width: 100%;
+  width: 90%;
+  margin:10px auto 0;
 }
 
 .newsText {
   margin-top: 10px;
+  line-height: 1.7;
 }
 
 .newsText a {
   color: #59b20e;
+
 }
 
 .more {
@@ -30,4 +34,12 @@
   color: #59b20e;
   font-weight: 600;
   font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+.more a:hover {
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
+  color:#fff;
+  text-decoration: none;
 }

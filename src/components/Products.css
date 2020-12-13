@@ -95,7 +95,10 @@ PRODUKT ITEM
 }
 
 .card {
-  border-color: #58b20e49;
+  border-color: #00000000;
+  /* box-shadow: 0px 0px 4px #00000024; */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+  border-radius: 2px;
 }
 
 .card-body {
@@ -108,24 +111,28 @@ PRODUKT ITEM
   font-weight: 600;
 }
 
-.card-btn {
+.cardButton {
   text-align: center;
-  background-color: #59b20e;
-  width: 50px;
-  border-radius: 0.25rem;
-  transition: transform 0.5s;
+  border-radius: 2px;
+
+  color: white;
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
 }
 
-.card-btn a {
+.cardButton a {
   color: white;
+  padding:3px 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 
-.card-btn:hover {
-  transform: scale(1.1);
-}
+/* .cardButton:hover {
+  border: none;
+  box-shadow:none;
+} */
 
-.card-btn:hover a {
+.cardButton:hover a {
   color: white;
   font-weight: 700;
+  background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
 }

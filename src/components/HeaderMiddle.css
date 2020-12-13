@@ -33,6 +33,10 @@
   border-bottom-left-radius: 0;
 }
 
+.searchButton:hover {
+  background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
+}
+
 .searchButton img svg path {
   color: white;
 }
