@@ -34,7 +34,7 @@ export default function HeaderMiddle() {
         <div className="cart">
           <NavLink to="/mysticshop/Cart1" exact>
             <img src={cart} alt="logo" />
-            <span className="badge cartItems">1 ks</span>
+            <span className="cartItems">1 ks</span>
             <span className="cartAmount">159 Kč</span>
           </NavLink>
         </div>

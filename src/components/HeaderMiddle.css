@@ -42,20 +42,20 @@
 .searchButton img svg path {
   color: white;
 }
-.bonusCartWraper {
-  display:flex;
-  align-items:flex-end;
-  height:46px;
 
+.bonusCartWraper {
+  display: flex;
+  align-items: flex-end;
+  height: 46px;
 }
 
 .bonusCartWraper a {
-padding-top:0;
-padding-bottom:0;
-line-height: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 24px;
 }
-.bonusCartWraper img {
 
+.bonusCartWraper img {
   vertical-align: text-bottom;
 }
 
@@ -78,18 +78,17 @@ line-height: 24px;
 }
 
 .cartItems {
-  background-color:#fff;
-  color:black;
-  padding: 5px;
-  margin: 0 8px;
-  position:relative;
-  top:-5px;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 2px 0;
+  padding: 4px;
 }
 
 .cartAmount {
   font-size: 16px;
   font-weight: 600;
   margin-left: 2px;
+  padding: 4px;
 }
 
 .cart a:hover .cartAmount,
