@@ -31,5 +31,6 @@
 }
 
 .text:hover {
+  text-decoration: none;
   color: #59b20e;
 }

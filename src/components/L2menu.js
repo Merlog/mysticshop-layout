@@ -20,7 +20,19 @@ export default function L2menu() {
       <NavLink className="nav-link" to="/#">
         Knížky
       </NavLink>
-      <li className="nav-item dropdown">
+      <NavLink className="nav-link" to="/#">
+        Kostky
+      </NavLink>
+      <NavLink className="nav-link" to="/#">
+        Krabičky
+      </NavLink>
+      <NavLink className="nav-link" to="/#">
+        Magic: The Gathering
+      </NavLink>
+      <NavLink className="nav-link" to="/#">
+        Obaly na karty
+      </NavLink>
+      {/* <li className="nav-item dropdown">
         <a
           className="nav-link dropdown-toggle"
           data-toggle="dropdown"
@@ -111,7 +123,7 @@ export default function L2menu() {
             Příklad 3
           </NavLink>
         </div>
-      </li>
+      </li> */}
       <NavLink className="nav-link" to="/#">
         Ostatní doplňky
       </NavLink>

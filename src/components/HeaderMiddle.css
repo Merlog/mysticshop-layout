@@ -60,3 +60,8 @@
   font-weight: 600;
   margin-left: 2px;
 }
+
+.cart a:hover .cartAmount,
+.bonus a:hover .cartAmount {
+  color: #59b20e;
+}

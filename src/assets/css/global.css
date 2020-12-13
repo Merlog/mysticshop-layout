@@ -12,6 +12,11 @@ body {
 a,
 button {
   cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 input:focus,
@@ -64,7 +69,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-/* .temporary {
+.temporary {
   background-color: #111;
   position: absolute;
   top: 250px;
@@ -79,4 +84,4 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 600;
   padding: 5px 20px;
   color: #fff;
-} */
+}
