@@ -55,7 +55,8 @@
   vertical-align: text-bottom;
 }
 
-.bonus {
+.bonus,
+.credit {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -88,6 +89,7 @@
 }
 
 .cart a:hover .cartAmount,
-.bonus a:hover .cartAmount {
+.bonus a:hover .cartAmount,
+.credit a:hover .cartAmount {
   color: #59b20e;
 }

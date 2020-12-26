@@ -11,22 +11,36 @@ export default function Products() {
 
         <div className="row">
           <div className="col-2">
-            <div className="card">
-              <img src={Booster} className="card-img-top" alt="recommended" />
-              <div className="card-body">
-                <h5 className="card-title">Core Set 2021 booster</h5>
-                <h5 className="card-price">99 Kč</h5>
-                <div className="card-btn cardButton">
-                  <a href="#" className="btn btn-sm">
-                    Detail
-                  </a>
+            <a href="#">
+              <div className="card cardModif">
+                <img src={Booster} className="card-img-top" alt="recommended" />
+                <div className="card-body">
+                  <h5 className="card-title">Core Set 2021 booster</h5>
+                  <h5 className="card-price">99 Kč</h5>
+                  <div className="d-flex">
+                    <div className="cardInput">
+                      <input type="number" value="1" placeholder="ks" />
+                    </div>
+                    <div className="card-btn cardButton">
+                      <button
+                        type="button"
+                        className="btn"
+                        onClick={(event) => {
+                          alert("koupeno");
+                          event.preventDefault();
+                        }}
+                      >
+                        Koupit
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div className="col-2">
-            <div className="card">
+            <div className="card cardModif">
               <img
                 src={BoosterPack}
                 className="card-img-top"
@@ -45,7 +59,7 @@ export default function Products() {
           </div>
 
           <div className="col-2">
-            <div className="card">
+            <div className="card cardModif">
               <img src={Duel} className="card-img-top" alt="recommended" />
               <div className="card-body">
                 <h5 className="card-title">Duel Decks: Elves Vs. Inventors</h5>
@@ -60,7 +74,7 @@ export default function Products() {
           </div>
 
           <div className="col-2">
-            <div className="card">
+            <div className="card cardModif">
               <img src={Duel} className="card-img-top" alt="recommended" />
               <div className="card-body">
                 <h5 className="card-title">Duel Decks: Elves Vs. Inventors</h5>
@@ -74,7 +88,7 @@ export default function Products() {
             </div>
           </div>
           <div className="col-2">
-            <div className="card">
+            <div className="card cardModif">
               <img src={Duel} className="card-img-top" alt="recommended" />
               <div className="card-body">
                 <h5 className="card-title">Duel Decks: Elves Vs. Inventors</h5>
@@ -88,7 +102,7 @@ export default function Products() {
             </div>
           </div>
           <div className="col-2">
-            <div className="card">
+            <div className="card cardModif">
               <img src={Duel} className="card-img-top" alt="recommended" />
               <div className="card-body">
                 <h5 className="card-title">Duel Decks: Elves Vs. Inventors</h5>
