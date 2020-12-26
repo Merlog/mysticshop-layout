@@ -146,18 +146,35 @@ export default function Cart1() {
                 </div>
               </div>
             </div>
+            <div class="summary_inner">
+              <div class="row summary">
+                <div class="col-12 d-flex justify-content-between">
+                  <div>Slevový kupón XXZZYYWW</div>
+                  <div>- 82 Kč</div>
+                </div>
+              </div>
 
-            <div class="row summary">
-              <div class="col-12 d-flex justify-content-between">
-                <div>Slevový kupón XXZZYYWW</div>
-                <div>- 82 Kč</div>
+              <div class="row summary">
+                <div class="col-12 d-flex justify-content-between">
+                  <div>Cena po slevě vč. DPH</div>
+                  <div class="price">5 140 Kč</div>
+                </div>
               </div>
             </div>
 
-            <div class="row summary">
-              <div class="col-12 d-flex justify-content-between">
-                <div>Cena po slevě vč. DPH</div>
-                <div class="price">5 140 Kč</div>
+            <div class="summary_inner">
+              <div class="row summary">
+                <div class="col-12 d-flex justify-content-between">
+                  <div>Výše kreditu použitého k úhradě</div>
+                  <div>122 Kč</div>
+                </div>
+              </div>
+
+              <div class="row summary">
+                <div class="col-12 d-flex justify-content-between">
+                  <div>Zbývá k zaplacení</div>
+                  <div class="price">5 018 Kč</div>
+                </div>
               </div>
             </div>
           </div>
@@ -172,7 +189,23 @@ export default function Cart1() {
             </div>
             <div>
               <button type="submit" className="btn btn-secondary">
-                Uplatnit
+                Uplatnit slevu
+              </button>
+            </div>
+          </div>
+
+          <div className="row mt-4">
+            <div className="col-3">
+              <input
+                type="number"
+                className="form-control"
+                placeholder="Zadejte počet kreditů"
+                min="1"
+              />
+            </div>
+            <div>
+              <button type="submit" className="btn btn-secondary">
+                Použít kredity
               </button>
             </div>
           </div>

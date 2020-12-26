@@ -7,7 +7,7 @@ import Search from "./../assets/svg/search-material.svg";
 export default function HeaderMiddle() {
   return (
     <div className="row navMidle mb-3">
-      <div className="col-3">
+      <div className="col-2">
         <a className="navbar-brand" href="/#">
           <img src={MSLogoBile} alt="logo" width="120px" />
         </a>
@@ -24,11 +24,17 @@ export default function HeaderMiddle() {
           </button>
         </form>
       </div>
-      <div className="col-4 d-flex flex-row justify-content-between bonusCartWraper">
+      <div className="col-5 d-flex flex-row justify-content-between bonusCartWraper">
         <div className="bonus">
           <NavLink to="/mysticshop/MyAccount" exact>
             <span>Bonus: </span>
             <span className="cartAmount">2000 b.</span>
+          </NavLink>
+        </div>
+        <div className="credit">
+          <NavLink to="/mysticshop/MyAccount" exact>
+            <span>Kredit: </span>
+            <span className="cartAmount">6000 Kč</span>
           </NavLink>
         </div>
         <div className="cart">
