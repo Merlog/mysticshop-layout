@@ -12,7 +12,7 @@ export default function HeaderMiddle() {
           <img src={logo} alt="logo" />
         </a>
       </div>
-      <div className="col-6">
+      <div className="col-5">
         <form className="form-inline my-2 searchWrapper">
           <input
             className="form-control w-100 search"
@@ -24,18 +24,18 @@ export default function HeaderMiddle() {
           </button>
         </form>
       </div>
-      <div className="col-3 d-flex flex-row justify-content-between bonusCartWraper">
+      <div className="col-4 d-flex flex-row justify-content-between bonusCartWraper">
         <div className="bonus">
           <NavLink to="/mysticshop/MyAccount" exact>
             <span>Bonus: </span>
-            <span className="cartAmount">20 b.</span>
+            <span className="cartAmount">2000 b.</span>
           </NavLink>
         </div>
         <div className="cart">
           <NavLink to="/mysticshop/Cart1" exact>
             <img src={cart} alt="logo" />
-            <span className="cartItems">1 ks</span>
-            <span className="cartAmount">159 Kč</span>
+            <span className="cartItems">999 ks</span>
+            <span className="cartAmount">15900 Kč</span>
           </NavLink>
         </div>
       </div>

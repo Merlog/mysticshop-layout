@@ -21,7 +21,7 @@ import BussinessConditions from "./pages/BussinessConditions";
 import MyAccount from "./pages/MyAccount";
 
 export default function App() {
-  const [message, setMessage] = useState(true);
+  const [message, setMessage] = useState(false);
   return (
     <div className={`app${message ? " appWithMessage" : ""}`}>
       <div className="row temporary">

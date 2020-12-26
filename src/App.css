@@ -22,7 +22,13 @@
   display: flex;
   flex-direction: column;
   padding: 20px 6px;
+  opacity:0.05;
 }
+
+.temporary:hover {
+  opacity:0.8;
+}
+
 
 .temporary div {
   padding: 2px 0;

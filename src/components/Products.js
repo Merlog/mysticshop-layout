@@ -10,7 +10,7 @@ export default function Products() {
         <h2>Nejnovější produkty</h2>
 
         <div className="row">
-          <div className="col-3">
+          <div className="col-2">
             <div className="card">
               <img src={Booster} className="card-img-top" alt="recommended" />
               <div className="card-body">
@@ -25,7 +25,7 @@ export default function Products() {
             </div>
           </div>
 
-          <div className="col-3">
+          <div className="col-2">
             <div className="card">
               <img
                 src={BoosterPack}
@@ -44,7 +44,7 @@ export default function Products() {
             </div>
           </div>
 
-          <div className="col-3">
+          <div className="col-2">
             <div className="card">
               <img src={Duel} className="card-img-top" alt="recommended" />
               <div className="card-body">
@@ -59,7 +59,35 @@ export default function Products() {
             </div>
           </div>
 
-          <div className="col-3">
+          <div className="col-2">
+            <div className="card">
+              <img src={Duel} className="card-img-top" alt="recommended" />
+              <div className="card-body">
+                <h5 className="card-title">Duel Decks: Elves Vs. Inventors</h5>
+                <h5 className="card-price">449 Kč</h5>
+                <div className="card-btn cardButton">
+                  <a href="#" className="btn btn-sm">
+                    Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-2">
+            <div className="card">
+              <img src={Duel} className="card-img-top" alt="recommended" />
+              <div className="card-body">
+                <h5 className="card-title">Duel Decks: Elves Vs. Inventors</h5>
+                <h5 className="card-price">449 Kč</h5>
+                <div className="card-btn cardButton">
+                  <a href="#" className="btn btn-sm">
+                    Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-2">
             <div className="card">
               <img src={Duel} className="card-img-top" alt="recommended" />
               <div className="card-body">

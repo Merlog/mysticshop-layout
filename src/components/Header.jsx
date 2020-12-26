@@ -42,6 +42,16 @@ export default function Header() {
                   EUR
                 </a>
               </li>
+              <li className="list-inline-item">
+                <NavLink to='/mysticshop/doprava-platba'>
+                  Doprava a platba
+                </NavLink>
+              </li>
+              <li className="list-inline-item">
+                <NavLink to='/mysticshop/vernostni-program'>
+                  Věrnostní program
+                </NavLink>
+              </li>
               {loggedIn && (
                 <>
                   <li className="list-inline-item">
