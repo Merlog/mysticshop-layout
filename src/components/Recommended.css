@@ -5,5 +5,20 @@
 }
 
 .recommended h2 {
+  margin-bottom: 10px;
+}
+
+
+.contorls {
+}
+
+.control {
+  width: 30px;
+  height: 30px;
+  background: grey;
+}
+
+.title {
+  border-bottom: 1px solid #f3f3f3;
   margin-bottom: 20px;
 }

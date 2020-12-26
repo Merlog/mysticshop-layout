@@ -8,7 +8,20 @@ export default function Recommended() {
   return (
     <div className="row recommended">
       <div className="col-12">
-        <h2>Doporučené produkty</h2>
+
+        <div className="row title">
+          <div className="col-11">
+            <h2>Doporučené produkty</h2>
+          </div>
+          <div className="col-1 contorls">
+            <a class="carousel-control-prev control">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next control">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
 
         <div className="row">
           <div className="col-2">
