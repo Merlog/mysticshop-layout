@@ -2,27 +2,15 @@
   background-color: #222323;
 }
 
-.links {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.social {
-  justify-content: center;
-  align-items: center;
-}
-
-.payment {
-  justify-content: center;
-  align-items: center;
-}
-
 .text {
   font-size: 14px;
   color: white;
-  text-transform: uppercase;
   padding: 8px 0;
+}
+
+.text:hover {
+  text-decoration: none;
+  color: #59b20e;
 }
 
 .copyright {
@@ -30,7 +18,8 @@
   color: #666666;
 }
 
-.text:hover {
-  text-decoration: none;
-  color: #59b20e;
+.payment img {
+  margin-left: 5px;
+  padding: 5px;
+  background-color: #fff;
 }
