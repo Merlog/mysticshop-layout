@@ -1,6 +1,6 @@
 import "./HeaderMiddle.css";
 import { NavLink } from "react-router-dom";
-import logo from "./../assets/logo1.png";
+import MSLogoBile from "./../assets/MS_logo_bile.png";
 import cart from "./../assets/svg/cart-material.svg";
 import Search from "./../assets/svg/search-material.svg";
 
@@ -8,8 +8,8 @@ export default function HeaderMiddle() {
   return (
     <div className="row navMidle mb-3">
       <div className="col-3">
-        <a className="navbar-brand mainLogo" href="/#">
-          <img src={logo} alt="logo" />
+        <a className="navbar-brand" href="/#">
+          <img src={MSLogoBile} alt="logo" width="120px" />
         </a>
       </div>
       <div className="col-5">

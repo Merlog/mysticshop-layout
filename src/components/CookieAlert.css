@@ -1,0 +1,10 @@
+.cookie {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8db82;
+}
+
+.cookie p {
+  line-height: 30px;
+}

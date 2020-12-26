@@ -6,6 +6,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomepagePage from "./pages/HomepagePage";
+import CookieAlert from "./components/CookieAlert";
 
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
@@ -22,6 +23,8 @@ import MyAccount from "./pages/MyAccount";
 
 export default function App() {
   const [message, setMessage] = useState(false);
+  const [cookieAlert, setCookieAlert] = useState(false);
+
   return (
     <div className={`app${message ? " appWithMessage" : ""}`}>
       <div className="row temporary">
@@ -84,8 +87,17 @@ export default function App() {
         >
           Horní lišta
         </a>
+        <a
+          href
+          className={`linkcurrency${cookieAlert ? " active" : ""}`}
+          onClick={() => {
+            setCookieAlert(!cookieAlert);
+          }}
+        >
+          Spodní cookie lišta
+        </a>
       </div>
-      <Header />
+      <Header setMessage={setMessage} />
       <div className="container main">
         <Redirect to={`${process.env.PUBLIC_URL}/`} />
         <Switch>
@@ -131,6 +143,7 @@ export default function App() {
         </Switch>
       </div>
       <Footer />
+      {cookieAlert && <CookieAlert setCookieAlert={setCookieAlert} />}
     </div>
   );
 }

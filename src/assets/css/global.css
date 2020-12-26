@@ -19,6 +19,18 @@ a:hover {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+p {
+  margin: 0;
+}
+
 input:focus,
 button:focus,
 .btn:focus {
@@ -30,8 +42,6 @@ button:focus,
 .container {
   max-width: 1240px;
 }
-
-
 
 /* clears the 'X' from Internet Explorer */
 input[type="search"]::-ms-clear {
@@ -52,4 +62,3 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
-

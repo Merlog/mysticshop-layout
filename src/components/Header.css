@@ -34,3 +34,7 @@
   color: #57b00c;
   font-weight: bold;
 }
+
+.alertText {
+  text-align: left;
+}
