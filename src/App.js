@@ -29,11 +29,6 @@ export default function App() {
     <div className={`app${message ? " appWithMessage" : ""}`}>
       <div className="row temporary">
         <div>
-          <NavLink to="/mysticshop" exact>
-            Homepage
-          </NavLink>
-        </div>
-        <div>
           <NavLink to="/mysticshop/OrderDetail" exact>
             Order Detail
           </NavLink>
