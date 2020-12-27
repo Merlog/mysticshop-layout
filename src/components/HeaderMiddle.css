@@ -1,5 +1,7 @@
 .navMidle {
   padding: 0;
+  display: flex;
+  flex-direction:row;
 }
 
 .searchWrapper {
@@ -15,6 +17,7 @@
 
 .searchWrapper .form-control {
   border: 0px solid #fff;
+  margin-left: 20px;
 }
 
 .search {

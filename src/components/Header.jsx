@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import HeaderTabs from "./HeaderTabs";
 import HeaderMiddle from "./HeaderMiddle";
 import close from "./../assets/svg/close-material.svg";
+import MSLogoBile from "./../assets/MS_logo_bile.png";
 
 export default function Header(props) {
   const [loggedIn, setLoggedIn] = useState(true);
@@ -34,76 +35,85 @@ export default function Header(props) {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col d-flex justify-content-end">
-            <ul className="list-unstyled list-inline pt-2 headerControls">
-              <li className="dropdown dropdown-small list-inline-item currency">
-                <a
-                  href
-                  className={`linkcurrency${currency ? " active" : ""}`}
-                  onClick={() => {
-                    setCurrency(true);
-                  }}
-                >
-                  CZK
+          <div className="col-2 logoWrapper">
+            <a className="navbar-brand" href="/#">
+              <img src={MSLogoBile} alt="logo" className="logo" />
+            </a>
+          </div>
+          <div className="col-10">
+            <div className="row">
+              <div className="col-12 d-flex justify-content-end">
+                <ul className="list-unstyled list-inline pt-2 headerControls">
+                  <li className="dropdown dropdown-small list-inline-item currency">
+                    <a
+                      href
+                      className={`linkcurrency${currency ? " active" : ""}`}
+                      onClick={() => {
+                        setCurrency(true);
+                      }}
+                    >
+                      CZK
                 </a>
                 /
                 <a
-                  href
-                  className={`linkcurrency${!currency ? " active" : ""}`}
-                  onClick={() => {
-                    setCurrency(false);
-                  }}
-                >
-                  EUR
+                      href
+                      className={`linkcurrency${!currency ? " active" : ""}`}
+                      onClick={() => {
+                        setCurrency(false);
+                      }}
+                    >
+                      EUR
                 </a>
-              </li>
-              <li className="list-inline-item">
-                <NavLink to="/mysticshop/doprava-platba">
-                  Doprava a platba
-                </NavLink>
-              </li>
-              <li className="list-inline-item">
-                <NavLink to="/mysticshop/vernostni-program">
-                  Věrnostní program
-                </NavLink>
-              </li>
-              {loggedIn && (
-                <>
+                  </li>
                   <li className="list-inline-item">
-                    <NavLink to="/mysticshop/MyAccount" exact>
-                      Můj účet
+                    <NavLink to="/mysticshop/doprava-platba">
+                      Doprava a platba
+                </NavLink>
+                  </li>
+                  <li className="list-inline-item">
+                    <NavLink to="/mysticshop/vernostni-program">
+                      Věrnostní program
+                </NavLink>
+                  </li>
+                  {loggedIn && (
+                    <>
+                      <li className="list-inline-item">
+                        <NavLink to="/mysticshop/MyAccount" exact>
+                          Můj účet
                     </NavLink>
-                  </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="#"
-                      onClick={() => {
-                        setLoggedIn(false);
-                      }}
-                    >
-                      Odhlásit se
+                      </li>
+                      <li className="list-inline-item">
+                        <a
+                          href="#"
+                          onClick={() => {
+                            setLoggedIn(false);
+                          }}
+                        >
+                          Odhlásit se
                     </a>
-                  </li>
-                </>
-              )}
-              {!loggedIn && (
-                <>
-                  <li className="list-inline-item">
-                    <a
-                      href="#"
-                      onClick={() => {
-                        setLoggedIn(true);
-                      }}
-                    >
-                      Přihlásit se
+                      </li>
+                    </>
+                  )}
+                  {!loggedIn && (
+                    <>
+                      <li className="list-inline-item">
+                        <a
+                          href="#"
+                          onClick={() => {
+                            setLoggedIn(true);
+                          }}
+                        >
+                          Přihlásit se
                     </a>
-                  </li>
-                </>
-              )}
-            </ul>
+                      </li>
+                    </>
+                  )}
+                </ul>
+              </div>
+              <HeaderMiddle />
+            </div>
           </div>
         </div>
-        <HeaderMiddle />
       </div>
       <HeaderTabs />
     </div>
