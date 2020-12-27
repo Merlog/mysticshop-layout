@@ -4,8 +4,20 @@
   padding: 25px;
 }
 
-.products h2 {
-  margin-bottom: 10px;
+.title {
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 20px;
+}
+
+.control {
+  padding: 0;
+  margin: 0 4px;
+}
+
+.control:hover {
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
+  fill: white;
+  border-radius: 2px;
 }
 
 .cardModif {
@@ -25,6 +37,7 @@
 
 .cardTitle {
   font-weight: 600;
+  min-height: 57px;
 }
 
 .cardButton {
