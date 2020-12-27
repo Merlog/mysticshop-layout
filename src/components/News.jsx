@@ -4,15 +4,19 @@ import "./News.css";
 export default function New() {
   return (
     <div className="row news">
-      <div className="col-12">
+      <div className="col-12 title">
         <h2>Aktuality</h2>
+      </div>
+      <div className="col-12 obal">
         <div className="row">
-          <div className="col-3">
-            <img src={imgNews} className="card-img-top" alt="news" />
-          </div>
           <div className="col-8">
             <h4>Kompletní spoiler Avacyn Restored</h4>
-            <h5>A je to zde!</h5>
+            <h5>A je to tu</h5>
+          </div>
+          <div className="col-4">
+            <img src={imgNews} className="card-img-top" alt="news" />
+          </div>
+          <div className="col-12">
             <p className="newsText">
               <a href="#">Kompletní spoiler Avacyn Restored </a>
               včetně obrázků je na světě. Prohlédni si už nyní karty, které
@@ -24,11 +28,14 @@ export default function New() {
               <b> a objednej ještě dnes!</b>
             </p>
           </div>
-          <div className="col-1 more">
+          <div className="col-12 vice">
             <a href="#">Více...</a>
           </div>
         </div>
       </div>
-    </div>
+      <div className="col-12 dalsiAktuality">
+        <a href="#">další novinky</a>
+      </div>
+    </div >
   );
 }

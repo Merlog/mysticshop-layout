@@ -1,8 +1,9 @@
 .news {
   background-color: #fff;
-  margin: 15px 0;
-  padding: 25px;
-
+  margin: 0px 0 0 -15px;
+  padding: 15px;
+  height: 400px;
+  display: flex;
 }
 
 .news h2 {
@@ -12,7 +13,7 @@
 .card-img-top {
   height: auto;
   width: 90%;
-  margin:10px auto 0;
+  margin:0px auto 0;
 }
 
 .newsText {
@@ -42,4 +43,32 @@
   background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
   color:#fff;
   text-decoration: none;
+}
+
+.news .title {
+  border-bottom: 1px solid #f3f3f3;
+  padding: 0 0px;
+  margin-bottom: 10px;
+}
+
+.news h2 {
+  margin-bottom:10px;
+}
+
+.vice {
+  padding-top:10px;
+  text-align: right;
+}
+
+/* predelat ! */
+.vice a, .dalsiAktuality a {
+color: green;
+}
+
+.news .obal {
+  padding: 0;
+}
+
+.dalsiAktuality {
+ text-align: center;
 }
