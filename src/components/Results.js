@@ -1,13 +1,14 @@
 import Booster from "./../assets/images/product-img/booster.jpg";
 import Pagination from "./Pagination";
 import { useState } from "react";
+import "./Results.css";
 
 export default function Results() {
   const [listView, setListView] = useState(false);
 
-  const cards = [];
+  const cardsGrid = [];
   for (let i = 0; i < 16; i++) {
-    cards.push(
+    cardsGrid.push(
       <div className="col-3 my-2">
         <div className="card cardModif">
           <a href="#">
@@ -45,6 +46,68 @@ export default function Results() {
       </div>
     );
   }
+
+  const cardsList = [];
+  for (let i = 0; i < 16; i++) {
+    cardsList.push(
+      <div className="col-12 my-2">
+        <a href="#">
+          <div className="card cardModif">
+            <div className="row">
+              <div className="col-1">
+                <img
+                  src={Booster}
+                  className="card-img-top cardImgList"
+                  alt="recommended"
+                />
+              </div>
+              <div className="col-4 d-flex flex-column">
+                <h5 className="card-title cardTitleList">
+                  Název - Core Set 2021 booster
+                </h5>
+                <h6>Typ</h6>
+              </div>
+              <div className="col-3 d-flex flex-column">
+                <p>Mana</p>
+                <p>
+                  <span>Set/</span>
+                  <span>R</span>
+                </p>
+              </div>
+              <div className="col-2 d-flex flex-column">
+                <p>Poznámka</p>
+                <p>Počet ks k dispozici</p>
+              </div>
+              <div className="col-2">
+                <div className="d-flex flex-column align-items-end">
+                  <h5 className="card-price">99 Kč</h5>
+                  <div className="d-flex">
+                    <input
+                      type="number"
+                      value="1"
+                      placeholder="ks"
+                      className="cardInput"
+                    />
+                    <button
+                      type="button"
+                      className="btn card-btn cardButton"
+                      onClick={(event) => {
+                        alert("koupeno");
+                        event.preventDefault();
+                      }}
+                    >
+                      Koupit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    );
+  }
+
   return (
     <div className="row products">
       <div className="col-12">
@@ -83,7 +146,11 @@ export default function Results() {
             </button>
           </div>
         </div>
-        {listView ? <p>list view</p> : <div className="row">{cards}</div>}
+        {listView ? (
+          <div className="row">{cardsList}</div>
+        ) : (
+          <div className="row">{cardsGrid}</div>
+        )}
         <Pagination />
       </div>
     </div>
