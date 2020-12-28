@@ -31,10 +31,12 @@ export default function L3menu() {
   return (
     <div className="L3wrapper">
       <h5 className="L3headline">Magic: TG Kusovky</h5>
-      <div className="L3filters">
+      <div className="L3filters d-flex flex-column">
         <span className="L3filtersTitle">Seřadit:</span>
-        <button className="L3filtersButton">Abecedně</button>
-        <button className="L3filtersButton">Od nejnovějších</button>
+        <div className="d-flex justify-content-between my-2">
+          <button className="L3filtersButton">Abecedně</button>
+          <button className="L3filtersButton">Nejnovější</button>
+        </div>
       </div>
       <ul className="nav nav-tabs L3list">{items}</ul>
     </div>

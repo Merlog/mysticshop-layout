@@ -5,10 +5,10 @@ import Results from "./../components/Results";
 export default function BuyCards() {
   return (
     <div className="row">
-      <div className="col-3">
+      <div className="col-2">
         <L3menu />
       </div>
-      <div className="col-9">
+      <div className="col-10">
         {/* <h5 className="L3headline">Prodej karet</h5> */}
         <ProductSearch />
         <Results />
