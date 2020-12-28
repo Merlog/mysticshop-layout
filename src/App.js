@@ -21,6 +21,8 @@ import BussinessConditions from "./pages/BussinessConditions";
 import MyAccount from "./pages/MyAccount";
 import BuyCards from "./pages/BuyCards";
 import SellCards from "./pages/SellCards";
+import Products from "./pages/Products";
+import Accessories from "./pages/Accessories";
 
 export default function App() {
   const [message, setMessage] = useState(false);
@@ -133,6 +135,12 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/SellCards" exact>
             <SellCards />
+          </Route>
+          <Route path="/mysticshop/Products" exact>
+            <Products />
+          </Route>
+          <Route path="/mysticshop/Accessories" exact>
+            <Accessories />
           </Route>
         </Switch>
       </div>
