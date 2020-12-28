@@ -3,7 +3,7 @@ import Pagination from "./Pagination";
 import { useState } from "react";
 import "./Results.css";
 
-export default function Results() {
+export default function Results(props) {
   const [listView, setListView] = useState(false);
 
   const cardsGrid = [];
@@ -36,7 +36,7 @@ export default function Results() {
                       event.preventDefault();
                     }}
                   >
-                    Koupit
+                    {props.sellCards ? `Prodat` : `Koupit`}
                   </button>
                 </div>
               </div>
@@ -76,7 +76,11 @@ export default function Results() {
               </div>
               <div className="col-2 d-flex flex-column">
                 <p>Poznámka</p>
-                <p>Počet ks k dispozici</p>
+                <p>
+                  {props.sellCards
+                    ? `Poptávaný počet ks`
+                    : `Počet ks k dispozici`}
+                </p>
               </div>
               <div className="col-2">
                 <div className="d-flex flex-column align-items-end">
@@ -96,7 +100,7 @@ export default function Results() {
                         event.preventDefault();
                       }}
                     >
-                      Koupit
+                      {props.sellCards ? `Prodat` : `Koupit`}
                     </button>
                   </div>
                 </div>

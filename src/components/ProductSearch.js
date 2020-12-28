@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ProductSearch() {
+export default function ProductSearch(props) {
   const [expandedSearch, setExpandedSearch] = useState(false);
   return (
     <form className="border border-dark p-3">
@@ -610,92 +610,101 @@ export default function ProductSearch() {
 
       {expandedSearch && (
         <>
+          {!props.sellCards && (
+            <>
+              <div className="row py-1">
+                <div className="col-2">
+                  <label for="exampleFormControlSelect1">Kvalita nejhůře</label>
+                </div>
+                <div className="col-10">
+                  <div className="form-check-inline">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                    <label className="form-check-label" for="exampleRadios1">
+                      text text
+                    </label>
+                  </div>
+                  <div className="form-check-inline">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                    <label className="form-check-label" for="exampleRadios1">
+                      text text
+                    </label>
+                  </div>
+                  <div className="form-check-inline">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                    />
+                    <label className="form-check-label" for="exampleRadios1">
+                      text text
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="row py-1">
+                <div className="col-2">
+                  <label for="exampleFormControlSelect1">
+                    Další vlastnosti
+                  </label>
+                </div>
+                <div className="col-10">
+                  <div className="form-check form-check-inline">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label className="form-check-label" for="inlineCheckbox1">
+                      1
+                    </label>
+                  </div>
+                  <div className="form-check form-check-inline">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label className="form-check-label" for="inlineCheckbox1">
+                      1
+                    </label>
+                  </div>
+                  <div className="form-check form-check-inline">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label className="form-check-label" for="inlineCheckbox1">
+                      1
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
           <div className="row py-1">
             <div className="col-2">
-              <label for="exampleFormControlSelect1">Kvalita nejhůře</label>
-            </div>
-            <div className="col-10">
-              <div className="form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios1"
-                  value="option1"
-                />
-                <label className="form-check-label" for="exampleRadios1">
-                  text text
-                </label>
-              </div>
-              <div className="form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios1"
-                  value="option1"
-                />
-                <label className="form-check-label" for="exampleRadios1">
-                  text text
-                </label>
-              </div>
-              <div className="form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios1"
-                  value="option1"
-                />
-                <label className="form-check-label" for="exampleRadios1">
-                  text text
-                </label>
-              </div>
-            </div>
-          </div>
-          <div className="row py-1">
-            <div className="col-2">
-              <label for="exampleFormControlSelect1">Další vlastnosti</label>
-            </div>
-            <div className="col-10">
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="inlineCheckbox1"
-                  value="option1"
-                />
-                <label className="form-check-label" for="inlineCheckbox1">
-                  1
-                </label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="inlineCheckbox1"
-                  value="option1"
-                />
-                <label className="form-check-label" for="inlineCheckbox1">
-                  1
-                </label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="inlineCheckbox1"
-                  value="option1"
-                />
-                <label className="form-check-label" for="inlineCheckbox1">
-                  1
-                </label>
-              </div>
-            </div>
-          </div>
-          <div className="row py-1">
-            <div className="col-2">
-              <label for="exampleFormControlSelect1">Cena</label>
+              <label for="exampleFormControlSelect1">
+                {props.sellCards ? `Výkupní cena` : `Cena`}
+              </label>
             </div>
             <div className="col-10 form-inline">
               <label for="inputZip">min</label>
@@ -713,23 +722,25 @@ export default function ProductSearch() {
               <label>Kč</label>
             </div>
           </div>
-          <div className="row py-1">
-            <div className="col-2">
-              <label for="exampleFormControlSelect1">Jazyk</label>
+          {!props.sellCards && (
+            <div className="row py-1">
+              <div className="col-2">
+                <label for="exampleFormControlSelect1">Jazyk</label>
+              </div>
+              <div className="col-10">
+                <select
+                  className="form-control form-control-sm w-25"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
             </div>
-            <div className="col-10">
-              <select
-                className="form-control form-control-sm w-25"
-                id="exampleFormControlSelect1"
-              >
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-          </div>
+          )}
           <div className="row py-1">
             <div className="col-2">
               <label for="exampleFormControlSelect1">Sesílací cena</label>
@@ -885,20 +896,22 @@ export default function ProductSearch() {
           </div>
         </div>
       </div>
-      <div className="row py-1">
-        <div className="col-2"></div>
-        <div className="form-check col-10">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            id="inlineCheckbox1"
-            value="option1"
-          />
-          <label className="form-check-label" for="inlineCheckbox1">
-            Režim encyklopedie
-          </label>
+      {!props.sellCards && (
+        <div className="row py-1">
+          <div className="col-2"></div>
+          <div className="form-check col-10">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="inlineCheckbox1"
+              value="option1"
+            />
+            <label className="form-check-label" for="inlineCheckbox1">
+              Režim encyklopedie
+            </label>
+          </div>
         </div>
-      </div>
+      )}
       <div className="row py-1">
         <div className="col-2"></div>
         <div className="form-check col-10">
@@ -909,7 +922,8 @@ export default function ProductSearch() {
             value="option1"
           />
           <label className="form-check-label" for="inlineCheckbox1">
-            Nezobrazovat kusovky, které nejsou na skladě
+            Nezobrazovat kusovky,{" "}
+            {props.sellCards ? `které nepoptáváme` : `které nejsou na skladě`}
           </label>
         </div>
       </div>
