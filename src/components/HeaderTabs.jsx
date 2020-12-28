@@ -11,19 +11,19 @@ export default function HeaderTabs() {
               <NavLink to="/mysticshop/#" exact>
                 <li className="nav-item">Domů</li>
               </NavLink>
-              <NavLink to="/mysticshop/BonusProgram" exact>
+              <NavLink to="/mysticshop/BuyCards" exact>
                 <li className="nav-item">Prodej Karet</li>
               </NavLink>
-              <NavLink to="/mysticshop/CardGames" exact>
+              <NavLink to="/mysticshop/SellCards" exact>
                 <li className="nav-item">Výkup karet</li>
               </NavLink>
-              <NavLink to="/mysticshop/LoyaltyDiscount" exact>
+              <NavLink to="/mysticshop/Products" exact>
                 <li className="nav-item">Produkty</li>
               </NavLink>
-              <NavLink to="/mysticshop/HowTo" exact>
+              <NavLink to="/mysticshop/Accessories" exact>
                 <li className="nav-item">Doplňky</li>
               </NavLink>
-              <NavLink to="/mysticshop/vernostni-program" exact>
+              <NavLink to="/mysticshop/LoyaltyProgram" exact>
                 <li className="nav-item">Věrnostní Program</li>
               </NavLink>
               <a href="http://www.mysticshop.cz/blog/" target="blank" exact>

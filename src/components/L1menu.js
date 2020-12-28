@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "./leftMenu.css";
 
 export default function L1menu() {
   return (

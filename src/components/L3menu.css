@@ -1,0 +1,50 @@
+.L3wrapper {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.L3headline {
+  background: #59b20e;
+  background: linear-gradient(to bottom, #59b20e 0%, #038004 100%);
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px;
+  margin: 0;
+}
+
+.L3filters {
+  padding: 5px;
+}
+
+.L3filtersTitle {
+  padding: 0 6px;
+}
+
+.L3filtersButton:hover {
+  color: #038004;
+}
+
+.L3list {
+  border-bottom: none;
+}
+
+.L3items {
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-top: 1px solid #eaeaea;
+  padding: 5px;
+}
+
+.L3items:hover {
+  background: #eaeaea;
+}
+
+.L3img {
+  width: 20px;
+  height: 20px;
+}

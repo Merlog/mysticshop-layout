@@ -12,7 +12,6 @@ import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
 import Cart3 from "./pages/Cart3";
 import ContactForm from "./pages/ContactForm";
-import FullSearch from "./pages/FullSearch";
 import OrderDetail from "./pages/OrderDetail";
 import OrderList from "./pages/OrderList";
 import RegistrationForm from "./pages/RegistrationForm";
@@ -20,6 +19,7 @@ import UserSettings from "./pages/UserSettings";
 import Contact from "./pages/Contact";
 import BussinessConditions from "./pages/BussinessConditions";
 import MyAccount from "./pages/MyAccount";
+import BuyCards from "./pages/BuyCards";
 
 export default function App() {
   const [message, setMessage] = useState(false);
@@ -56,11 +56,6 @@ export default function App() {
         <div>
           <NavLink to="/mysticshop/RegistrationForm" exact>
             Registration Form
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/mysticshop/FullSearch" exact>
-            Full Search
           </NavLink>
         </div>
         <div>
@@ -117,9 +112,6 @@ export default function App() {
           <Route path="/mysticshop/RegistrationForm" exact>
             <RegistrationForm />
           </Route>
-          <Route path="/mysticshop/FullSearch" exact>
-            <FullSearch />
-          </Route>
           <Route path="/mysticshop/OrderList" exact>
             <OrderList />
           </Route>
@@ -134,6 +126,9 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/MyAccount" exact>
             <MyAccount />
+          </Route>
+          <Route path="/mysticshop/BuyCards" exact>
+            <BuyCards />
           </Route>
         </Switch>
       </div>

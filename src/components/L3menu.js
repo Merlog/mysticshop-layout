@@ -1,132 +1,42 @@
-import "./leftMenu.css";
+import "./L3menu.css";
 
-export default function L2menu() {
+export default function L3menu() {
+  const items = [];
+  for (let i = 0; i < 40; i++) {
+    items.push(
+      <li className="L3items d-flex">
+        <div className="L3img d-flex justify-content-center align-items-center">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            className="bi bi-tree-fill"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 0a.5.5 0 0 1 .416.223l3 4.5A.5.5 0 0 1 11 5.5h-.098l2.022 3.235a.5.5 0 0 1-.424.765h-.191l1.638 3.276a.5.5 0 0 1-.447.724h-11a.5.5 0 0 1-.447-.724L3.69 9.5H3.5a.5.5 0 0 1-.424-.765L5.098 5.5H5a.5.5 0 0 1-.416-.777l3-4.5A.5.5 0 0 1 8 0z"
+            />
+            <path d="M7 13h2v3H7v-3z" />
+          </svg>
+        </div>
+        <p className="L3name d-flex align-items-center px-1">
+          Ikoria: Lair of Behemoths
+        </p>
+      </li>
+    );
+  }
+
   return (
-    <nav className="nav flex-column navEdice">
-      <span className="nav-link headline" href="/#">
-        Edice
-      </span>
-      <a className="nav-link" href="/#">
-        <span className="svg">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            className="bi bi-tree-fill"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 0a.5.5 0 0 1 .416.223l3 4.5A.5.5 0 0 1 11 5.5h-.098l2.022 3.235a.5.5 0 0 1-.424.765h-.191l1.638 3.276a.5.5 0 0 1-.447.724h-11a.5.5 0 0 1-.447-.724L3.69 9.5H3.5a.5.5 0 0 1-.424-.765L5.098 5.5H5a.5.5 0 0 1-.416-.777l3-4.5A.5.5 0 0 1 8 0z"
-            />
-            <path d="M7 13h2v3H7v-3z" />
-          </svg>
-        </span>
-        Promo karty
-      </a>
-      <a className="nav-link" href="/#">
-        <span className="svg">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            className="bi bi-tree-fill"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 0a.5.5 0 0 1 .416.223l3 4.5A.5.5 0 0 1 11 5.5h-.098l2.022 3.235a.5.5 0 0 1-.424.765h-.191l1.638 3.276a.5.5 0 0 1-.447.724h-11a.5.5 0 0 1-.447-.724L3.69 9.5H3.5a.5.5 0 0 1-.424-.765L5.098 5.5H5a.5.5 0 0 1-.416-.777l3-4.5A.5.5 0 0 1 8 0z"
-            />
-            <path d="M7 13h2v3H7v-3z" />
-          </svg>
-        </span>
-        Core Set 2021
-      </a>
-      <a className="nav-link" href="/#">
-        <span className="svg">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            className="bi bi-tree-fill"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 0a.5.5 0 0 1 .416.223l3 4.5A.5.5 0 0 1 11 5.5h-.098l2.022 3.235a.5.5 0 0 1-.424.765h-.191l1.638 3.276a.5.5 0 0 1-.447.724h-11a.5.5 0 0 1-.447-.724L3.69 9.5H3.5a.5.5 0 0 1-.424-.765L5.098 5.5H5a.5.5 0 0 1-.416-.777l3-4.5A.5.5 0 0 1 8 0z"
-            />
-            <path d="M7 13h2v3H7v-3z" />
-          </svg>
-        </span>
-        Ikoria: Lair of Behemoths
-      </a>
-      <a className="nav-link" href="/#">
-        <span className="svg">
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            className="bi bi-tree-fill"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 0a.5.5 0 0 1 .416.223l3 4.5A.5.5 0 0 1 11 5.5h-.098l2.022 3.235a.5.5 0 0 1-.424.765h-.191l1.638 3.276a.5.5 0 0 1-.447.724h-11a.5.5 0 0 1-.447-.724L3.69 9.5H3.5a.5.5 0 0 1-.424-.765L5.098 5.5H5a.5.5 0 0 1-.416-.777l3-4.5A.5.5 0 0 1 8 0z"
-            />
-            <path d="M7 13h2v3H7v-3z" />
-          </svg>
-        </span>
-        Theros Beyond Death
-      </a>
-      <a className="nav-link" href="/#">
-        Theros Beyond Death (Alternate)
-      </a>
-      <a className="nav-link" href="/#">
-        Throne of Eldraine
-      </a>
-      <a className="nav-link" href="/#">
-        Throne of Eldraine (Alternate)
-      </a>
-      <a className="nav-link" href="/#">
-        Core Set 2020
-      </a>
-      <a className="nav-link" href="/#">
-        Modern Horizons
-      </a>
-      <a className="nav-link" href="/#">
-        War of the Spark
-      </a>
-      <a className="nav-link" href="/#">
-        Ravnica Allegiance
-      </a>
-      <a className="nav-link" href="/#">
-        Ultimate Masters
-      </a>
-      <a className="nav-link" href="/#">
-        Guilds of Ravnica
-      </a>
-      <a className="nav-link" href="/#">
-        Core Set 2019
-      </a>
-      <a className="nav-link" href="/#">
-        Battlebond
-      </a>
-      <a className="nav-link" href="/#">
-        Dominaria
-      </a>
-      <a className="nav-link" href="/#">
-        Masters 25
-      </a>
-      <a className="nav-link" href="/#">
-        Rivals of Ixalan
-      </a>
-      <a className="nav-link" href="/#">
-        Unstable
-      </a>
-    </nav>
+    <div className="L3wrapper">
+      <h5 className="L3headline">Magic: TG Kusovky</h5>
+      <div className="L3filters">
+        <span className="L3filtersTitle">Seřadit:</span>
+        <button className="L3filtersButton">Abecedně</button>
+        <button className="L3filtersButton">Od nejnovějších</button>
+      </div>
+      <ul className="nav nav-tabs L3list">{items}</ul>
+    </div>
   );
 }
