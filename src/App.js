@@ -23,6 +23,8 @@ import BuyCards from "./pages/BuyCards";
 import SellCards from "./pages/SellCards";
 import Products from "./pages/Products";
 import Accessories from "./pages/Accessories";
+import LoyaltyProgram from "./pages/LoyaltyProgram";
+import ShipmentPayment from "./pages/ShipmentPayment";
 
 export default function App() {
   const [message, setMessage] = useState(false);
@@ -141,6 +143,12 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/Accessories" exact>
             <Accessories />
+          </Route>
+          <Route path="/mysticshop/LoyaltyProgram" exact>
+            <LoyaltyProgram />
+          </Route>
+          <Route path="/mysticshop/ShipmentPayment" exact>
+            <ShipmentPayment />
           </Route>
         </Switch>
       </div>

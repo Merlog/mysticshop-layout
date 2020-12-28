@@ -53,9 +53,9 @@ export default function Header(props) {
                       }}
                     >
                       CZK
-                </a>
-                /
-                <a
+                    </a>
+                    /
+                    <a
                       href
                       className={`linkcurrency${!currency ? " active" : ""}`}
                       onClick={() => {
@@ -63,24 +63,24 @@ export default function Header(props) {
                       }}
                     >
                       EUR
-                </a>
+                    </a>
                   </li>
                   <li className="list-inline-item">
-                    <NavLink to="/mysticshop/doprava-platba">
+                    <NavLink to="/mysticshop/ShipmentPayment">
                       Doprava a platba
-                </NavLink>
+                    </NavLink>
                   </li>
                   <li className="list-inline-item">
-                    <NavLink to="/mysticshop/vernostni-program">
+                    <NavLink to="/mysticshop/LoyaltyProgram">
                       Věrnostní program
-                </NavLink>
+                    </NavLink>
                   </li>
                   {loggedIn && (
                     <>
                       <li className="list-inline-item">
                         <NavLink to="/mysticshop/MyAccount" exact>
                           Můj účet
-                    </NavLink>
+                        </NavLink>
                       </li>
                       <li className="list-inline-item">
                         <a
@@ -90,7 +90,7 @@ export default function Header(props) {
                           }}
                         >
                           Odhlásit se
-                    </a>
+                        </a>
                       </li>
                     </>
                   )}
@@ -104,7 +104,7 @@ export default function Header(props) {
                           }}
                         >
                           Přihlásit se
-                    </a>
+                        </a>
                       </li>
                     </>
                   )}

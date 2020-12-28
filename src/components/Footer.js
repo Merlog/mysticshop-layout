@@ -19,11 +19,7 @@ export default function Footer() {
             <NavLink to="/mysticshop/Contact" exact className="text">
               Kontakt
             </NavLink>
-            <NavLink
-              to="/mysticshop/BussinessConditions"
-              exact
-              className="text"
-            >
+            <NavLink to="/mysticshop/ShipmentPayment" exact className="text">
               Doprava a platba
             </NavLink>
             <NavLink
@@ -35,38 +31,28 @@ export default function Footer() {
             </NavLink>
           </div>
           <div className="col-3 d-flex flex-column">
-            <NavLink
-              to="/mysticshop/BussinessConditions"
-              exact
-              className="text"
-            >
+            <NavLink to="/mysticshop/LoyaltyProgram" exact className="text">
               Jak funguje věrnostní program
             </NavLink>
-            <NavLink
-              to="/mysticshop/BussinessConditions"
-              exact
-              className="text"
-            >
+            <NavLink to="/mysticshop/SellCardsHow" exact className="text">
               Jak funguje výkup karet
             </NavLink>
-            <NavLink
-              to="/mysticshop/BussinessConditions"
-              exact
-              className="text"
-            >
+            <NavLink to="/mysticshop/GDPR" exact className="text">
               Ochrana osobních údajů
             </NavLink>
           </div>
           <div className="col-6 d-flex flex-column justify-content-between">
             <div className="row">
               <div className="col-12 d-flex justify-content-end mt-1">
-                <img
-                  src={Facebook}
-                  alt="Facebook"
-                  width="36px"
-                  height="36px"
-                  className="mx-2"
-                />
+                <a href="https://www.facebook.com/MysticShop.cz" target="blank">
+                  <img
+                    src={Facebook}
+                    alt="Facebook"
+                    width="36px"
+                    height="36px"
+                    className="mx-2"
+                  />
+                </a>
                 {/* <img
                       src={Twitter}
                       alt="Twitter"
