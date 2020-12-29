@@ -1,8 +1,8 @@
 import "./L3menu.css";
 
-export default function L3menu() {
+export default function L3menuCards() {
   const items = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 40; i++) {
     items.push(
       <li className="L3items d-flex">
         <div className="L3img d-flex justify-content-center align-items-center">
@@ -21,14 +21,23 @@ export default function L3menu() {
             <path d="M7 13h2v3H7v-3z" />
           </svg>
         </div>
-        <p className="L3name d-flex align-items-center px-1">Boxy na karty</p>
+        <p className="L3name d-flex align-items-center px-1">
+          Ikoria: Lair of Behemoths
+        </p>
       </li>
     );
   }
 
   return (
     <div className="L3wrapper">
-      <h5 className="L3headline">Produkty / Doplňky</h5>
+      <h5 className="L3headline">Magic: TG Kusovky</h5>
+      <div className="L3filters d-flex flex-column">
+        <span className="L3filtersTitle">Seřadit:</span>
+        <div className="d-flex justify-content-between my-2">
+          <button className="L3filtersButton">Abecedně</button>
+          <button className="L3filtersButton">Nejnovější</button>
+        </div>
+      </div>
       <ul className="nav nav-tabs L3list">{items}</ul>
     </div>
   );

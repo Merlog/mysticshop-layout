@@ -3,27 +3,35 @@ import Pagination from "./Pagination";
 import { useState } from "react";
 import "./Results.css";
 
-export default function Results(props) {
+export default function ResultsCard(props) {
   const [listView, setListView] = useState(false);
 
   const cardsGrid = [];
   for (let i = 0; i < 16; i++) {
     cardsGrid.push(
       <div className="col-3 my-2">
-        <div className="card cardModif">
-          <a href="#">
-            <img
-              src={Booster}
-              className="card-img-top cardImg"
-              alt="recommended"
-            />
+        <a href="#">
+          <div className="card cardModif">
+            <div className="row">
+              <div className="col-8">
+                <img
+                  src={Booster}
+                  className="card-img-top cardImg"
+                  alt="recommended"
+                />
+              </div>
+              <div className="col-4">
+                <p>Mana</p>
+                <p>
+                  <span>Set/</span>
+                  <span>R</span>
+                </p>
+              </div>
+            </div>
             <div className="card-body d-flex flex-column cardBody">
               <h5 className="card-title cardTitle">Core Set 2021 booster</h5>
-              <p>
-                Popis - Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Quo, laborum numquam aliquam provident distinctio.
-              </p>
-              <p>Kód produktu</p>
+              <h6>Typ</h6>
+              <p>Poznámka</p>
               <p>
                 {props.sellCards
                   ? `Poptávaný počet ks`
@@ -51,8 +59,8 @@ export default function Results(props) {
                 </div>
               </div>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     );
   }
@@ -71,17 +79,21 @@ export default function Results(props) {
                   alt="recommended"
                 />
               </div>
-              <div className="col-6 d-flex flex-column">
+              <div className="col-4 d-flex flex-column">
                 <h5 className="card-title cardTitleList">
                   Název - Core Set 2021 booster
                 </h5>
-                <p>
-                  Popis - Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Quo, laborum numquam aliquam provident distinctio.
-                </p>
+                <h6>Typ</h6>
               </div>
               <div className="col-3 d-flex flex-column">
-                <p>Kód produktu</p>
+                <p>Mana</p>
+                <p>
+                  <span>Set/</span>
+                  <span>R</span>
+                </p>
+              </div>
+              <div className="col-2 d-flex flex-column">
+                <p>Poznámka</p>
                 <p>
                   {props.sellCards
                     ? `Poptávaný počet ks`
@@ -123,7 +135,7 @@ export default function Results(props) {
       <div className="col-12">
         <div className="row title">
           <div className="col-9">
-            <h2>Produkty / Doplňky</h2>
+            <h2>Výsledek hledání / Karty</h2>
           </div>
           <div className="col-2 d-flex">
             <label htmlFor="select">Seřadit:</label>
