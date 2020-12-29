@@ -25,6 +25,8 @@ import Products from "./pages/Products";
 import Accessories from "./pages/Accessories";
 import LoyaltyProgram from "./pages/LoyaltyProgram";
 import ShipmentPayment from "./pages/ShipmentPayment";
+import SellCardsHow from "./pages/SellCardsHow";
+import GDPR from "./pages/GDPR";
 
 export default function App() {
   const [message, setMessage] = useState(false);
@@ -33,16 +35,6 @@ export default function App() {
   return (
     <div className={`app${message ? " appWithMessage" : ""}`}>
       <div className="row temporary">
-        <div>
-          <NavLink to="/mysticshop/OrderDetail" exact>
-            Order Detail
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/mysticshop/ContactForm" exact>
-            Contact Form
-          </NavLink>
-        </div>
         <div>
           <NavLink to="/mysticshop/Cart1" exact>
             Cart1
@@ -59,18 +51,18 @@ export default function App() {
           </NavLink>
         </div>
         <div>
-          <NavLink to="/mysticshop/RegistrationForm" exact>
-            Registration Form
-          </NavLink>
-        </div>
-        <div>
           <NavLink to="/mysticshop/OrderList" exact>
             Order List
           </NavLink>
         </div>
         <div>
-          <NavLink to="/mysticshop/UserSettings" exact>
-            User Settings
+          <NavLink to="/mysticshop/OrderDetail" exact>
+            Order Detail
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/mysticshop/RegistrationForm" exact>
+            Registration Form
           </NavLink>
         </div>
         <a
@@ -149,6 +141,12 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/ShipmentPayment" exact>
             <ShipmentPayment />
+          </Route>
+          <Route path="/mysticshop/SellCardsHow" exact>
+            <SellCardsHow />
+          </Route>
+          <Route path="/mysticshop/GDPR" exact>
+            <GDPR />
           </Route>
         </Switch>
       </div>

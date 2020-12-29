@@ -1,7 +1,7 @@
 export default function ContactForm() {
   return (
     <div className="row d-flex justify-content-center align-items-center my-4">
-      <div className="col-5 p-4">
+      <div className="col-12 p-4">
         <div className="row">
           <div className="col-2 py-4">
             <a
