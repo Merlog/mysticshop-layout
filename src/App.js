@@ -6,6 +6,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomepagePage from "./pages/HomepagePage";
+import ProduktDetail from "./pages/ProduktDetail";
 import CookieAlert from "./components/CookieAlert";
 
 import Cart1 from "./pages/Cart1";
@@ -90,6 +91,9 @@ export default function App() {
         <Switch>
           <Route path={`${process.env.PUBLIC_URL}/`} exact>
             <HomepagePage />
+          </Route>
+          <Route path="/mysticshop/Produkty" exact>
+            <ProduktDetail />
           </Route>
           <Route path="/mysticshop/OrderDetail" exact>
             <OrderDetail />
