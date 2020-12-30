@@ -62,3 +62,10 @@ input[type="search"]::-webkit-search-resultscard-button,
 input[type="search"]::-webkit-search-resultscard-decoration {
   display: none;
 }
+
+.captcha {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #eaeaea;
+  background-color: white;
+}

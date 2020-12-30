@@ -50,6 +50,15 @@ export default function ContactForm() {
             </div>
           </div>
           <div className="form-row">
+            <div className="col-6 my-4 form-group">
+              <input type="checkbox" value="" id="defaultCheck1" />
+              <label className="font-weight-bolder pl-2" for="defaultCheck1">
+                Poslat mi kopii zprávy na email
+              </label>
+            </div>
+          </div>
+          <div className="form-row captcha">Captcha</div>
+          <div className="form-row">
             <div className="col-12 d-flex justify-content-center mt-3">
               <button type="button" className="btn btn-success">
                 Odeslat zprávu

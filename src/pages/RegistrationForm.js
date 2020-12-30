@@ -55,7 +55,7 @@ export default function RegistrationForm() {
           </div>
           <div className="form-row">
             <div className="col mb-3">
-              <h5 className="text-center my-3">Fakturační údaje</h5>
+              <h5 className="text-center my-3">Kontaktní údaje</h5>
             </div>
           </div>
           <div className="form-row">
@@ -142,6 +142,7 @@ export default function RegistrationForm() {
               </label>
             </div>
           </div>
+          <div className="form-row captcha">Captcha</div>
           <div className="form-row">
             <div className="col-12 d-flex justify-content-center mt-3">
               <NavLink to={`${process.env.PUBLIC_URL}/`}>
