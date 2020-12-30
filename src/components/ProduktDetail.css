@@ -1,0 +1,54 @@
+.productWrapper .navigace{
+  padding-bottom: 20px;
+}
+
+.productDetail {
+  background: white;
+  min-height:500px;
+  margin: 0 0 20px 0;
+}
+
+
+.productCode {
+  font-style:italic;
+  color: #777;
+  margin-bottom:20px;
+}
+
+.productDetail .gallery {
+  padding: 30px;
+}
+
+.productDetail img {
+  width: 300px;
+  height: auto;
+}
+.productDetail .text {
+  margin-bottom: 60px;
+}
+
+.mainImg, .nahled{
+  display:flex;
+  justify-content:center;
+}
+.nahledy {
+  margin-top: 20px;
+}
+
+.nahledy img{
+  width: 100px;
+}
+
+.productDetail .content {
+  padding: 30px;
+}
+.skladem {
+  color:green;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.koupit {
+  justify-content: flex-end;
+}

@@ -6,7 +6,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomepagePage from "./pages/HomepagePage";
-import ProduktDetail from "./pages/ProduktDetail";
+import ProduktDetailPage from "./pages/ProduktDetailPage";
 import CookieAlert from "./components/CookieAlert";
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
@@ -57,6 +57,11 @@ export default function App() {
             Registration Form
           </NavLink>
         </div>
+        <div>
+          <NavLink to="/mysticshop/ProduktDetailPage" exact>
+            Produkt Detail
+          </NavLink>
+        </div>
         <a
           href
           className={`linkcurrency${message ? " active" : ""}`}
@@ -78,13 +83,10 @@ export default function App() {
       </div>
       <Header setMessage={setMessage} />
       <div className="container main">
-        <Redirect to={`${process.env.PUBLIC_URL}/`} />
+        <Redirect to={`${process.env.PUBLIC_URL}/ProduktDetail`} />
         <Switch>
           <Route path={`${process.env.PUBLIC_URL}/`} exact>
             <HomepagePage />
-          </Route>
-          <Route path="/mysticshop/Produkty" exact>
-            <ProduktDetail />
           </Route>
           <Route path="/mysticshop/OrderDetail" exact>
             <OrderDetail />
@@ -100,6 +102,9 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/Cart3" exact>
             <Cart3 />
+          </Route>
+          <Route path="/mysticshop/ProduktDetail" exact>
+            <ProduktDetailPage />
           </Route>
           <Route path="/mysticshop/RegistrationForm" exact>
             <RegistrationForm />

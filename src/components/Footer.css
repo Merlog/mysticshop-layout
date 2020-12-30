@@ -1,24 +1,24 @@
-.wrapper {
+.footer {
   background-color: #222323;
 }
 
-.text {
+.footer .text {
   font-size: 14px;
   color: white;
   padding: 8px 0;
 }
 
-.text:hover {
+.footer .text:hover {
   text-decoration: none;
   color: #59b20e;
 }
 
-.copyright {
+.footer .copyright {
   font-size: 13px;
   color: #666666;
 }
 
-.payment img {
+.footer .payment img {
   margin-left: 5px;
   padding: 5px;
   background-color: #fff;
