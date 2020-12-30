@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function OrderDetail() {
   return (
     <div className="container">
@@ -5,12 +7,12 @@ export default function OrderDetail() {
         <div className="col-10 offset-1">
           <div className="row">
             <div className="col-2 py-4">
-              <a
-                href="#"
+              <NavLink
+                to="/mysticshop/MyAccount/"
                 className="btn btn-outline-success btn-sm align-baseline"
               >
                 Zpět
-              </a>
+              </NavLink>
             </div>
             <div className="col-8 text-center py-4">
               <h4>Objednávka č. 111111</h4>

@@ -53,16 +53,6 @@ export default function App() {
           </NavLink>
         </div>
         <div>
-          <NavLink to="/mysticshop/OrderList" exact>
-            Order List
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/mysticshop/OrderDetail" exact>
-            Order Detail
-          </NavLink>
-        </div>
-        <div>
           <NavLink to="/mysticshop/RegistrationForm" exact>
             Registration Form
           </NavLink>
