@@ -8,7 +8,6 @@ import Header from "./components/Header";
 import HomepagePage from "./pages/HomepagePage";
 import ProduktDetail from "./pages/ProduktDetail";
 import CookieAlert from "./components/CookieAlert";
-
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
 import Cart3 from "./pages/Cart3";
@@ -28,6 +27,8 @@ import ShipmentPayment from "./pages/ShipmentPayment";
 import SellCardsHow from "./pages/SellCardsHow";
 import GDPR from "./pages/GDPR";
 import NewsPage from "./pages/NewsPage";
+import LogIn from "./pages/LogIn";
+import ResetPassword from "./pages/ResetPassword";
 
 export default function App() {
   const [message, setMessage] = useState(false);
@@ -141,6 +142,12 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/News" exact>
             <NewsPage />
+          </Route>
+          <Route path="/mysticshop/LogIn" exact>
+            <LogIn />
+          </Route>
+          <Route path="/mysticshop/ResetPassword" exact>
+            <ResetPassword />
           </Route>
         </Switch>
       </div>

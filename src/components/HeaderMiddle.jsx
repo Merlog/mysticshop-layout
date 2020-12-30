@@ -1,6 +1,5 @@
 import "./HeaderMiddle.css";
 import { NavLink } from "react-router-dom";
-import MSLogoBile from "./../assets/MS_logo_bile.png";
 import cart from "./../assets/svg/cart-material.svg";
 import Search from "./../assets/svg/search-material.svg";
 

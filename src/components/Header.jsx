@@ -9,6 +9,7 @@ import MSLogoBile from "./../assets/MS_logo_bile.png";
 export default function Header(props) {
   const [loggedIn, setLoggedIn] = useState(true);
   const [currency, setCurrency] = useState(true);
+
   return (
     <div className="fixed-top w-100 headerWrapper">
       <div className="w-100 topAlert">
@@ -83,28 +84,32 @@ export default function Header(props) {
                         </NavLink>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="#"
-                          onClick={() => {
-                            setLoggedIn(false);
-                          }}
-                        >
-                          Odhlásit se
-                        </a>
+                        <NavLink to={`${process.env.PUBLIC_URL}/`} exact>
+                          <button
+                            onClick={() => {
+                              setLoggedIn(false);
+                            }}
+                          >
+                            Odhlásit se
+                          </button>
+                        </NavLink>
                       </li>
                     </>
                   )}
                   {!loggedIn && (
                     <>
                       <li className="list-inline-item">
-                        <a
-                          href="#"
-                          onClick={() => {
-                            setLoggedIn(true);
-                          }}
-                        >
+                        <NavLink to="/mysticshop/LogIn">
                           Přihlásit se
-                        </a>
+                          {/* <button
+                            href="#"
+                            onClick={() => {
+                              setLoggedIn(true);
+                            }}
+                          >
+                            Přihlásit se
+                          </button> */}
+                        </NavLink>
                       </li>
                     </>
                   )}
