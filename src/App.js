@@ -16,7 +16,6 @@ import ContactForm from "./pages/ContactForm";
 import OrderDetail from "./pages/OrderDetail";
 import OrderList from "./pages/OrderList";
 import RegistrationForm from "./pages/RegistrationForm";
-import UserSettings from "./pages/UserSettings";
 import Contact from "./pages/Contact";
 import BussinessConditions from "./pages/BussinessConditions";
 import MyAccount from "./pages/MyAccount";
@@ -106,9 +105,6 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/OrderList" exact>
             <OrderList />
-          </Route>
-          <Route path="/mysticshop/UserSettings" exact>
-            <UserSettings />
           </Route>
           <Route path="/mysticshop/Contact" exact>
             <Contact />

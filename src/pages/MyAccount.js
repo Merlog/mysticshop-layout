@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./MyAccount.css";
 import OrderList from "./OrderList";
+import UserDetail from "./UserDetail";
 import { NavLink } from "react-router-dom";
 
 export default function MyAccount() {
@@ -44,7 +45,9 @@ export default function MyAccount() {
           <OrderList />
         </div>
       ) : (
-        <div className="col-10">obsah k účtu</div>
+        <div className="col-10">
+          <UserDetail />
+        </div>
       )}
     </div>
   );
