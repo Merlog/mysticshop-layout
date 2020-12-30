@@ -144,9 +144,15 @@ export default function RegistrationForm() {
           </div>
           <div className="form-row">
             <div className="col-12 d-flex justify-content-center mt-3">
-              <button type="button" className="btn btn-success px-4">
-                Zaregistrovat
-              </button>
+              <NavLink to={`${process.env.PUBLIC_URL}/`}>
+                <button
+                  type="button"
+                  className="btn btn-success px-4"
+                  onClick={() => alert("Registrace proběhla úspěšně")}
+                >
+                  Zaregistrovat
+                </button>
+              </NavLink>
             </div>
           </div>
         </form>
