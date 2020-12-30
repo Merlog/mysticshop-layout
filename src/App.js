@@ -28,6 +28,7 @@ import LoyaltyProgram from "./pages/LoyaltyProgram";
 import ShipmentPayment from "./pages/ShipmentPayment";
 import SellCardsHow from "./pages/SellCardsHow";
 import GDPR from "./pages/GDPR";
+import NewsPage from "./pages/NewsPage";
 
 export default function App() {
   const [message, setMessage] = useState(false);
@@ -151,6 +152,9 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/GDPR" exact>
             <GDPR />
+          </Route>
+          <Route path="/mysticshop/News" exact>
+            <NewsPage />
           </Route>
         </Switch>
       </div>

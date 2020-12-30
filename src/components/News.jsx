@@ -1,7 +1,8 @@
 import imgNews from "./../assets/images/news1.png";
+import { NavLink } from "react-router-dom";
 import "./News.css";
 
-export default function New() {
+export default function News() {
   return (
     <div className="row news">
       <div className="col-12">
@@ -21,7 +22,7 @@ export default function New() {
           </div>
           <div className="col-12">
             <p className="newsText">
-              <a href="#">Kompletní spoiler Avacyn Restored</a>
+              <a href="#">Kompletní spoiler Avacyn Restored </a>
               včetně obrázků je na světě. Prohlédni si už nyní karty, které
               rozbalíš nejdříve o víkendu.{" "}
               <a href="#">
@@ -32,14 +33,10 @@ export default function New() {
               <b> a objednej ještě dnes!</b>
             </p>
           </div>
-          <div className="col-12 d-flex justify-content-end mt-2 newsDetail">
-            <a href="#">detail</a>
-          </div>
         </div>
-
-        <div className="row mt-4">
+        <div className="row mt-5">
           <div className="col-12 newsNext d-flex justify-content-center">
-            <a href="#">Další novinky</a>
+            <NavLink to="/mysticshop/News">Více</NavLink>
           </div>
         </div>
       </div>
