@@ -13,12 +13,9 @@ export default function News() {
         </div>
 
         <div className="row newsWrapper">
-          <div className="col-8">
+          <div className="col-12">
             <h4>Kompletní spoiler Avacyn Restored</h4>
             <h5 className="mt-3 mb-0">A je to tu</h5>
-          </div>
-          <div className="col-4">
-            <img src={imgNews} className="newsImg" alt="news" />
           </div>
           <div className="col-12">
             <p className="newsText">

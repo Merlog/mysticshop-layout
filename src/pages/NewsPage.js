@@ -8,10 +8,7 @@ export default function NewsPage() {
   for (let i = 0; i < 8; i++) {
     newMsg.push(
       <div className="row newsPageWrapper my-3">
-        <div className="col-2 d-flex justify-content-center align-items-center p-0">
-          <img src={imgNews} className="newsPageImg" alt="news" />
-        </div>
-        <div className="col-10">
+        <div className="col-12">
           <h4>Kompletní spoiler Avacyn Restored</h4>
           <h5 className="mt-3 mb-0">A je to tu</h5>
           <p className="newsPageText">
