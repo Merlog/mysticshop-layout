@@ -5,6 +5,7 @@ import HeaderTabs from "./HeaderTabs";
 import HeaderMiddle from "./HeaderMiddle";
 import close from "./../assets/svg/close-material.svg";
 import MSLogoBile from "./../assets/MS_logo_bile.png";
+import MSLogo from "./../assets/MS_logo.png";
 
 export default function Header(props) {
   const [loggedIn, setLoggedIn] = useState(true);
@@ -39,6 +40,7 @@ export default function Header(props) {
           <div className="col-2 logoWrapper">
             <a className="navbar-brand" href="/#">
               <img src={MSLogoBile} alt="logo" className="logo" />
+              <img src={MSLogo} alt="logo" className="logo2" />
             </a>
           </div>
           <div className="col-10">

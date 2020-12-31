@@ -1,7 +1,7 @@
 .navMidle {
   padding: 0;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .searchWrapper {
@@ -38,10 +38,6 @@
   background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
 }
 
-.searchButton img svg path {
-  color: white;
-}
-
 .bonusCartWraper {
   display: flex;
   align-items: flex-end;
@@ -75,6 +71,10 @@
 
 .cart img {
   vertical-align: text-bottom;
+}
+
+.appLightTheme .cart img {
+  color: #333333;
 }
 
 .cartItems {

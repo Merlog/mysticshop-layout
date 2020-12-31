@@ -14,7 +14,7 @@
   font-size: 14px;
   text-transform: uppercase;
   padding: 0 18px;
-  color: white;
+  color: white !important;
   line-height: 42px;
   letter-spacing: 1px;
   border-right: 1px solid #222;

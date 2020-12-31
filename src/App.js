@@ -32,10 +32,15 @@ import ResetPassword from "./pages/ResetPassword";
 
 export default function App() {
   const [message, setMessage] = useState(false);
+  const [light, setLight] = useState(false);
   const [cookieAlert, setCookieAlert] = useState(false);
 
   return (
-    <div className={`app${message ? " appWithMessage" : ""}`}>
+    <div
+      className={`app${message ? " appWithMessage" : ""}${
+        light ? " appLightTheme" : ""
+      }`}
+    >
       <div className="row temporary">
         <div>
           <NavLink to="/mysticshop/Cart1" exact>
@@ -62,6 +67,15 @@ export default function App() {
             Produkt Detail
           </NavLink>
         </div>
+        <a
+          href
+          className={`linkcurrency${light ? " active" : ""}`}
+          onClick={() => {
+            setLight(!light);
+          }}
+        >
+          Light Theme
+        </a>
         <a
           href
           className={`linkcurrency${message ? " active" : ""}`}
