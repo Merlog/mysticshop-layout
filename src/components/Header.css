@@ -2,11 +2,13 @@
   padding-bottom: 10px;
 }
 
-.headerWrapper a {
+.headerWrapper a,
+.headerWrapper button {
   color: white;
 }
 
-.headerControls a:hover {
+.headerControls a:hover,
+.headerWrapper button:hover {
   text-decoration: none;
   color: #59b20e;
 }
@@ -38,8 +40,9 @@
 .alertText {
   text-align: left;
 }
+
 .logoWrapper {
-  display:flex;
+  display: flex;
 }
 
 a.navbar-brand {
@@ -51,5 +54,4 @@ a.navbar-brand {
 .logo {
   height: 70px;
   width: auto;
-
 }
