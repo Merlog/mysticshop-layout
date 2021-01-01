@@ -4,7 +4,6 @@ import Zendikar from "./../assets/images/zendikar.jpg";
 import Pagination from "./Pagination";
 import { useState } from "react";
 import cart from "./../assets/svg/cart-material.svg";
-import cart2 from "./../assets/svg/cart-material2.svg";
 import "./Results.css";
 
 export default function ResultsCard(props) {
@@ -86,14 +85,14 @@ export default function ResultsCard(props) {
         <a href="#">
           <div className="card cardModif">
             <div className="row">
-              <div className="col-1">
+              <div className="col-1 d-flex align-items-center">
                 <img
                   src={Booster}
                   className="card-img-top cardImgList"
                   alt="recommended"
                 />
               </div>
-              <div className="col-4 d-flex flex-column justify-content-around">
+              <div className="col-5 d-flex flex-column justify-content-around">
                 <h5 className="card-title cardTitleList">
                   Abbey Matron
                   <img
@@ -105,18 +104,18 @@ export default function ResultsCard(props) {
                 </h5>
                 <h6>Creature — Human Cleric (1/3)</h6>
               </div>
-              <div className="col-3 d-flex flex-column justify-content-around">
+              <div className="col-2 d-flex flex-column justify-content-around align-items-end">
                 <div>
-                  <img src={Mana} className="" alt="mana" width="20px" />
-                  <img src={Mana} className="" alt="mana" width="20px" />
-                  <img src={Mana} className="" alt="mana" width="20px" />
+                  <img src={Mana} className="" alt="mana" width="18px" />
+                  <img src={Mana} className="" alt="mana" width="18px" />
+                  <img src={Mana} className="" alt="mana" width="18px" />
                 </div>
                 <p>NM, foil</p>
               </div>
-              <div className="col-2 d-flex flex-column justify-content-end text-center">
+              <div className="col-2 d-flex flex-column justify-content-end align-items-end">
                 <h5 className="card-price">1199 Kč</h5>
               </div>
-              <div className="col-2 d-flex flex-column justify-content-around">
+              <div className="col-2 d-flex flex-column justify-content-around align-items-end">
                 <p className="cardTextList cardBuyList">
                   {props.sellCards ? `15ks poptáváno` : `15ks skladem`}
                 </p>

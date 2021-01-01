@@ -1,6 +1,7 @@
 import Booster from "./../assets/images/product-img/booster.jpg";
 import Pagination from "./Pagination";
 import { useState } from "react";
+import cart from "./../assets/svg/cart-material.svg";
 import "./Results.css";
 
 export default function Results(props) {
@@ -71,33 +72,31 @@ export default function Results(props) {
         <a href="#">
           <div className="card cardModif">
             <div className="row">
-              <div className="col-1">
+              <div className="col-1 d-flex align-items-center">
                 <img
                   src={Booster}
                   className="card-img-top cardImgList"
                   alt="recommended"
                 />
               </div>
-              <div className="col-6 d-flex flex-column">
+              <div className="col-6 d-flex flex-column justify-content-around">
                 <h5 className="card-title cardTitleList">
                   Název - Core Set 2021 booster
                 </h5>
-                <p>
+                <h6>
                   Popis - Lorem ipsum dolor, sit amet consectetur adipisicing
                   elit. Quo, laborum numquam aliquam provident distinctio.
-                </p>
+                </h6>
               </div>
-              <div className="col-3 d-flex flex-column">
-                <p>Kód produktu</p>
-                <p>
-                  {props.sellCards
-                    ? `Poptávaný počet ks`
-                    : `Počet ks k dispozici`}
-                </p>
+              <div className="col-3 d-flex flex-column justify-content-around align-items-end">
+                <p className="small">Kód produktu: AT-20305</p>
+                <h5 className="card-price">1199 Kč</h5>
               </div>
-              <div className="col-2">
-                <div className="d-flex flex-column align-items-end">
-                  <h5 className="card-price">99 Kč</h5>
+              <div className="col-2 d-flex flex-column justify-content-around align-items-end">
+                <p className="cardTextList cardBuyList">
+                  {props.sellCards ? `15ks poptáváno` : `15ks skladem`}
+                </p>
+                <div className="d-flex flex-column align-items-end cardBuyList">
                   <div className="d-flex">
                     <input
                       type="number"
@@ -113,7 +112,16 @@ export default function Results(props) {
                         event.preventDefault();
                       }}
                     >
-                      {props.sellCards ? `Prodat` : `Koupit`}
+                      {props.sellCards ? (
+                        `Prodat`
+                      ) : (
+                        <img
+                          src={cart}
+                          alt="logo"
+                          className="dark"
+                          width="20px"
+                        />
+                      )}
                     </button>
                   </div>
                 </div>
