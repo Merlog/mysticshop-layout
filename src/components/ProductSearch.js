@@ -929,35 +929,6 @@ export default function ProductSearch(props) {
       </div>
       <div className="row py-1">
         <div className="col-2"></div>
-        <div className="form-check col-10">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            id="inlineCheckbox1"
-            value="option1"
-          />
-          <label className="form-check-label" for="inlineCheckbox1">
-            Výpis s obrázky
-          </label>
-        </div>
-      </div>
-      <div className="row py-1">
-        <div className="col-2">
-          <label for="exampleFormControlSelect1">Zobrazit karet</label>
-        </div>
-        <div className="form-group col-2">
-          <select
-            className="form-control form-control-sm"
-            id="exampleFormControlSelect1"
-          >
-            <option>20</option>
-            <option>50</option>
-            <option>100</option>
-          </select>
-        </div>
-      </div>
-      <div className="row py-1">
-        <div className="col-2"></div>
         <div className="col-10">
           <a className="btn btn-primary mx-1" href="/#" role="button">
             Vyhledej
