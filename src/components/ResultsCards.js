@@ -134,10 +134,10 @@ export default function ResultsCard(props) {
     <div className="row products">
       <div className="col-12">
         <div className="row title">
-          <div className="col-9">
+          <div className="col-8">
             <h2>Výsledek hledání / Karty</h2>
           </div>
-          <div className="col-2 d-flex">
+          <div className="col-3 d-flex justify-content-center align-items-center">
             <label htmlFor="select">Seřadit:</label>
             <select
               class="form-select form-select-sm"
@@ -152,7 +152,7 @@ export default function ResultsCard(props) {
               <option value="4">Z-A</option>
             </select>
           </div>
-          <div className="col-1">
+          <div className="col-1 d-flex justify-content-center align-items-center">
             <button
               onClick={() => {
                 setListView(!listView);
