@@ -32,12 +32,19 @@ export default function Results(props) {
               <div className="d-flex flex-column align-items-end">
                 <h5 className="card-price">99 Kč</h5>
                 <div className="d-flex">
-                  <input
-                    type="number"
-                    value="1"
-                    placeholder="ks"
-                    className="cardInput"
-                  />
+                  <div className="quantity position-relative">
+                    <input
+                      type="number"
+                      min="1"
+                      step="1"
+                      value="1"
+                      className="cardInput"
+                    />
+                    <div className="quantity-nav">
+                      <div className="quantity-button quantity-up">+</div>
+                      <div className="quantity-button quantity-down">-</div>
+                    </div>
+                  </div>
                   <button
                     type="button"
                     className="btn card-btn cardButton"

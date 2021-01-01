@@ -76,3 +76,43 @@
 .cardTitleList {
   font-weight: 600;
 }
+
+/* INPUT QUANTITY */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  padding-left: 10px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  border-right: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.quantity-nav {
+  height: 29px;
+  width: 20px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  border-left: 1px solid #eee;
+}
+
+.quantity-button {
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.quantity-down {
+  border-top: 1px solid #eee;
+}
