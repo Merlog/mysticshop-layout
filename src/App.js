@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomepagePage from "./pages/HomepagePage";
 import ProduktDetailPage from "./pages/ProduktDetailPage";
+import KartaDetailPage from "./pages/KartaDetailPage";
 import CookieAlert from "./components/CookieAlert";
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
@@ -63,8 +64,13 @@ export default function App() {
           </NavLink>
         </div>
         <div>
-          <NavLink to="/mysticshop/ProduktDetailPage" exact>
+          <NavLink to="/mysticshop/ProduktDetail" exact>
             Produkt Detail
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/mysticshop/KartaDetail" exact>
+            Karta Detail
           </NavLink>
         </div>
         <a
@@ -97,7 +103,7 @@ export default function App() {
       </div>
       <Header setMessage={setMessage} />
       <div className="container main">
-        <Redirect to={`${process.env.PUBLIC_URL}/ProduktDetail`} />
+        <Redirect to={`${process.env.PUBLIC_URL}/KartaDetail`} />
         <Switch>
           <Route path={`${process.env.PUBLIC_URL}/`} exact>
             <HomepagePage />
@@ -167,6 +173,9 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/ResetPassword" exact>
             <ResetPassword />
+          </Route>
+          <Route path="/mysticshop/KartaDetail" exact>
+            <KartaDetailPage />
           </Route>
         </Switch>
       </div>

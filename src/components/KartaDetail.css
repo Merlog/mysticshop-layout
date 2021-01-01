@@ -1,0 +1,64 @@
+.productWrapper .navigace{
+  padding-bottom: 20px;
+}
+
+.productDetail {
+  background: white;
+  min-height:500px;
+  margin: 0 0 20px 0;
+}
+
+
+.productCode {
+  font-style:italic;
+  color: #777;
+  margin-bottom:20px;
+}
+
+.productDetail .gallery {
+  padding: 30px;
+}
+
+.productDetail .imageKarta {
+  width: 300px;
+  height: auto;
+}
+.productDetail .text {
+  margin-bottom: 60px;
+}
+
+.mainImg {
+  display:flex;
+  justify-content:center;
+}
+.imageKarta {
+  border: solid 7px black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nahledy {
+  margin-top: 20px;
+}
+
+.productDetail .content {
+  padding: 30px;
+}
+
+.skladem {
+  color:green;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.koupit {
+  justify-content: flex-end;
+}
+
+.productDetail .symbol {
+  height: 24px;
+  width:auto;
+  margin-top: -10px;
+  margin-right: 10px;
+}
