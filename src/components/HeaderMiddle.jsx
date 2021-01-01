@@ -1,7 +1,9 @@
 import "./HeaderMiddle.css";
 import { NavLink } from "react-router-dom";
 import cart from "./../assets/svg/cart-material.svg";
+import cart2 from "./../assets/svg/cart-material2.svg";
 import Search from "./../assets/svg/search-material.svg";
+import Search2 from "./../assets/svg/search-material2.svg";
 
 export default function HeaderMiddle() {
   return (
@@ -14,7 +16,8 @@ export default function HeaderMiddle() {
             placeholder="Vyhledat"
           ></input>
           <button className="btn searchButton" type="submit">
-            <img src={Search} alt="search"></img>
+            <img src={Search} alt="search" className="dark"></img>
+            <img src={Search2} alt="search" className="light"></img>
           </button>
         </form>
       </div>
@@ -33,7 +36,8 @@ export default function HeaderMiddle() {
         </div>
         <div className="cart">
           <NavLink to="/mysticshop/Cart1" exact>
-            <img src={cart} alt="logo" />
+            <img src={cart} alt="logo" className="dark" />
+            <img src={cart2} alt="logo" className="light" />
             <span className="cartItems">999 ks</span>
             <span className="cartAmount">15900 Kč</span>
           </NavLink>

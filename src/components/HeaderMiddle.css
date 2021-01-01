@@ -20,6 +20,10 @@
   margin-left: 20px;
 }
 
+.appLightTheme .searchWrapper .form-control {
+  border: 1px solid green;
+}
+
 .search {
   padding-right: 54px;
 }
@@ -95,4 +99,21 @@
 .bonus a:hover .cartAmount,
 .credit a:hover .cartAmount {
   color: #59b20e;
+}
+
+
+.dark {
+  display: inline-block;
+}
+
+.light {
+  display: none;
+}
+
+.appLightTheme .dark  {
+  display: none;
+}
+
+.appLightTheme .light {
+  display: inline-block;
 }
