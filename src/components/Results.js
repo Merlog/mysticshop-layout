@@ -2,6 +2,7 @@ import Booster from "./../assets/images/product-img/booster.jpg";
 import Pagination from "./Pagination";
 import { useState } from "react";
 import cart from "./../assets/svg/cart-material.svg";
+import { NavLink } from "react-router-dom";
 import "./Results.css";
 
 export default function Results(props) {
@@ -12,7 +13,7 @@ export default function Results(props) {
     cardsGrid.push(
       <div className="col-3 my-2">
         <div className="card cardModif">
-          <a href="#">
+          <NavLink to="/mysticshop/ProduktDetail" exact>
             <img
               src={Booster}
               className="card-img-top cardImg"
@@ -59,7 +60,7 @@ export default function Results(props) {
                 </div>
               </div>
             </div>
-          </a>
+          </NavLink>
         </div>
       </div>
     );
@@ -69,7 +70,7 @@ export default function Results(props) {
   for (let i = 0; i < 16; i++) {
     cardsList.push(
       <div className="col-12 my-2">
-        <a href="#">
+        <NavLink to="/mysticshop/ProduktDetail" exact>
           <div className="card cardModif">
             <div className="row">
               <div className="col-1 d-flex align-items-center">
@@ -128,7 +129,7 @@ export default function Results(props) {
               </div>
             </div>
           </div>
-        </a>
+        </NavLink>
       </div>
     );
   }

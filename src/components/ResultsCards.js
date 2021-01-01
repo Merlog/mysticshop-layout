@@ -4,6 +4,7 @@ import Zendikar from "./../assets/images/zendikar.jpg";
 import Pagination from "./Pagination";
 import { useState } from "react";
 import cart from "./../assets/svg/cart-material.svg";
+import { NavLink } from "react-router-dom";
 import "./Results.css";
 
 export default function ResultsCard(props) {
@@ -13,7 +14,7 @@ export default function ResultsCard(props) {
   for (let i = 0; i < 16; i++) {
     cardsGrid.push(
       <div className="col-3 my-2">
-        <a href="#">
+        <NavLink to="/mysticshop/KartaDetail" exact>
           <div className="card cardModif">
             <div className="row">
               <div className="col-8">
@@ -73,7 +74,7 @@ export default function ResultsCard(props) {
               </div>
             </div>
           </div>
-        </a>
+        </NavLink>
       </div>
     );
   }
@@ -82,7 +83,7 @@ export default function ResultsCard(props) {
   for (let i = 0; i < 16; i++) {
     cardsList.push(
       <div className="col-12 my-2">
-        <a href="#">
+        <NavLink to="/mysticshop/KartaDetail" exact>
           <div className="card cardModif">
             <div className="row">
               <div className="col-1 d-flex align-items-center">
@@ -151,7 +152,7 @@ export default function ResultsCard(props) {
               </div>
             </div>
           </div>
-        </a>
+        </NavLink>
       </div>
     );
   }
