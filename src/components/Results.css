@@ -30,6 +30,7 @@
   border-color: #00000000;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
+  color: #222;
 }
 
 .cardImg {
@@ -81,6 +82,14 @@
 
 .cardTitleList {
   font-weight: 600;
+}
+
+.cardTextList {
+  text-align: end;
+}
+
+.cardBuyList {
+  margin-right: 10px;
 }
 
 /* INPUT QUANTITY */
