@@ -3,13 +3,13 @@ import BoosterPack from "./../assets/images/product-img/booster_pack.jpg";
 import Booster from "./../assets/images/product-img/booster.jpg";
 import Duel from "./../assets/images/product-img/duel.jpg";
 
-export default function Recommended() {
+export default function Recommended(props) {
   return (
     <div className="row products">
       <div className="col-12">
         <div className="row title">
           <div className="col-11">
-            <h2>Doporučené produkty</h2>
+            <h2>{props.title ? props.title : "Doporučené produkty"}</h2>
           </div>
 
           <div className="col-1 d-flex align-items-start">

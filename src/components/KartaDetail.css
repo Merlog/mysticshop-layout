@@ -45,6 +45,13 @@
   padding: 30px;
 }
 
+.cardPrice {
+  display:flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 .skladem {
   color:green;
   justify-content: flex-end;
@@ -60,5 +67,5 @@
   height: 24px;
   width:auto;
   margin-top: -10px;
-  margin-right: 10px;
+  margin-left: 10px;
 }

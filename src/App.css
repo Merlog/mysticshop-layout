@@ -55,3 +55,6 @@
 .appWithMessage .topAlert {
   display: block;
 }
+.italic {
+  font-style:italic;
+}
