@@ -31,10 +31,7 @@ export default function NewsPage() {
     <div className="row newsPage">
       <div className="col-12">
         <div className="row newsPageTitle">
-          <div className="col-2 newsPageBack">
-            <NavLink to="/mysticshop">Zpět</NavLink>
-          </div>
-          <div className="col-10">
+          <div className="col-12">
             <h2 className="mx-3">Aktuality</h2>
           </div>
         </div>
