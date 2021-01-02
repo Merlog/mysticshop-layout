@@ -48,6 +48,10 @@
   overflow: scroll;
 }
 
+.productDetail .content h2 {
+  font-weight: 600;
+}
+
 .language {
   color: white;
   font-size: 13px;

@@ -17,11 +17,7 @@ export default function ResultsCard(props) {
         <NavLink to="/mysticshop/KartaDetail" exact>
           <div className="row cardModif">
             <div className="col-12 position-relative">
-              <img
-                src={Karta}
-                className="cardImgGrid"
-                alt="recommended"
-              />
+              <img src={Karta} className="cardImgGrid" alt="recommended" />
 
               <div className=" cardDescriptionGrid">
                 <h5 className="card-title cardTitleList">
@@ -33,21 +29,26 @@ export default function ResultsCard(props) {
                     width="20px"
                   />
                 </h5>
-                <h6>Creature — Human Cleric (1/3)</h6>
-                <div>
+                <h6 className="edice">Creature — Human Cleric (1/3)</h6>
+                <div className="mana">
                   <img src={Mana} className="" alt="mana" width="18px" />
                   <img src={Mana} className="" alt="mana" width="18px" />
                   <img src={Mana} className="" alt="mana" width="18px" />
                 </div>
-                <p>NM, foil</p>
+                <div>
+                  <span className="extra">NM</span>
+                  <span className="extra">foil</span>
+                </div>
               </div>
             </div>
             <div className="col-12 d-flex justify-content-between cardBody">
               <div className="d-flex align-items-end">
-                <h5>1199 Kč</h5>
+                <div className="price">1199 Kč</div>
               </div>
               <div className="d-flex flex-column align-items-end">
-                <p>{props.sellCards ? `poptáváme 15ks` : `15ks skladem`}</p>
+                <div className="skladem">
+                  {props.sellCards ? `poptáváme 15ks` : `15ks skladem`}
+                </div>
                 <div className="d-flex">
                   <div className="quantity position-relative">
                     <input
@@ -73,19 +74,18 @@ export default function ResultsCard(props) {
                     {props.sellCards ? (
                       `Prodat`
                     ) : (
-                        <img
-                          src={cart}
-                          alt="logo"
-                          className="dark"
-                          width="20px"
-                        />
-                      )}
+                      <img
+                        src={cart}
+                        alt="logo"
+                        className="dark"
+                        width="20px"
+                      />
+                    )}
                   </button>
                 </div>
               </div>
             </div>
           </div>
-
         </NavLink>
       </div>
     );
@@ -106,7 +106,7 @@ export default function ResultsCard(props) {
                 />
               </div>
               <div className="col-5 d-flex flex-column justify-content-around">
-                <h5 className="card-title cardTitleList">
+                <h5 className="cardTitleList">
                   Abbey Matron
                   <img
                     src={Zendikar}
@@ -151,13 +151,13 @@ export default function ResultsCard(props) {
                       {props.sellCards ? (
                         `Prodat`
                       ) : (
-                          <img
-                            src={cart}
-                            alt="logo"
-                            className="dark"
-                            width="20px"
-                          />
-                        )}
+                        <img
+                          src={cart}
+                          alt="logo"
+                          className="dark"
+                          width="20px"
+                        />
+                      )}
                     </button>
                   </div>
                 </div>
@@ -208,24 +208,24 @@ export default function ResultsCard(props) {
                   <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
                 </svg>
               ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
-                  </svg>
-                )}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
+                </svg>
+              )}
             </button>
           </div>
         </div>
         {listView ? (
           <div className="row">{cardsList}</div>
         ) : (
-            <div className="row">{cardsGrid}</div>
-          )}
+          <div className="row">{cardsGrid}</div>
+        )}
         <Pagination />
       </div>
     </div>
