@@ -13,18 +13,17 @@ export default function ResultsCard(props) {
   const cardsGrid = [];
   for (let i = 0; i < 16; i++) {
     cardsGrid.push(
-      <div className="col-3 my-3">
+      <div className="col-3 my-3 karta ">
         <NavLink to="/mysticshop/KartaDetail" exact>
-          <div className="card cardModif">
-            <div className="row position-relative">
-              <div className="col-12 d-flex justify-content-center align-items-center">
-                <img
-                  src={Karta}
-                  className="card-img-top cardImgGrid"
-                  alt="recommended"
-                />
-              </div>
-              <div className="col-12 cardDescriptionGrid">
+          <div className="row cardModif">
+            <div className="col-12 position-relative">
+              <img
+                src={Karta}
+                className="cardImgGrid"
+                alt="recommended"
+              />
+
+              <div className=" cardDescriptionGrid">
                 <h5 className="card-title cardTitleList">
                   Abbey Matron
                   <img
@@ -42,37 +41,38 @@ export default function ResultsCard(props) {
                 </div>
                 <p>NM, foil</p>
               </div>
-              <div className="col-12 d-flex justify-content-around cardBody">
-                <div className="d-flex align-items-end">
-                  <h5>1199 Kč</h5>
-                </div>
-                <div className="d-flex flex-column align-items-end">
-                  <p>{props.sellCards ? `poptáváme 15ks` : `15ks skladem`}</p>
-                  <div className="d-flex">
-                    <div className="quantity position-relative">
-                      <input
-                        type="number"
-                        min="1"
-                        step="1"
-                        value="1"
-                        className="cardInput"
-                      />
-                      <div className="quantity-nav">
-                        <div className="quantity-button quantity-up">+</div>
-                        <div className="quantity-button quantity-down">-</div>
-                      </div>
+            </div>
+            <div className="col-12 d-flex justify-content-between cardBody">
+              <div className="d-flex align-items-end">
+                <h5>1199 Kč</h5>
+              </div>
+              <div className="d-flex flex-column align-items-end">
+                <p>{props.sellCards ? `poptáváme 15ks` : `15ks skladem`}</p>
+                <div className="d-flex">
+                  <div className="quantity position-relative">
+                    <input
+                      type="number"
+                      min="1"
+                      step="1"
+                      value="1"
+                      className="cardInput"
+                    />
+                    <div className="quantity-nav">
+                      <div className="quantity-button quantity-up">+</div>
+                      <div className="quantity-button quantity-down">-</div>
                     </div>
-                    <button
-                      type="button"
-                      className="btn card-btn cardButton"
-                      onClick={(event) => {
-                        alert("koupeno");
-                        event.preventDefault();
-                      }}
-                    >
-                      {props.sellCards ? (
-                        `Prodat`
-                      ) : (
+                  </div>
+                  <button
+                    type="button"
+                    className="btn card-btn cardButton"
+                    onClick={(event) => {
+                      alert("koupeno");
+                      event.preventDefault();
+                    }}
+                  >
+                    {props.sellCards ? (
+                      `Prodat`
+                    ) : (
                         <img
                           src={cart}
                           alt="logo"
@@ -80,12 +80,12 @@ export default function ResultsCard(props) {
                           width="20px"
                         />
                       )}
-                    </button>
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+
         </NavLink>
       </div>
     );
@@ -151,13 +151,13 @@ export default function ResultsCard(props) {
                       {props.sellCards ? (
                         `Prodat`
                       ) : (
-                        <img
-                          src={cart}
-                          alt="logo"
-                          className="dark"
-                          width="20px"
-                        />
-                      )}
+                          <img
+                            src={cart}
+                            alt="logo"
+                            className="dark"
+                            width="20px"
+                          />
+                        )}
                     </button>
                   </div>
                 </div>
@@ -208,24 +208,24 @@ export default function ResultsCard(props) {
                   <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
                 </svg>
               ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
-                </svg>
-              )}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
+                  </svg>
+                )}
             </button>
           </div>
         </div>
         {listView ? (
           <div className="row">{cardsList}</div>
         ) : (
-          <div className="row">{cardsGrid}</div>
-        )}
+            <div className="row">{cardsGrid}</div>
+          )}
         <Pagination />
       </div>
     </div>
