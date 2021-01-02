@@ -1,4 +1,4 @@
-import Booster from "./../assets/images/product-img/booster.jpg";
+import Karta from "./../assets/images/karta.jpg";
 import Mana from "./../assets/svg/mana-placeholder-material.svg";
 import Zendikar from "./../assets/images/zendikar.jpg";
 import Pagination from "./Pagination";
@@ -13,63 +13,75 @@ export default function ResultsCard(props) {
   const cardsGrid = [];
   for (let i = 0; i < 16; i++) {
     cardsGrid.push(
-      <div className="col-3 my-2">
+      <div className="col-3 my-3">
         <NavLink to="/mysticshop/KartaDetail" exact>
           <div className="card cardModif">
-            <div className="row">
-              <div className="col-8">
+            <div className="row position-relative">
+              <div className="col-12 d-flex justify-content-center align-items-center">
                 <img
-                  src={Booster}
-                  className="card-img-top cardImg"
+                  src={Karta}
+                  className="card-img-top cardImgGrid"
                   alt="recommended"
                 />
               </div>
-              <div className="col-4">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.23 15.39L12 15.45l-3.22 1.94c-.38.23-.85-.11-.75-.54l.85-3.66-2.83-2.45c-.33-.29-.15-.84.29-.88l3.74-.32 1.46-3.45c.17-.41.75-.41.92 0l1.46 3.44 3.74.32c.44.04.62.59.28.88l-2.83 2.45.85 3.67c.1.43-.36.77-.74.54z" />
-                  </svg>
-                </div>
-                <p>
-                  <span>Set/</span>
-                  <span>R</span>
-                </p>
-              </div>
-            </div>
-            <div className="card-body d-flex flex-column cardBody">
-              <h5 className="card-title cardTitle">Core Set 2021 booster</h5>
-              <h6>Typ</h6>
-              <p>Poznámka</p>
-              <p>
-                {props.sellCards
-                  ? `Poptávaný počet ks`
-                  : `Počet ks k dispozici`}
-              </p>
-              <div className="d-flex flex-column align-items-end">
-                <h5 className="card-price">99 Kč</h5>
-                <div className="d-flex">
-                  <input
-                    type="number"
-                    value="1"
-                    placeholder="ks"
-                    className="cardInput"
+              <div className="col-12 cardDescriptionGrid">
+                <h5 className="card-title cardTitleList">
+                  Abbey Matron
+                  <img
+                    src={Zendikar}
+                    className="mx-2"
+                    alt="mana"
+                    width="20px"
                   />
-                  <button
-                    type="button"
-                    className="btn card-btn cardButton"
-                    onClick={(event) => {
-                      alert("koupeno");
-                      event.preventDefault();
-                    }}
-                  >
-                    {props.sellCards ? `Prodat` : `Koupit`}
-                  </button>
+                </h5>
+                <h6>Creature — Human Cleric (1/3)</h6>
+                <div>
+                  <img src={Mana} className="" alt="mana" width="18px" />
+                  <img src={Mana} className="" alt="mana" width="18px" />
+                  <img src={Mana} className="" alt="mana" width="18px" />
+                </div>
+                <p>NM, foil</p>
+              </div>
+              <div className="col-12 d-flex justify-content-around cardBody">
+                <div className="d-flex align-items-end">
+                  <h5>1199 Kč</h5>
+                </div>
+                <div className="d-flex flex-column align-items-end">
+                  <p>{props.sellCards ? `poptáváme 15ks` : `15ks skladem`}</p>
+                  <div className="d-flex">
+                    <div className="quantity position-relative">
+                      <input
+                        type="number"
+                        min="1"
+                        step="1"
+                        value="1"
+                        className="cardInput"
+                      />
+                      <div className="quantity-nav">
+                        <div className="quantity-button quantity-up">+</div>
+                        <div className="quantity-button quantity-down">-</div>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      className="btn card-btn cardButton"
+                      onClick={(event) => {
+                        alert("koupeno");
+                        event.preventDefault();
+                      }}
+                    >
+                      {props.sellCards ? (
+                        `Prodat`
+                      ) : (
+                        <img
+                          src={cart}
+                          alt="logo"
+                          className="dark"
+                          width="20px"
+                        />
+                      )}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -88,7 +100,7 @@ export default function ResultsCard(props) {
             <div className="row">
               <div className="col-1 d-flex align-items-center">
                 <img
-                  src={Booster}
+                  src={Karta}
                   className="card-img-top cardImgList"
                   alt="recommended"
                 />

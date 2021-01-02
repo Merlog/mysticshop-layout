@@ -33,6 +33,10 @@
   color: #222;
 }
 
+.cardModif:hover .cardDescriptionGrid {
+  opacity: 1;
+}
+
 .cardImg {
   height: 100%;
   width: auto;
@@ -41,6 +45,7 @@
 
 .cardBody {
   color: rgba(0, 0, 0, 0.8);
+  padding: 20px 30px;
 }
 
 .cardTitle {
@@ -70,6 +75,21 @@
 .cardInput {
   width: 50px;
   height: 30px;
+}
+
+/* GRID VIEW */
+
+.cardImgGrid {
+  height: auto;
+  width: 95%;
+}
+
+.cardDescriptionGrid {
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  bottom: 80px;
+  padding: 10px 30px 0 30px;
 }
 
 /* LIST VIEW */
