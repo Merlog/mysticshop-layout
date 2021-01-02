@@ -36,7 +36,7 @@ export default function KartaDetail() {
             >
               cz
             </a>
-            {!fdlanguage && (
+            {!language && (
               <div className="text cz">
                 <p>
 
