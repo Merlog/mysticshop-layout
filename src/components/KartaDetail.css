@@ -1,18 +1,17 @@
-.productWrapper .navigace{
+.productWrapper .navigace {
   padding-bottom: 20px;
 }
 
 .productDetail {
   background: white;
-  min-height:500px;
+  min-height: 500px;
   margin: 0 0 20px 0;
 }
 
-
 .productCode {
-  font-style:italic;
+  font-style: italic;
   color: #777;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .productDetail .gallery {
@@ -23,14 +22,16 @@
   width: 300px;
   height: auto;
 }
-.productDetail .text {
-  margin-bottom: 60px;
+
+.productDetail .text p {
+  margin: 15px 0;
 }
 
 .mainImg {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
+
 .imageKarta {
   border: solid 7px black;
   border-radius: 10px;
@@ -43,29 +44,55 @@
 
 .productDetail .content {
   padding: 30px;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.language {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
+  border: none;
+  border-radius: 2px;
+  padding: 3px 15px;
+}
+
+.language:hover {
+  color: white;
+  background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
+}
+
+.productDetail .buy {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .cardPrice {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 18px;
 }
+
 .skladem {
-  color:green;
+  color: green;
   justify-content: flex-end;
   font-weight: bold;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
 }
+
 .koupit {
   justify-content: flex-end;
 }
 
 .productDetail .symbol {
   height: 24px;
-  width:auto;
+  width: auto;
   margin-top: -10px;
   margin-left: 10px;
 }
