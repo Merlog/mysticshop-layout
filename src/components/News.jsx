@@ -1,4 +1,3 @@
-import imgNews from "./../assets/images/news1.png";
 import { NavLink } from "react-router-dom";
 import "./News.css";
 

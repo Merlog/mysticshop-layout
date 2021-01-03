@@ -1,5 +1,3 @@
-import imgNews from "./../assets/images/news1.png";
-import { NavLink } from "react-router-dom";
 import "./NewsPage.css";
 import Pagination from "./../components/Pagination";
 

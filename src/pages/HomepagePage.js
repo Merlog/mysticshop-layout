@@ -1,6 +1,5 @@
 import Carousel from "./../components/Carousel";
 import Products from "./../components/Products";
-import Recommended from "../components/Recommended";
 import News from "../components/News";
 
 export default function HomepagePage() {
@@ -16,8 +15,8 @@ export default function HomepagePage() {
       </div>
       <div className="row">
         <div className="col col-lg-12">
-          <Products />
-          <Recommended />
+          <Products title="Nejnovější produkty" />
+          <Products title="Doporučené produkty" />
         </div>
       </div>
     </div>

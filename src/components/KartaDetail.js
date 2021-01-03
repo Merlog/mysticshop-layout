@@ -20,7 +20,8 @@ export default function KartaDetail() {
               Stoneforge Mystic
               <img src={Zendikar} className="symbol" alt="recommended" />
             </h2>
-            <p className="productCode">Kód Karty: 230589</p>
+            <h6 className="edice">Creature — Human Cleric (1/3)</h6>
+            <p className="productCode">Kód karty: 230589</p>
             {language ? (
               <a
                 href
@@ -114,7 +115,7 @@ export default function KartaDetail() {
                   event.preventDefault();
                 }}
               >
-                <img src={cart} alt="koupit" className="dark" width="20px" />
+                <img src={cart} alt="koupit" width="20px" />
               </button>
             </div>
           </div>

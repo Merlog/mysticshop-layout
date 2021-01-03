@@ -43,7 +43,7 @@ export default function ResultsCard(props) {
             </div>
             <div className="col-12 d-flex justify-content-between cardBody">
               <div className="d-flex align-items-end">
-                <div className="price">1199 Kč</div>
+                <div className="price">1 199 Kč</div>
               </div>
               <div className="d-flex flex-column align-items-end">
                 <div className="skladem">
@@ -71,16 +71,7 @@ export default function ResultsCard(props) {
                       event.preventDefault();
                     }}
                   >
-                    {props.sellCards ? (
-                      `Prodat`
-                    ) : (
-                      <img
-                        src={cart}
-                        alt="logo"
-                        className="dark"
-                        width="20px"
-                      />
-                    )}
+                    <img src={cart} alt="logo" width="20px" />
                   </button>
                 </div>
               </div>
@@ -126,11 +117,11 @@ export default function ResultsCard(props) {
                 <p>NM, foil</p>
               </div>
               <div className="col-2 d-flex flex-column justify-content-end align-items-end">
-                <h5 className="card-price">1199 Kč</h5>
+                <h5 className="card-price">1 199 Kč</h5>
               </div>
               <div className="col-2 d-flex flex-column justify-content-around align-items-end">
                 <p className="cardTextList cardBuyList">
-                  {props.sellCards ? `15ks poptáváno` : `15ks skladem`}
+                  {props.sellCards ? `poptáváme 15ks` : `15ks skladem`}
                 </p>
                 <div className="d-flex flex-column align-items-end cardBuyList">
                   <div className="d-flex">
@@ -148,16 +139,7 @@ export default function ResultsCard(props) {
                         event.preventDefault();
                       }}
                     >
-                      {props.sellCards ? (
-                        `Prodat`
-                      ) : (
-                        <img
-                          src={cart}
-                          alt="logo"
-                          className="dark"
-                          width="20px"
-                        />
-                      )}
+                      <img src={cart} alt="logo" width="20px" />
                     </button>
                   </div>
                 </div>

@@ -84,8 +84,11 @@
   overflow: hidden;
 }
 
-.karta .edice {
+.edice {
   font-weight: 600;
+}
+
+.karta .edice {
   max-width: 184px;
   white-space: nowrap;
   overflow: hidden;

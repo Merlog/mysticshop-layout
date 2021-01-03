@@ -1,6 +1,7 @@
 import BoosterBox from "./../assets/images/product-img/booster_pack.jpg";
 import Booster from "./../assets/images/product-img/booster.jpg";
 import Duel from "./../assets/images/product-img/duel.jpg";
+import cart from "./../assets/svg/cart-material.svg";
 import "./ProduktDetail.css";
 
 export default function ProduktDetail() {
@@ -24,10 +25,9 @@ export default function ProduktDetail() {
               </div>
             </div>
           </div>
-          <div className="col-7 content">
+          <div className="col-5 content">
             <h2>Core Set 2021 BoosterBox</h2>
             <p className="productCode">Kód produktu: 310589</p>
-
             <p className="text">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce
               dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Nullam
@@ -47,15 +47,24 @@ export default function ProduktDetail() {
               Nulla turpis magna, cursus sit amet, suscipit a, interdum id,
               felis.
             </p>
-
+          </div>
+          <div className="col-2 buy">
+            <div className="cardPrice">199 Kč</div>
             <div className="d-flex skladem">15ks skladem</div>
             <div className="d-flex koupit">
-              <input
-                type="number"
-                value="1"
-                placeholder="ks"
-                className="cardInput"
-              />
+              <div className="quantity position-relative">
+                <input
+                  type="number"
+                  min="1"
+                  step="1"
+                  value="1"
+                  className="cardInput"
+                />
+                <div className="quantity-nav">
+                  <div className="quantity-button quantity-up">+</div>
+                  <div className="quantity-button quantity-down">-</div>
+                </div>
+              </div>
               <button
                 type="button"
                 className="btn card-btn cardButton"
@@ -64,7 +73,7 @@ export default function ProduktDetail() {
                   event.preventDefault();
                 }}
               >
-                dukwhkuda
+                <img src={cart} alt="koupit" width="20px" />
               </button>
             </div>
           </div>

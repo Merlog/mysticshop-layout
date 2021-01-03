@@ -19,20 +19,18 @@ export default function Results(props) {
               className="card-img-top cardImg"
               alt="recommended"
             />
-            <div className="card-body d-flex flex-column cardBody">
-              <h5 className="card-title cardTitle">Core Set 2021 booster</h5>
-              <p>
-                Popis - Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Quo, laborum numquam aliquam provident distinctio.
-              </p>
-              <p>Kód produktu</p>
-              <p>
-                {props.sellCards
-                  ? `Poptávaný počet ks`
-                  : `Počet ks k dispozici`}
-              </p>
+            <h5 className="card-title cardTitle">Core Set 2021 booster</h5>
+            <p>
+              Popis - Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quo, laborum numquam aliquam provident distinctio.
+            </p>
+            <p className="productCode">Kód produktu: 310589</p>
+            <div className="col-12 d-flex justify-content-between cardBody">
+              <div className="d-flex align-items-end">
+                <div className="price">1 199 Kč</div>
+              </div>
               <div className="d-flex flex-column align-items-end">
-                <h5 className="card-price">99 Kč</h5>
+                <div className="skladem">15ks skladem</div>
                 <div className="d-flex">
                   <div className="quantity position-relative">
                     <input
@@ -55,11 +53,48 @@ export default function Results(props) {
                       event.preventDefault();
                     }}
                   >
-                    {props.sellCards ? `Prodat` : `Koupit`}
+                    <img src={cart} alt="logo" width="20px" />
                   </button>
                 </div>
               </div>
             </div>
+            {/* <div className="card-body d-flex flex-column cardBody">
+              <h5 className="card-title cardTitle">Core Set 2021 booster</h5>
+              <p>
+                Popis - Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Quo, laborum numquam aliquam provident distinctio.
+              </p>
+              <p>Kód produktu</p>
+              <p className="cardTextList cardBuyList">15ks skladem</p>
+              <div className="d-flex flex-column align-items-end">
+                <h5 className="card-price">1 199 Kč</h5>
+                <div className="d-flex">
+                  <div className="quantity position-relative">
+                    <input
+                      type="number"
+                      min="1"
+                      step="1"
+                      value="1"
+                      className="cardInput"
+                    />
+                    <div className="quantity-nav">
+                      <div className="quantity-button quantity-up">+</div>
+                      <div className="quantity-button quantity-down">-</div>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    className="btn card-btn cardButton"
+                    onClick={(event) => {
+                      alert("koupeno");
+                      event.preventDefault();
+                    }}
+                  >
+                    <img src={cart} alt="logo" width="20px" />
+                  </button>
+                </div>
+              </div>
+            </div> */}
           </NavLink>
         </div>
       </div>

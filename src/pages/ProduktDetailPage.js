@@ -1,4 +1,4 @@
-import Recommended from "../components/Recommended";
+import Products from "../components/Products";
 import ProduktDetail from "./../components/ProduktDetail";
 import Zpet from "../components/Zpet";
 
@@ -7,7 +7,7 @@ export default function ProduktDetailPage() {
     <div className="container productWrapper">
       <Zpet to="Products" />
       <ProduktDetail />
-      <Recommended />
+      <Products title="Lidé také kupují" />
     </div>
   );
 }
