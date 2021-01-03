@@ -51,22 +51,7 @@ export default function ProduktDetail() {
           <div className="col-2 buy">
             <div className="cardPrice">199 Kč</div>
             <div className="d-flex skladem">15ks skladem</div>
-            <div className="d-flex koupit">
-              <div className="quantity position-relative">
-                <input
-                  type="number"
-                  min="1"
-                  step="1"
-                  value="1"
-                  className="cardInput"
-                />
-                <div className="quantity-nav">
-                  <div className="quantity-button quantity-up">+</div>
-                  <div className="quantity-button quantity-down">-</div>
-                </div>
-              </div>
               <Koupit />
-            </div>
           </div>
         </div>
       </div>

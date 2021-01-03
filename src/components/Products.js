@@ -21,22 +21,7 @@ export default function Products(props) {
               <div className="d-flex flex-column align-items-end">
                 <h5 className="card-price mb-2">99 Kč</h5>
                 <p>15ks skladem</p>
-                <div className="d-flex">
-                  <div className="quantity position-relative">
-                    <input
-                      type="number"
-                      min="1"
-                      step="1"
-                      value="1"
-                      className="cardInput"
-                    />
-                    <div className="quantity-nav">
-                      <div className="quantity-button quantity-up">+</div>
-                      <div className="quantity-button quantity-down">-</div>
-                    </div>
-                  </div>
-                  <Koupit />
-                </div>
+                <Koupit />
               </div>
             </div>
           </a>

@@ -3,7 +3,7 @@ import Mana from "./../assets/svg/mana-placeholder-material.svg";
 import Zendikar from "./../assets/images/zendikar.jpg";
 import Pagination from "./Pagination";
 import { useState } from "react";
-import cart from "./../assets/svg/cart-material.svg";
+import Koupit from './Koupit';
 import { NavLink } from "react-router-dom";
 import "./Results.css";
 
@@ -49,31 +49,8 @@ export default function ResultsCard(props) {
                 <div className="skladem">
                   {props.sellCards ? `poptáváme 15ks` : `15ks skladem`}
                 </div>
-                <div className="d-flex">
-                  <div className="quantity position-relative">
-                    <input
-                      type="number"
-                      min="1"
-                      step="1"
-                      value="1"
-                      className="cardInput"
-                    />
-                    <div className="quantity-nav">
-                      <div className="quantity-button quantity-up">+</div>
-                      <div className="quantity-button quantity-down">-</div>
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    className="btn card-btn cardButton"
-                    onClick={(event) => {
-                      alert("koupeno");
-                      event.preventDefault();
-                    }}
-                  >
-                    <img src={cart} alt="logo" width="20px" />
-                  </button>
-                </div>
+
+                <Koupit />
               </div>
             </div>
           </div>
@@ -126,31 +103,7 @@ export default function ResultsCard(props) {
                 <div className="skladem">
                   {props.sellCards ? `poptáváme 15ks` : `15ks skladem`}
                 </div>
-                <div className="d-flex">
-                  <div className="quantity position-relative">
-                    <input
-                      type="number"
-                      min="1"
-                      step="1"
-                      value="1"
-                      className="cardInput"
-                    />
-                    <div className="quantity-nav">
-                      <div className="quantity-button quantity-up">+</div>
-                      <div className="quantity-button quantity-down">-</div>
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    className="btn card-btn cardButton"
-                    onClick={(event) => {
-                      alert("koupeno");
-                      event.preventDefault();
-                    }}
-                  >
-                    <img src={cart} alt="logo" width="20px" />
-                  </button>
-                </div>
+                <Koupit />
               </div>
             </div>
           </div>
@@ -198,24 +151,24 @@ export default function ResultsCard(props) {
                   <path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z" />
                 </svg>
               ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
-                </svg>
-              )}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z" />
+                  </svg>
+                )}
             </button>
           </div>
         </div>
         {listView ? (
           <div className="row">{cardsList}</div>
         ) : (
-          <div className="row">{cardsGrid}</div>
-        )}
+            <div className="row">{cardsGrid}</div>
+          )}
         <Pagination />
       </div>
     </div>

@@ -1,4 +1,9 @@
-.cardButton {
+.koupitWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.koupitButton {
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -11,8 +16,7 @@
   padding: 3px 15px;
 }
 
-.cardButton:hover {
-  color: white;
+.koupitButton:hover {
   font-weight: 700;
   background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
 }
