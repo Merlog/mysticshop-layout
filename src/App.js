@@ -103,7 +103,7 @@ export default function App() {
       </div>
       <Header setMessage={setMessage} />
       <div className="container main">
-        <Redirect to={`${process.env.PUBLIC_URL}/KartaDetail`} />
+        <Redirect to={`${process.env.PUBLIC_URL}/`} />
         <Switch>
           <Route path={`${process.env.PUBLIC_URL}/`} exact>
             <HomepagePage />
