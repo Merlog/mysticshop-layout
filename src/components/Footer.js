@@ -12,7 +12,7 @@ import visaVerified from "../assets/images/payment/visa-verified.jpg";
 
 export default function Footer() {
   return (
-    <div className="py-3 px-5 w-100 footer">
+    <div className="py-3 w-100 footer">
       <div className="container">
         <div className="row mb-4">
           <div className="col-3 d-flex flex-column">
