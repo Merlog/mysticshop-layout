@@ -13,13 +13,13 @@ export default function ResultsCard(props) {
   const cardsGrid = [];
   for (let i = 0; i < 16; i++) {
     cardsGrid.push(
-      <div className="col-3 my-3 karta ">
+      <div className="col-3 my-3 karta">
         <NavLink to="/mysticshop/KartaDetail" exact>
           <div className="row cardModif">
             <div className="col-12 position-relative">
               <img src={Karta} className="cardImgGrid" alt="recommended" />
 
-              <div className=" cardDescriptionGrid">
+              <div className="cardDescriptionGrid">
                 <h5 className="card-title cardTitleList">
                   Abbey Matron
                   <img
@@ -87,7 +87,7 @@ export default function ResultsCard(props) {
     cardsList.push(
       <div className="col-12 my-2">
         <NavLink to="/mysticshop/KartaDetail" exact>
-          <div className="card cardModif">
+          <div className="card cardModif cardModifList p-2">
             <div className="row">
               <div className="col-1 d-flex align-items-center">
                 <img
@@ -97,7 +97,7 @@ export default function ResultsCard(props) {
                 />
               </div>
               <div className="col-5 d-flex flex-column justify-content-around">
-                <h5 className="cardTitleList">
+                <h5 className="card-title cardTitleList">
                   Abbey Matron
                   <img
                     src={Zendikar}
@@ -106,42 +106,50 @@ export default function ResultsCard(props) {
                     width="20px"
                   />
                 </h5>
-                <h6>Creature — Human Cleric (1/3)</h6>
+                <h6 className="edice">Creature — Human Cleric (1/3)</h6>
               </div>
               <div className="col-2 d-flex flex-column justify-content-around align-items-end">
-                <div>
+                <div className="mana">
                   <img src={Mana} className="" alt="mana" width="18px" />
                   <img src={Mana} className="" alt="mana" width="18px" />
                   <img src={Mana} className="" alt="mana" width="18px" />
                 </div>
-                <p>NM, foil</p>
+                <div>
+                  <span className="extra extraList">NM</span>
+                  <span className="extra extraList">foil</span>
+                </div>
               </div>
               <div className="col-2 d-flex flex-column justify-content-end align-items-end">
-                <h5 className="card-price">1 199 Kč</h5>
+                <h5 className="price">1 199 Kč</h5>
               </div>
               <div className="col-2 d-flex flex-column justify-content-around align-items-end">
-                <p className="cardTextList cardBuyList">
+                <div className="skladem">
                   {props.sellCards ? `poptáváme 15ks` : `15ks skladem`}
-                </p>
-                <div className="d-flex flex-column align-items-end cardBuyList">
-                  <div className="d-flex">
+                </div>
+                <div className="d-flex">
+                  <div className="quantity position-relative">
                     <input
                       type="number"
+                      min="1"
+                      step="1"
                       value="1"
-                      placeholder="ks"
                       className="cardInput"
                     />
-                    <button
-                      type="button"
-                      className="btn card-btn cardButton"
-                      onClick={(event) => {
-                        alert("koupeno");
-                        event.preventDefault();
-                      }}
-                    >
-                      <img src={cart} alt="logo" width="20px" />
-                    </button>
+                    <div className="quantity-nav">
+                      <div className="quantity-button quantity-up">+</div>
+                      <div className="quantity-button quantity-down">-</div>
+                    </div>
                   </div>
+                  <button
+                    type="button"
+                    className="btn card-btn cardButton"
+                    onClick={(event) => {
+                      alert("koupeno");
+                      event.preventDefault();
+                    }}
+                  >
+                    <img src={cart} alt="logo" width="20px" />
+                  </button>
                 </div>
               </div>
             </div>
