@@ -3,7 +3,9 @@ import ContactForm from "../pages/ContactForm";
 export default function Contact() {
   return (
     <>
-      <h2>Kontakt</h2>
+      <div className="row">
+        <h2>Kontakt</h2>
+      </div>
       <div className="row">
         <div className="col-6">
           <ContactForm />

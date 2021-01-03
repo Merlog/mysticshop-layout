@@ -1,6 +1,9 @@
 .headerTabs {
   background: linear-gradient(to bottom, #262727 0%, #222323 100%);
 }
+.appLightTheme .headerTabs {
+  background: linear-gradient(to bottom, #4e4e4e 0%, #252525 100%);
+}
 
 .headerTabs .nav-tabs {
   border-bottom: 0px solid #dee2e6;
