@@ -7,7 +7,7 @@ export default function MyAccount() {
   const [orders, setOrders] = useState(false);
   return (
     <div className="row">
-      <div className="col-2 p-0">
+      <div className="col-2">
         <div className="accountMenu">
           <button
             onClick={() => {

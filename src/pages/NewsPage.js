@@ -5,7 +5,7 @@ export default function NewsPage() {
   const newMsg = [];
   for (let i = 0; i < 8; i++) {
     newMsg.push(
-      <div className="row newsPageWrapper my-3">
+      <div className="row newsPageWrapper my-4">
         <div className="col-12">
           <h4>Kompletní spoiler Avacyn Restored</h4>
           <h5 className="mt-3 mb-0">A je to tu</h5>
