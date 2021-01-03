@@ -121,7 +121,7 @@
   position: absolute;
   width: calc(100% - 30px);
   height: 0px;
-  bottom: -11px;
+  bottom: -15px;
   border-top: 5px black solid;
   padding: 10px 0 0;
   transition: 0.2s ease-out;
@@ -142,6 +142,9 @@
   margin: 10px 0;
   overflow: hidden;
 }
+.cardModif .cardTitleList{
+margin-bottom: 5px;
+}
 
 .cardImg {
   height: 100%;
@@ -151,7 +154,7 @@
 
 .cardBody {
   color: rgba(0, 0, 0, 0.8);
-  padding: 15px;
+  padding: 10px 15px 15px;
   background: white;
 }
 
