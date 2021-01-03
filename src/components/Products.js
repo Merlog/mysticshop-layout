@@ -1,6 +1,6 @@
 import "./Products.css";
 import Booster from "./../assets/images/product-img/booster.jpg";
-import cart from "./../assets/svg/cart-material.svg";
+import Koupit from './Koupit';
 
 export default function Products(props) {
   const products = [];
@@ -35,16 +35,7 @@ export default function Products(props) {
                       <div className="quantity-button quantity-down">-</div>
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    className="btn card-btn cardButton"
-                    onClick={(event) => {
-                      alert("koupeno");
-                      event.preventDefault();
-                    }}
-                  >
-                    <img src={cart} alt="logo" width="20px" />
-                  </button>
+                  <Koupit />
                 </div>
               </div>
             </div>

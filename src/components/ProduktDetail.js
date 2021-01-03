@@ -1,7 +1,7 @@
 import BoosterBox from "./../assets/images/product-img/booster_pack.jpg";
 import Booster from "./../assets/images/product-img/booster.jpg";
 import Duel from "./../assets/images/product-img/duel.jpg";
-import cart from "./../assets/svg/cart-material.svg";
+import Koupit from './Koupit';
 import "./ProduktDetail.css";
 
 export default function ProduktDetail() {
@@ -65,16 +65,7 @@ export default function ProduktDetail() {
                   <div className="quantity-button quantity-down">-</div>
                 </div>
               </div>
-              <button
-                type="button"
-                className="btn card-btn cardButton"
-                onClick={(event) => {
-                  alert("koupeno");
-                  event.preventDefault();
-                }}
-              >
-                <img src={cart} alt="koupit" width="20px" />
-              </button>
+              <Koupit />
             </div>
           </div>
         </div>

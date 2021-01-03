@@ -2,6 +2,7 @@ import Karta from "./../assets/images/karta.jpg";
 import Zendikar from "./../assets/images/zendikar.jpg";
 import { useState } from "react";
 import cart from "./../assets/svg/cart-material.svg";
+import Koupit from './Koupit';
 import "./KartaDetail.css";
 
 export default function KartaDetail() {
@@ -33,16 +34,16 @@ export default function KartaDetail() {
                 CZ
               </a>
             ) : (
-              <a
-                href
-                className="language"
-                onClick={() => {
-                  setLanguage(!language);
-                }}
-              >
-                EN
-              </a>
-            )}
+                <a
+                  href
+                  className="language"
+                  onClick={() => {
+                    setLanguage(!language);
+                  }}
+                >
+                  EN
+                </a>
+              )}
             {!language && (
               <div className="text cz">
                 <p>Flying, double strike</p>
@@ -107,16 +108,7 @@ export default function KartaDetail() {
                   <div className="quantity-button quantity-down">-</div>
                 </div>
               </div>
-              <button
-                type="button"
-                className="btn card-btn cardButton"
-                onClick={(event) => {
-                  alert("koupeno");
-                  event.preventDefault();
-                }}
-              >
-                <img src={cart} alt="koupit" width="20px" />
-              </button>
+              <Koupit withIcon />
             </div>
           </div>
         </div>

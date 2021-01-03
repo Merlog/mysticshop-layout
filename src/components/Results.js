@@ -45,16 +45,7 @@ export default function Results(props) {
                       <div className="quantity-button quantity-down">-</div>
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    className="btn card-btn cardButton"
-                    onClick={(event) => {
-                      alert("koupeno");
-                      event.preventDefault();
-                    }}
-                  >
-                    <img src={cart} alt="logo" width="20px" />
-                  </button>
+                  <Koupit />
                 </div>
               </div>
             </div>
