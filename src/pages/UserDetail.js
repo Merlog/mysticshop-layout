@@ -2,7 +2,7 @@ import "./UserDetail.css";
 
 export default function UserDetail() {
   return (
-    <div className="container">
+    <>
       <div className="row d-flex flex-column">
         <h5 className="text-center">Přihlašovací údaje</h5>
         <form>
@@ -208,6 +208,6 @@ export default function UserDetail() {
           </button>
         </form>
       </div>
-    </div>
+    </>
   );
 }

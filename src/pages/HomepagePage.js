@@ -4,7 +4,7 @@ import News from "../components/News";
 
 export default function HomepagePage() {
   return (
-    <div className="container">
+    <>
       <div className="row">
         <div className="col col-lg-7">
           <Carousel />
@@ -19,6 +19,6 @@ export default function HomepagePage() {
           <Products title="Doporučené produkty" />
         </div>
       </div>
-    </div>
+    </>
   );
 }

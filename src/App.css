@@ -5,7 +5,7 @@
 .main {
   min-height: calc(100vh - 150px);
   margin-top: 150px;
-  padding: 30px 0;
+  padding: 30px 15px;
 }
 
 .appWithMessage .main {
@@ -22,13 +22,12 @@
   display: flex;
   flex-direction: column;
   padding: 20px 6px;
-  opacity:0.05;
+  opacity: 0.05;
 }
 
 .temporary:hover {
-  opacity:0.8;
+  opacity: 0.8;
 }
-
 
 .temporary div {
   padding: 2px 0;
@@ -56,5 +55,5 @@
   display: block;
 }
 .italic {
-  font-style:italic;
+  font-style: italic;
 }
