@@ -3,25 +3,96 @@
   justify-content: flex-end;
 }
 
-.koupitButton {
+.koupitWrapper .koupitButton {
   color: white;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
   background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
   border: none;
-  border-radius: 2px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
   padding: 3px 15px;
 }
 
-.koupitButton:hover {
+.koupitWrapper .koupitButton:hover {
   font-weight: 700;
   background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
 }
 
-.cardInput {
+.koupitWrapper .cardInput {
   width: 50px;
   height: 30px;
+}
+
+.koupitWrapperBig .koupitButton {
+  font-size: 18px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 6px 30px;
+}
+
+.koupitWrapperBig .cardInput {
+  width: 80px;
+  height: 50px;
+}
+
+/* INPUT QUANTITY */
+
+.koupitWrapper input[type="number"]::-webkit-inner-spin-button,
+.koupitWrapper input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.koupitWrapper input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.koupitWrapper .quantity input {
+  padding-left: 10px;
+  border: 1px solid #eee;
+  border-right: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.koupitWrapperBig .quantity input {
+  padding-left: 20px;
+  font-size: 18px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.koupitWrapper .quantity input:focus {
+  border: 1px solid #eee!important;
+}
+
+.koupitWrapper .quantity-nav {
+  height: 29px;
+  width: 20px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  border-left: 1px solid #eee;
+}
+
+.koupitWrapperBig .quantity-nav {
+  height: 49px;
+  width: 30px;
+}
+
+.koupitWrapper .quantity-button {
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+.koupitWrapperBig .quantity-button {
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.koupitWrapper .quantity-down {
+  border-top: 1px solid #eee;
 }

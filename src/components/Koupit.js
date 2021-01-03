@@ -1,9 +1,9 @@
 import cart from "./../assets/svg/cart-material.svg";
 import "./Koupit.css";
 
-export default function Koupit() {
+export default function Koupit(props) {
   return (
-    <div className="koupitWrapper">
+    <div className={`koupitWrapper${props.big ? " koupitWrapperBig" : ''}`}>
       <div className="quantity position-relative">
         <input
           type="number"
@@ -27,6 +27,6 @@ export default function Koupit() {
       >
         <img src={cart} alt="koupit" width="20px" />
       </button>
-    </div>
+    </div >
   );
 }
