@@ -1,5 +1,6 @@
 import "./NewsPage.css";
 import Pagination from "./../components/Pagination";
+import { NavLink } from "react-router-dom";
 
 export default function NewsPage() {
   const newMsg = [];
@@ -19,6 +20,9 @@ export default function NewsPage() {
             </a>
             platí již jen několik dní, proto si pospěš{" "}
             <b> a objednej ještě dnes!</b>
+            <div className="newsNext d-flex justify-content-center">
+              <NavLink to="/mysticshop/Aktualita">detail</NavLink>
+            </div>
           </p>
         </div>
       </div>

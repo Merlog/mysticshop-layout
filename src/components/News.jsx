@@ -7,7 +7,9 @@ export default function News() {
       <div className="col-12">
         <div className="row newsTitle">
           <div className="col-12">
-            <h2>Aktuality</h2>
+            <NavLink to="/mysticshop/News">
+              <h2>Aktuality</h2>
+            </NavLink>
           </div>
         </div>
 
@@ -27,15 +29,14 @@ export default function News() {
               </a>
               platí již jen několik dní, proto si pospěš{" "}
               <b> a objednej ještě dnes!</b>
+              
+              <div className="newsNext d-flex justify-content-center">
+                <NavLink to="/mysticshop/Aktualita">detail</NavLink>
+              </div>
             </p>
           </div>
         </div>
-        <div className="row mt-5">
-          <div className="col-12 newsNext d-flex justify-content-center">
-            <NavLink to="/mysticshop/News">Více</NavLink>
-          </div>
-        </div>
       </div>
-    </div>
+    </div >
   );
 }

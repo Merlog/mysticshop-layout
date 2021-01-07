@@ -8,7 +8,6 @@ export default function Accessories() {
         <L3menu />
       </div>
       <div className="col-10">
-        {/* <h5 className="L3headline">Prodej karet</h5> */}
         <Results />
       </div>
     </div>
