@@ -5,10 +5,7 @@ import ResultsCards from "../components/ResultsCards";
 export default function BuyCards() {
   return (
     <div className="row">
-      <div className="col-2">
-        <L3menuCards />
-      </div>
-      <div className="col-10">
+      <div className="col-12">
         {/* <h5 className="L3headline">Prodej karet</h5> */}
         <ProductSearch sellCards />
         <ResultsCards sellCards />

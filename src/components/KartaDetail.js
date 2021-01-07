@@ -1,7 +1,8 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Karta from "./../assets/images/karta.jpg";
 import Zendikar from "./../assets/images/zendikar.jpg";
-import { useState } from "react";
-import cart from "./../assets/svg/cart-material.svg";
+import Stav from "./../assets/images/stav.png";
 import Koupit from './Koupit';
 import "./KartaDetail.css";
 
@@ -23,6 +24,11 @@ export default function KartaDetail() {
             </h2>
             <h6 className="edice">Creature — Human Cleric (1/3)</h6>
             <p className="productCode">Kód karty: 230589</p>
+            <div className="stav">
+              <NavLink to="/mysticshop/StavKartyPage" exact>
+                <img src={Stav} className="" alt="stav" />
+              </NavLink>
+            </div>
             {language ? (
               <a
                 href
@@ -59,21 +65,7 @@ export default function KartaDetail() {
                 <p className="text italic">
                   "Archoni vykonávají spravedlnost na základě prastarých, ale
                   nedokonalých pravidel." — Nissa Revane
-                </p>
-                {/* <p>Flying, double strike</p>
-                <p>
-                  Kdykoli bytost pod tvou kontrolou udělí bojové zranění hráči,
-                  ty a onen hráč si přidáte odpovídající množství životů.
-                </p>
-                <p>
-                  Na začátku tvé fáze konce kola, pokud máš aspoň o 15 životů
-                  více než na počátku hry, každý hráč, na kterého Angel of
-                  Destiny toto kolo zaútočila, prohrává hru.
-                </p>
-                <p className="text italic">
-                  "Archoni vykonávají spravedlnost na základě prastarých, ale
-                  nedokonalých pravidel." — Nissa Revane
-                </p> */}
+                </p>s
               </div>
             )}
             {language && (

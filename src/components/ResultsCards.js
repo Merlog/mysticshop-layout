@@ -1,10 +1,11 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Karta from "./../assets/images/karta.jpg";
-import Mana from "./../assets/svg/mana-placeholder-material.svg";
+import ManaSymbol from "./../assets/images/symbols.png";
+import Stav from "./../assets/images/stav.png";
 import Zendikar from "./../assets/images/zendikar.jpg";
 import Pagination from "./Pagination";
-import { useState } from "react";
 import Koupit from './Koupit';
-import { NavLink } from "react-router-dom";
 import "./Results.css";
 
 export default function ResultsCard(props) {
@@ -31,13 +32,12 @@ export default function ResultsCard(props) {
                 </h5>
                 <h6 className="edice">Creature — Human Cleric (1/3)</h6>
                 <div className="mana">
-                  <img src={Mana} className="" alt="mana" width="18px" />
-                  <img src={Mana} className="" alt="mana" width="18px" />
-                  <img src={Mana} className="" alt="mana" width="18px" />
+                  <img src={ManaSymbol} className="" alt="mana" />
                 </div>
-                <div>
-                  <span className="extra">NM</span>
-                  <span className="extra">foil</span>
+                <div className="mana">
+                  <NavLink to="/mysticshop/StavKartyPage" exact>
+                    <img src={Stav} className="" alt="stav" />
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -87,13 +87,12 @@ export default function ResultsCard(props) {
               </div>
               <div className="col-2 d-flex flex-column justify-content-around align-items-end">
                 <div className="mana">
-                  <img src={Mana} className="" alt="mana" width="18px" />
-                  <img src={Mana} className="" alt="mana" width="18px" />
-                  <img src={Mana} className="" alt="mana" width="18px" />
+                  <img src={ManaSymbol} className="" alt="mana" />
                 </div>
-                <div>
-                  <span className="extra extraList">NM</span>
-                  <span className="extra extraList">foil</span>
+                <div className="mana">
+                  <NavLink to="/mysticshop/StavKartyPage" exact>
+                    <img src={Stav} className="" alt="stav" />
+                  </NavLink>
                 </div>
               </div>
               <div className="col-2 d-flex flex-column justify-content-end align-items-end">

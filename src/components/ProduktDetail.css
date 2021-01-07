@@ -40,9 +40,6 @@
   width: 100px;
 }
 
-.productDetail .content {
-  padding: 30px;
-}
 .skladem {
   color: green;
   justify-content: flex-end;

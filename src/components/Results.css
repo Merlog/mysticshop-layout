@@ -72,7 +72,17 @@
 }
 
 .mana {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
+}
+
+.mana img{
+  height: 20px;
+  width: auto;
+}
+
+.stav img{
+  height: 20px;
+  width: auto;
 }
 
 .extra {

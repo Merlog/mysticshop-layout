@@ -16,6 +16,10 @@
   padding: 30px;
 }
 
+.productDetail .stav {
+  margin-bottom: 15px;
+}
+
 .productDetail .imageKarta {
   width: 300px;
   height: auto;
@@ -43,7 +47,7 @@
 .productDetail .content {
   padding: 30px;
   max-height: 500px;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .productDetail .content h2 {

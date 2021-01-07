@@ -26,6 +26,7 @@ import Accessories from "./pages/Accessories";
 import LoyaltyProgram from "./pages/LoyaltyProgram";
 import ShipmentPayment from "./pages/ShipmentPayment";
 import SellCardsHow from "./pages/SellCardsHow";
+import StavKartyPage from "./pages/StavKarty";
 import GDPR from "./pages/GDPR";
 import NewsPage from "./pages/NewsPage";
 import LogIn from "./pages/LogIn";
@@ -38,9 +39,8 @@ export default function App() {
 
   return (
     <div
-      className={`app${message ? " appWithMessage" : ""}${
-        light ? " appLightTheme" : ""
-      }`}
+      className={`app${message ? " appWithMessage" : ""}${light ? " appLightTheme" : ""
+        }`}
     >
       <div className="row temporary">
         <div>
@@ -64,13 +64,8 @@ export default function App() {
           </NavLink>
         </div>
         <div>
-          <NavLink to="/mysticshop/ProduktDetail" exact>
-            Produkt Detail
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/mysticshop/KartaDetail" exact>
-            Karta Detail
+          <NavLink to="/mysticshop/StavKartyPage" exact>
+            Stav Karty
           </NavLink>
         </div>
         <a
@@ -173,6 +168,12 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/ResetPassword" exact>
             <ResetPassword />
+          </Route>
+          <Route path="/mysticshop/KartaDetail" exact>
+            <KartaDetailPage />
+          </Route>
+          <Route path="/mysticshop/StavKartyPage" exact>
+            <StavKartyPage />
           </Route>
           <Route path="/mysticshop/KartaDetail" exact>
             <KartaDetailPage />

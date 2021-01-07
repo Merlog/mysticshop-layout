@@ -7,7 +7,7 @@ export default function ProduktDetailPage() {
     <>
       <Zpet to="BuyCards" />
       <KartaDetail />
-      <Products title="Lidé také kupují" />
+      <Products title="Doporučené produkty" />
     </>
   );
 }

@@ -35,34 +35,6 @@ export default function Results(props) {
                 <Koupit />
               </div>
             </div>
-            {/* <div className="card-body d-flex flex-column cardBody">
-              <h5 className="card-title cardTitle">Core Set 2021 booster</h5>
-              <p>
-                Popis - Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Quo, laborum numquam aliquam provident distinctio.
-              </p>
-              <p>Kód produktu</p>
-              <p className="cardTextList cardBuyList">15ks skladem</p>
-              <div className="d-flex flex-column align-items-end">
-                <h5 className="card-price">1 199 Kč</h5>
-                <div className="d-flex">
-                  <div className="quantity position-relative">
-                    <input
-                      type="number"
-                      min="1"
-                      step="1"
-                      value="1"
-                      className="cardInput"
-                    />
-                    <div className="quantity-nav">
-                      <div className="quantity-button quantity-up">+</div>
-                      <div className="quantity-button quantity-down">-</div>
-                    </div>
-                  </div>
-                       <Koupit />
-                </div>
-              </div>
-            </div> */}
           </NavLink>
         </div>
       </div>
@@ -101,33 +73,6 @@ export default function Results(props) {
                   {props.sellCards ? `15ks poptáváno` : `15ks skladem`}
                 </p>
                 <div className="d-flex flex-column align-items-end cardBuyList">
-                  {/* <div className="d-flex">
-                    <input
-                      type="number"
-                      value="1"
-                      placeholder="ks"
-                      className="cardInput"
-                    />
-                    <button
-                      type="button"
-                      className="btn card-btn cardButton"
-                      onClick={(event) => {
-                        alert("koupeno");
-                        event.preventDefault();
-                      }}
-                    >
-                      {props.sellCards ? (
-                        `Prodat`
-                      ) : (
-                          <img
-                            src={cart}
-                            alt="logo"
-                            className="dark"
-                            width="20px"
-                          />
-                        )}
-                    </button>
-                  </div> */}
                   <Koupit />
                 </div>
               </div>
