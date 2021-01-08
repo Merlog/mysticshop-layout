@@ -11,7 +11,7 @@ export default function Products(props) {
           <a href="#">
             <img
               src={Booster}
-              className="card-img-top cardImg"
+              className="card-img-top productImg"
               alt="recommended"
             />
             <div className="card-body d-flex flex-column cardBody">

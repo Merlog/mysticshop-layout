@@ -37,10 +37,12 @@ export default function App() {
   const [message, setMessage] = useState(false);
   const [light, setLight] = useState(false);
   const [cookieAlert, setCookieAlert] = useState(false);
+  const [red, setRed] = useState(false);
 
   return (
     <div
       className={`app${message ? " appWithMessage" : ""}${light ? " appLightTheme" : ""
+        } ${red ? " appRed" : ""
         }`}
     >
       <div className="row temporary">
@@ -62,11 +64,6 @@ export default function App() {
         <div>
           <NavLink to="/mysticshop/RegistrationForm" exact>
             Registration Form
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/mysticshop/StavKartyPage" exact>
-            Stav Karty
           </NavLink>
         </div>
         <a
@@ -95,6 +92,15 @@ export default function App() {
           }}
         >
           Spodní cookie lišta
+        </a>
+        <a
+          href
+          className={`linkcurrency${cookieAlert ? " active" : ""}`}
+          onClick={() => {
+            setRed(!red);
+          }}
+        >
+          red
         </a>
       </div>
       <Header setMessage={setMessage} />

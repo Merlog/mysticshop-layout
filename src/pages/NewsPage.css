@@ -30,6 +30,9 @@
 .newsPageText a {
   color: #59b20e;
 }
+.newsNext a {
+  color: white;
+}
 
 .newsPageBack a {
   color: white;
