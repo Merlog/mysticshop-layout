@@ -29,7 +29,7 @@ import ShipmentPayment from "./pages/ShipmentPayment";
 import SellCardsHow from "./pages/SellCardsHow";
 import StavKartyPage from "./pages/StavKarty";
 import GDPR from "./pages/GDPR";
-import NewsPage from "./pages/NewsPage";
+import AktualityPage from "./pages/AktualityPage";
 import LogIn from "./pages/LogIn";
 import ResetPassword from "./pages/ResetPassword";
 
@@ -167,8 +167,8 @@ export default function App() {
           <Route path="/mysticshop/GDPR" exact>
             <GDPR />
           </Route>
-          <Route path="/mysticshop/News" exact>
-            <NewsPage />
+          <Route path="/mysticshop/Aktuality" exact>
+            <AktualityPage />
           </Route>
           <Route path="/mysticshop/LogIn" exact>
             <LogIn />

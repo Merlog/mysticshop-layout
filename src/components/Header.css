@@ -18,6 +18,11 @@
   color: #59b20e;
 }
 
+.appRed .headerControls a:hover,
+.appRed .headerWrapper button:hover {
+  color: #f25a2d;
+}
+
 .headerWrapper {
   background-color: #333333;
   font-size: 13px;
@@ -63,6 +68,11 @@
   color: #57b00c;
   font-weight: bold;
 }
+
+.appRed .currency .active {
+  color: #f25a2d;
+}
+
 
 .alertText {
   text-align: left;

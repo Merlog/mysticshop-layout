@@ -38,8 +38,17 @@
   border-bottom-left-radius: 0;
 }
 
+
 .searchButton:hover {
   background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
+}
+
+.appRed .searchButton{
+  background: linear-gradient(to bottom, #f25a2d 0%, #be2514 100%);
+}
+
+.appRed .searchButton:hover{
+  background: linear-gradient(to bottom, #e4552a 0%, #af2414 100%);
 }
 
 .bonusCartWraper {
@@ -101,6 +110,11 @@
   color: #59b20e;
 }
 
+.appRed .cart a:hover .cartAmount,
+.appRed .bonus a:hover .cartAmount,
+.appRed .credit a:hover .cartAmount {
+  color: #f25a2d;
+}
 
 .dark {
   display: inline-block;

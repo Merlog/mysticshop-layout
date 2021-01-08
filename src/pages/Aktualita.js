@@ -5,7 +5,7 @@ import Zpet from "../components/Zpet";
 export default function AktualitaPage() {
   return (
     <>
-      <Zpet to="News" />
+      <Zpet to="Aktuality" />
       <StaticPage >
         <h1>
           Kompletní spoiler Avacyn Restored

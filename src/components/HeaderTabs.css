@@ -29,7 +29,6 @@
   background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
 }
 
-
 .appRed .headerTabs a:hover,
 .appRed .headerTabs a.active {
   background: linear-gradient(to bottom, #f25a2d 0%, #be2514 100%);
