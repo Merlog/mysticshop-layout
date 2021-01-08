@@ -42,7 +42,7 @@ export default function App() {
   return (
     <div
       className={`app${message ? " appWithMessage" : ""}${light ? " appLightTheme" : ""
-        } ${red ? " appRed" : ""
+        }${red ? " appRed" : ""
         }`}
     >
       <div className="row temporary">
