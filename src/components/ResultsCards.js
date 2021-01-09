@@ -64,7 +64,7 @@ export default function ResultsCard(props) {
         <NavLink to="/mysticshop/KartaDetail" exact>
           <div className="card cardModif cardModifList p-2">
             <div className="row">
-              <div className="col-1 d-flex align-items-center">
+              <div className="col-1 d-flex justify-content-center align-items-center">
                 <img
                   src={Karta}
                   className="card-img-top cardImgList"

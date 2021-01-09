@@ -14,7 +14,7 @@ export default function ResultsProducts(props) {
       <div className="col-3 my-2">
         <NavLink to="/mysticshop/ProduktDetail" exact>
           <div className="row productModif">
-            <div className="col-12 d-flex justify-content-start align-items-center">
+            <div className="col-12 d-flex justify-content-center align-items-center">
               <img
                 src={Booster}
                 className="card-img-top productImg"

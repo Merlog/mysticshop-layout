@@ -1,37 +1,47 @@
-import "./Products.css";
+import "./ProductsSection.css";
 import Booster from "./../assets/images/product-img/booster.jpg";
 import Koupit from './Koupit';
+import { NavLink } from "react-router-dom";
 
 export default function ProductsSection(props) {
-  const products = [];
-  for (let i = 0; i < 6; i++) {
-    products.push(
-      <div className="col-2">
-        <div className="card cardModif">
-          <a href="#">
-            <img
-              src={Booster}
-              className="card-img-top productImg"
-              alt="recommended"
-            />
-            <div className="card-body d-flex flex-column cardBody">
-              <h5 className="card-title cardTitle mb-2">
-                Core Set 2021 booster
-              </h5>
-              <div className="d-flex flex-column align-items-end">
-                <h5 className="card-price mb-2">99 Kč</h5>
-                <p>15ks skladem</p>
-                <Koupit />
+  const productsGrid = [];
+  for (let i = 0; i < 5; i++) {
+    productsGrid.push(
+      <div className="productModifWrapper">
+        <NavLink to="/mysticshop/ProduktDetail" exact>
+          <div className="row productModif">
+            <div className="col-12 d-flex justify-content-center align-items-center">
+              <img
+                src={Booster}
+                className="card-img-top productImg"
+                alt="recommended"
+              />
+              </div>
+              <div className="col-12 mt-4">
+              <h5 className="card-title productTitle">Core Set 2021 booster</h5>
+              </div>
+              <div className="col-12">
+              <p>
+                Popis - Lorem ipsum dolor, sit amet consectetur adipisicing elit...
+              </p>
+              </div>
+              <div className="col-12 d-flex justify-content-between productBody">
+                <div className="d-flex align-items-end">
+                  <div className="price">1 199 Kč</div>
+                </div>
+                <div className="d-flex flex-column align-items-end">
+                  <div className="skladem">15ks skladem</div>
+                  <Koupit />
               </div>
             </div>
-          </a>
-        </div>
+          </div>
+        </NavLink>
       </div>
     );
   }
 
   return (
-    <div className="row products">
+    <div className="row productsSection">
       <div className="col-12">
         <div className="row title">
           <div className="col-11">
@@ -62,7 +72,7 @@ export default function ProductsSection(props) {
             </button>
           </div>
         </div>
-        <div className="row">{products}</div>
+        <div className="row">{productsGrid}</div>
       </div>
     </div>
   );

@@ -17,17 +17,6 @@
   padding: 2px;
 }
 
-.cards .control {
-  padding: 0;
-  margin: 0 4px;
-}
-
-.cards .control:hover {
-  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
-  fill: white;
-  border-radius: 2px;
-}
-
 /* CARD */
 
 .cardModif {
