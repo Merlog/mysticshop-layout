@@ -11,6 +11,10 @@
   margin-bottom: 20px;
 }
 
+.aktualityTitle h2 {
+  color: black;
+}
+
 .aktualityWrapper {
   border-color: #00000000;
   border-radius: 2px;

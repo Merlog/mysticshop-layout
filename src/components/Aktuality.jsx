@@ -6,7 +6,7 @@ export default function Aktuality() {
     <div className="row aktuality">
       <div className="col-12">
         <div className="row aktualityTitle">
-          <div className="col-12">
+          <div className="col-12 d-flex justify-content-start">
             <NavLink to="/mysticshop/Aktuality">
               <h2>Aktuality</h2>
             </NavLink>
