@@ -1,11 +1,11 @@
-import "./L3menu.css";
+import "./ProductsMenu.css";
 
-export default function L3menu() {
+export default function ProductsMenu() {
   const items = [];
   for (let i = 0; i < 10; i++) {
     items.push(
-      <li className="L3items d-flex">
-        <div className="L3img d-flex justify-content-center align-items-center">
+      <li className="ProductsMenuItems d-flex">
+        <div className="ProductsMenuImg d-flex justify-content-center align-items-center">
           <svg
             width="1em"
             height="1em"
@@ -21,15 +21,15 @@ export default function L3menu() {
             <path d="M7 13h2v3H7v-3z" />
           </svg>
         </div>
-        <p className="L3name d-flex align-items-center px-1">Boxy na karty</p>
+        <p className="d-flex align-items-center px-1">Boxy na karty</p>
       </li>
     );
   }
 
   return (
-    <div className="L3wrapper">
-      <h5 className="L3headline">Produkty / Doplňky</h5>
-      <ul className="nav nav-tabs L3list">{items}</ul>
+    <div className="ProductsMenuWrapper">
+      <h5 className="ProductsMenuTitle">Produkty / Doplňky</h5>
+      <ul className="nav nav-tabs ProductsMenuList">{items}</ul>
     </div>
   );
 }

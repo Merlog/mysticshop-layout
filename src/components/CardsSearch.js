@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ProductSearch(props) {
+export default function CardsSearch(props) {
   const [expandedSearch, setExpandedSearch] = useState(false);
   return (
     <form className="border border-dark p-3">

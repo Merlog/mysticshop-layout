@@ -1,4 +1,4 @@
-import ProductSearch from "./../components/ProductSearch";
+import CardsSearch from "./../components/CardsSearch";
 import ResultsCards from "./../components/ResultsCards";
 
 export default function BuyCards() {
@@ -6,7 +6,7 @@ export default function BuyCards() {
     <div className="row">
       <div className="col-12">
         {/* <h5 className="L3headline">Prodej karet</h5> */}
-        <ProductSearch />
+        <CardsSearch />
         <ResultsCards />
       </div>
     </div>
