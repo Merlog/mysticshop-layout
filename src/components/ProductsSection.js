@@ -2,7 +2,7 @@ import "./Products.css";
 import Booster from "./../assets/images/product-img/booster.jpg";
 import Koupit from './Koupit';
 
-export default function Products(props) {
+export default function ProductsSection(props) {
   const products = [];
   for (let i = 0; i < 6; i++) {
     products.push(

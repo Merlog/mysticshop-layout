@@ -1,4 +1,4 @@
-import Products from "../components/Products";
+import ProductsSection from "../components/ProductsSection";
 import KartaDetail from "../components/KartaDetail";
 import Zpet from "../components/Zpet";
 
@@ -7,7 +7,7 @@ export default function ProduktDetailPage() {
     <>
       <Zpet to="BuyCards" />
       <KartaDetail />
-      <Products title="Doporučené produkty" />
+      <ProductsSection title="Doporučené produkty" />
     </>
   );
 }
