@@ -1,5 +1,5 @@
 import L3menu from "../components/L3menu";
-import Results from "../components/Results";
+import ResultsProducts from "../components/ResultsProducts";
 
 export default function Products() {
   return (
@@ -9,7 +9,7 @@ export default function Products() {
       </div>
       <div className="col-10">
         {/* <h5 className="L3headline">Prodej karet</h5> */}
-        <Results />
+        <ResultsProducts />
       </div>
     </div>
   );

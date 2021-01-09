@@ -6,7 +6,7 @@ import Stav from "./../assets/images/stav.png";
 import Zendikar from "./../assets/images/zendikar.jpg";
 import Pagination from "./Pagination";
 import Koupit from './Koupit';
-import "./Results.css";
+import "./ResultsCards.css";
 
 export default function ResultsCard(props) {
   const [listView, setListView] = useState(false);
@@ -14,14 +14,13 @@ export default function ResultsCard(props) {
   const cardsGrid = [];
   for (let i = 0; i < 16; i++) {
     cardsGrid.push(
-      <div className="col-3 my-3 karta">
+      <div className="col-3 my-3">
         <NavLink to="/mysticshop/KartaDetail" exact>
-          <div className="row cardModif">
+          <div className="row cardModif cardModifGrid">
             <div className="col-12 position-relative">
               <img src={Karta} className="cardImgGrid" alt="recommended" />
-
               <div className="cardDescriptionGrid">
-                <h5 className="card-title cardTitleList">
+                <h5 className="card-title cardTitle">
                   Abbey Matron
                   <img
                     src={Zendikar}
@@ -49,7 +48,6 @@ export default function ResultsCard(props) {
                 <div className="skladem">
                   {props.sellCards ? `poptáváme 15ks` : `15ks skladem`}
                 </div>
-
                 <Koupit />
               </div>
             </div>
@@ -74,7 +72,7 @@ export default function ResultsCard(props) {
                 />
               </div>
               <div className="col-5 d-flex flex-column justify-content-around">
-                <h5 className="card-title cardTitleList">
+                <h5 className="card-title cardTitle">
                   Abbey Matron
                   <img
                     src={Zendikar}
@@ -112,7 +110,7 @@ export default function ResultsCard(props) {
   }
 
   return (
-    <div className="row products">
+    <div className="row cards">
       <div className="col-12">
         <div className="row title">
           <div className="col-8">

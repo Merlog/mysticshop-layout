@@ -2,79 +2,72 @@ import Booster from "./../assets/images/product-img/booster.jpg";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Pagination from "./Pagination";
-import cart from "./../assets/svg/cart-material.svg";
 import Koupit from './Koupit';
-import "./Results.css";
+import "./ResultsProducts.css";
 
-export default function Results(props) {
+export default function ResultsProducts(props) {
   const [listView, setListView] = useState(false);
 
-  const cardsGrid = [];
+  const productsGrid = [];
   for (let i = 0; i < 16; i++) {
-    cardsGrid.push(
+    productsGrid.push(
       <div className="col-3 my-2">
-        <div className="card cardModif">
-          <NavLink to="/mysticshop/ProduktDetail" exact>
-            <img
-              src={Booster}
-              className="card-img-top cardImg"
-              alt="recommended"
-            />
-            <h5 className="card-title cardTitle">Core Set 2021 booster</h5>
-            <p>
-              Popis - Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Quo, laborum numquam aliquam provident distinctio.
-            </p>
-            <p className="productCode">Kód produktu: 310589</p>
-            <div className="col-12 d-flex justify-content-between cardBody">
-              <div className="d-flex align-items-end">
-                <div className="price">1 199 Kč</div>
+        <NavLink to="/mysticshop/ProduktDetail" exact>
+          <div className="row productModif">
+            <div className="col-12 d-flex justify-content-start align-items-center">
+              <img
+                src={Booster}
+                className="card-img-top productImg"
+                alt="recommended"
+              />
               </div>
-              <div className="d-flex flex-column align-items-end">
-                <div className="skladem">15ks skladem</div>
-                <Koupit />
+              <div className="col-12 mt-4">
+              <h5 className="card-title productTitle">Core Set 2021 booster</h5>
+              </div>
+              <div className="col-12">
+              <p>
+                Popis - Lorem ipsum dolor, sit amet consectetur adipisicing elit...
+              </p>
+              </div>
+              <div className="col-12 d-flex justify-content-between productBody">
+                <div className="d-flex align-items-end">
+                  <div className="price">1 199 Kč</div>
+                </div>
+                <div className="d-flex flex-column align-items-end">
+                  <div className="skladem">15ks skladem</div>
+                  <Koupit />
               </div>
             </div>
-          </NavLink>
-        </div>
+          </div>
+        </NavLink>
       </div>
     );
   }
 
-  const cardsList = [];
+  const productsList = [];
   for (let i = 0; i < 16; i++) {
-    cardsList.push(
+    productsList.push(
       <div className="col-12 my-2">
         <NavLink to="/mysticshop/ProduktDetail" exact>
-          <div className="card cardModif">
+          <div className="card productModif productModifList p-2">
             <div className="row">
-              <div className="col-1 d-flex align-items-center">
+              <div className="col-2 d-flex justify-content-center align-items-center">
                 <img
                   src={Booster}
-                  className="card-img-top cardImgList"
+                  className="card-img-top productImgList"
                   alt="recommended"
                 />
               </div>
               <div className="col-6 d-flex flex-column justify-content-around">
-                <h5 className="card-title cardTitleList">
-                  Název - Core Set 2021 booster
-                </h5>
-                <h6>
-                  Popis - Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Quo, laborum numquam aliquam provident distinctio.
-                </h6>
+                <h5 className="card-title productTitle">Core Set 2021 booster</h5>
+                <p>Popis - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ut commodi quasi autem. Velit consequuntur tempora adipisci modi, quibusdam non at impedit...</p>
               </div>
-              <div className="col-3 d-flex flex-column justify-content-around align-items-end">
-                <p className="small">Kód produktu: AT-20305</p>
-                <h5 className="card-price">1199 Kč</h5>
+              <div className="col-2 d-flex flex-column justify-content-end align-items-end">
+                <h5 className="price">1 199 Kč</h5>
               </div>
               <div className="col-2 d-flex flex-column justify-content-around align-items-end">
-                <p className="cardTextList cardBuyList">
-                  {props.sellCards ? `15ks poptáváno` : `15ks skladem`}
-                </p>
-                <div className="d-flex flex-column align-items-end cardBuyList">
-                  <Koupit />
-                </div>
+                <div className="skladem">15ks skladem</div>
+                <Koupit />
               </div>
             </div>
           </div>
@@ -136,9 +129,9 @@ export default function Results(props) {
           </div>
         </div>
         {listView ? (
-          <div className="row">{cardsList}</div>
+          <div className="row">{productsList}</div>
         ) : (
-            <div className="row">{cardsGrid}</div>
+            <div className="row">{productsGrid}</div>
           )}
         <Pagination />
       </div>

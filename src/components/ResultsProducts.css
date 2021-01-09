@@ -1,0 +1,83 @@
+/* TITLE, FILTER, VIEW */
+
+.products {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 25px;
+}
+
+.products .title {
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 20px;
+}
+
+.products .title label,
+.products .title select {
+  margin: 0 10px;
+  padding: 2px;
+}
+
+.products .control {
+  padding: 0;
+  margin: 0 4px;
+}
+
+.products .control:hover {
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
+  fill: white;
+  border-radius: 2px;
+}
+
+/* PRODUCT */
+
+.productModif {
+  border-color: #00000000;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  color: #222;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.productModifList {
+  margin: 0;
+}
+
+.productModif:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.productImg {
+  height: 100%;
+  width: auto;
+  max-height: 100px;
+  margin-top: 15px;
+}
+
+.productImgList {
+  height: 100%;
+  width: auto;
+  max-height: 85px;
+}
+
+.productTitle {
+  font-weight: 600;
+}
+
+.productBody {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px 15px 15px;
+  background: white;
+}
+
+.productModif .price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.productModif .skladem {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 13px;
+}

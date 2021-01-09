@@ -1,5 +1,5 @@
 import L3menu from "../components/L3menu";
-import Results from "../components/Results";
+import ResultsProducts from "../components/ResultsProducts";
 
 export default function Accessories() {
   return (
@@ -8,7 +8,7 @@ export default function Accessories() {
         <L3menu />
       </div>
       <div className="col-10">
-        <Results />
+        <ResultsProducts />
       </div>
     </div>
   );
