@@ -96,7 +96,7 @@ export default function ResultsCard(props) {
               <div className="col-2 d-flex flex-column justify-content-end align-items-end">
                 <h5 className="price">1 199 Kč</h5>
               </div>
-              <div className="col-2 d-flex flex-column justify-content-around align-items-end">
+              <div className="col-2 d-flex flex-column justify-content-end align-items-end pb-2">
                 <div className="skladem">
                   {props.sellCards ? `poptáváme 15ks` : `15ks skladem`}
                 </div>
