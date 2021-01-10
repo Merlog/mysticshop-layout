@@ -5,26 +5,29 @@ import Zendikar from "./../assets/images/zendikar.jpg";
 import Stav from "./../assets/images/stav.png";
 import Koupit from './Koupit';
 import "./KartaDetail.css";
+import ManaSymbol from "./../assets/images/symbols.png";
 
 export default function KartaDetail() {
   const [language, setLanguage] = useState(false);
   return (
     <div className="row ">
       <div className="col-12">
-        <div className="row productDetail">
+        <div className="row kartaDetail">
           <div className="col-4 gallery">
             <div className="row mainImg">
               <img src={Karta} className="imageKarta" alt="recommended" />
             </div>
           </div>
           <div className="col-6 content">
-            <h2>
+            <h2 className="mb-2">
               Stoneforge Mystic
               <img src={Zendikar} className="symbol" alt="recommended" />
             </h2>
-            <h6 className="edice">Creature — Human Cleric (1/3)</h6>
-            <p className="productCode">Kód karty: 230589</p>
-            <div className="stav">
+            <h6 className="edice mb-3">Creature — Human Cleric (1/3)</h6>
+            <div className="mana mb-2">
+              <img src={ManaSymbol} className="" alt="mana" />
+            </div>
+            <div className="stav mb-4">
               <NavLink to="/mysticshop/StavKartyPage" exact>
                 <img src={Stav} className="" alt="stav" />
               </NavLink>
@@ -84,8 +87,8 @@ export default function KartaDetail() {
             )}
           </div>
           <div className="col-2 buy">
-            <div className="cardPrice">199 Kč</div>
-            <div className="d-flex skladem">15ks skladem</div>
+            <div className="price">1 199 Kč</div>
+            <div className="skladem">15ks skladem</div>
             <Koupit big />
           </div>
         </div>

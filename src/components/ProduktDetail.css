@@ -1,52 +1,64 @@
-.productWrapper .navigace {
-  padding-bottom: 20px;
-}
-
-.productDetail {
+.produktDetail {
   background: white;
   min-height: 500px;
   margin: 0 0 20px 0;
 }
 
-.productCode {
-  font-style: italic;
-  color: #777;
-  margin-bottom: 20px;
-}
-
-.productDetail .gallery {
+.produktDetail .gallery {
   padding: 30px;
 }
 
-.productDetail .mainImg img {
+.produktDetail .mainImg,
+.produktDetail .nahled {
+  display: flex;
+  justify-content: center;
+}
+
+.produktDetail .nahledy {
+  margin-top: 20px;
+}
+
+.produktDetail .nahledy img {
+  width: 100px;
+}
+
+.produktDetail .mainImg img {
   width: 300px;
   height: auto;
 }
 
-.productDetail .text {
+.produktDetail .content {
+  padding: 30px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.produktDetail .content h2 {
+  font-weight: 600;
+}
+
+.produktDetail .text {
   margin-bottom: 60px;
 }
 
-.mainImg,
-.nahled {
+.produktDetail .buy {
+  padding: 30px;
   display: flex;
-  justify-content: center;
-}
-.nahledy {
-  margin-top: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.nahledy img {
-  width: 100px;
+.produktDetail .price {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
-.skladem {
+.produktDetail .skladem {
   color: green;
+  display: flex;
   justify-content: flex-end;
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 16px;
-}
-.koupit {
-  justify-content: flex-end;
 }

@@ -6,9 +6,9 @@ import "./ProduktDetail.css";
 
 export default function ProduktDetail() {
   return (
-    <div className="row ">
+    <div className="row">
       <div className="col-12">
-        <div className="row productDetail">
+        <div className="row produktDetail">
           <div className="col-5 gallery">
             <div className="row mainImg">
               <img src={BoosterBox} className="imageMain" alt="recommended" />
@@ -26,8 +26,7 @@ export default function ProduktDetail() {
             </div>
           </div>
           <div className="col-5 content">
-            <h2>Core Set 2021 BoosterBox</h2>
-            <p className="productCode">Kód produktu: 310589</p>
+            <h2 className="mb-4">Core Set 2021 BoosterBox</h2>
             <p className="text">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce
               dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Nullam
@@ -49,9 +48,9 @@ export default function ProduktDetail() {
             </p>
           </div>
           <div className="col-2 buy">
-            <div className="cardPrice">199 Kč</div>
-            <div className="d-flex skladem">15ks skladem</div>
-              <Koupit />
+            <div className="price">1 199 Kč</div>
+            <div className="skladem">15ks skladem</div>
+              <Koupit big />
           </div>
         </div>
       </div>
