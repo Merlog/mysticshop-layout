@@ -37,16 +37,22 @@
 }
 
 .productImg {
-  height: 100%;
-  width: auto;
-  max-height: 100px;
+  max-height: 180px;
+}
+
+.productImg img {
+  height: auto;
+  width: 100%;
   margin-top: 15px;
 }
 
-.productImgList {
-  height: 100%;
-  width: auto;
-  max-height: 120px;
+.productModifList .productImgList {
+  height: 125px;
+}
+
+.productModifList .productImgList img {
+  height: auto;
+  width: 100%;
 }
 
 .productTitle {

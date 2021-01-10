@@ -1,4 +1,4 @@
-import Booster from "./../assets/images/product-img/booster.jpg";
+import Giftbox from "./../assets/images/product-img/giftbox.jpg";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Pagination from "./Pagination";
@@ -14,20 +14,15 @@ export default function ResultsProducts(props) {
       <div className="col-3 my-2">
         <NavLink to="/mysticshop/ProduktDetail" exact>
           <div className="row productModif">
-            <div className="col-12 d-flex justify-content-center align-items-center">
+            <div className="col-12 productImg d-flex justify-content-center align-items-center">
               <img
-                src={Booster}
-                className="card-img-top productImg"
+                src={Giftbox}
+                className="card-img-top"
                 alt="recommended"
               />
-              </div>
+            </div>
               <div className="col-12 mt-4">
-              <h5 className="card-title productTitle">Core Set 2021 booster</h5>
-              </div>
-              <div className="col-12">
-              <p>
-                Popis - Lorem ipsum dolor, sit amet consectetur adipisicing elit...
-              </p>
+              <h5 className="card-title productTitle">Core Set 2021 Giftbox</h5>
               </div>
               <div className="col-12 d-flex justify-content-between productBody">
                 <div className="d-flex align-items-end">
@@ -51,15 +46,15 @@ export default function ResultsProducts(props) {
         <NavLink to="/mysticshop/ProduktDetail" exact>
           <div className="card productModif productModifList p-2">
             <div className="row">
-              <div className="col-2 d-flex justify-content-center align-items-center">
+              <div className="col-2 productImgList d-flex justify-content-center align-items-center">
                 <img
-                  src={Booster}
-                  className="card-img-top productImgList"
+                  src={Giftbox}
+                  className="card-img-top"
                   alt="recommended"
                 />
               </div>
               <div className="col-6 d-flex flex-column justify-content-around">
-                <h5 className="card-title productTitle">Core Set 2021 booster</h5>
+                <h5 className="card-title productTitle">Core Set 2021 Giftbox</h5>
                 <p>Popis - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ut commodi quasi autem. Velit consequuntur tempora adipisci modi, quibusdam non at impedit...</p>
               </div>
               <div className="col-2 d-flex flex-column justify-content-end align-items-end">
