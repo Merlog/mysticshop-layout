@@ -9,6 +9,15 @@
 .aktualitaHomepageTitle {
   border-bottom: 1px solid #f3f3f3;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.aktualitaHomepageTitle:hover {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.aktualitaHomepageTitle:hover h2 {
+  color: green;
 }
 
 .aktualitaHomepageTitle h2 {

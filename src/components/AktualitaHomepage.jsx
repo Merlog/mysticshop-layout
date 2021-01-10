@@ -5,13 +5,13 @@ export default function Aktuality() {
   return (
     <div className="row aktualitaHomepage">
       <div className="col-12">
-        <div className="row aktualitaHomepageTitle">
-          <div className="col-12 d-flex justify-content-start">
             <NavLink to="/mysticshop/Aktuality">
+        <div className="row aktualitaHomepageTitle">
+          <div className="col-12 d-flex justify-content-start ">
               <h2>Aktuality</h2>
-            </NavLink>
           </div>
         </div>
+            </NavLink>
         <div className="row aktualitaHomepageWrapper">
           <div className="col-12">
             <h4 className="my-2">Kompletní spoiler Avacyn Restored</h4>
