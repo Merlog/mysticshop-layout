@@ -64,12 +64,19 @@ export default function ResultsCard(props) {
         <NavLink to="/mysticshop/KartaDetail" exact>
           <div className="card cardModif cardModifList p-2">
             <div className="row">
-              <div className="col-1 d-flex justify-content-center align-items-center">
+              <div className="col-1 d-flex justify-content-center align-items-center cardImgWrapper">
                 <img
                   src={Karta}
                   className="card-img-top cardImgList"
-                  alt="recommended"
+                  alt="imgkarty"
                 />
+                <div className="cardImgPreview">
+                  <img
+                    src={Karta}
+                    className="card-img-top cardImgBig"
+                    alt="imgkarty"
+                  />
+                </div>
               </div>
               <div className="col-5 d-flex flex-column justify-content-around">
                 <h5 className="card-title cardTitle">

@@ -25,7 +25,6 @@
   border-radius: 2px;
   color: #222;
   margin: 10px 0;
-  overflow: hidden;
 }
 
 .cardModif:hover {
@@ -43,6 +42,24 @@
   border-radius: 10px;
   overflow: hidden;
   margin-top: 15px;
+}
+.cardImgWrapper {
+  position:relative;
+}
+
+.cardImgWrapper:hover .cardImgPreview {
+  display:block;
+}
+
+.cardImgPreview {
+  position:absolute;
+  right:-220px;
+  display:none;
+  z-index: 5;
+}
+.cardImgBig {
+  width: 230px;
+  height: auto;
 }
 
 .cardImgList {
