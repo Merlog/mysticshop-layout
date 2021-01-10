@@ -1,4 +1,4 @@
-.aktuality {
+.aktualitaHomepage {
   display: flex;
   height: 400px;
   background-color: #fff;
@@ -6,50 +6,32 @@
   padding: 25px;
 }
 
-.aktualityTitle {
+.aktualitaHomepageTitle {
   border-bottom: 1px solid #f3f3f3;
   margin-bottom: 20px;
 }
 
-.aktualityTitle h2 {
+.aktualitaHomepageTitle h2 {
   color: black;
 }
 
-.aktualityWrapper {
+.aktualitaHomepageWrapper {
   border-color: #00000000;
   border-radius: 2px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   padding: 20px;
 }
 
-.aktualityImg {
-  width: 90%;
-  height: auto;
-}
-
-.aktualityText {
+.aktualitaHomepageText {
   margin-top: 10px;
   line-height: 1.7;
 }
 
-.aktualityText a {
+.aktualitaHomepageText a {
   color: #59b20e;
 }
 
-.aktualityDetail a {
-  color: #59b20e;
-  font-size: 14px;
-  border-radius: 2px;
-  padding: 3px 10px;
-}
-
-.aktualityDetail a:hover {
-  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
-  color: #fff;
-  text-decoration: none;
-}
-
-.aktualityNext a {
+.aktualitaDetail a {
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -61,7 +43,7 @@
   margin-top:20px;
 }
 
-.aktualityNext a:hover {
+.aktualitaDetail a:hover {
   font-weight: 700;
   background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
 }

@@ -1,6 +1,6 @@
 import Carousel from "./../components/Carousel";
 import ProductsSection from "./../components/ProductsSection";
-import Aktuality from "../components/Aktuality";
+import AktualitaHomepage from "../components/AktualitaHomepage";
 
 export default function HomepagePage() {
   return (
@@ -10,7 +10,7 @@ export default function HomepagePage() {
           <Carousel />
         </div>
         <div className="col col-lg-5">
-          <Aktuality />
+          <AktualitaHomepage />
         </div>
       </div>
       <div className="row">

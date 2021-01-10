@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import HomepagePage from "./pages/HomepagePage";
 import ProduktDetailPage from "./pages/ProduktDetailPage";
 import KartaDetailPage from "./pages/KartaDetailPage";
-import Aktualita from "./pages/Aktualita";
+import AktualitaDetailPage from "./pages/AktualitaDetailPage";
 import CookieAlert from "./components/CookieAlert";
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
@@ -182,8 +182,8 @@ export default function App() {
           <Route path="/mysticshop/StavKartyPage" exact>
             <StavKartyPage />
           </Route>
-          <Route path="/mysticshop/Aktualita" exact>
-            <Aktualita />
+          <Route path="/mysticshop/AktualitaDetailPage" exact>
+            <AktualitaDetailPage />
           </Route>
         </Switch>
       </div>

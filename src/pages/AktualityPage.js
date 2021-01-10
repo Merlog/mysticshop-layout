@@ -8,8 +8,7 @@ export default function AktualityPage() {
     newMsg.push(
       <div className="row aktualityPageWrapper my-4">
         <div className="col-12">
-          <h4>Kompletní spoiler Avacyn Restored</h4>
-          <h5 className="mt-3 mb-0">A je to tu</h5>
+          <h4 className="mt-2 mb-4">Kompletní spoiler Avacyn Restored</h4>
           <p className="aktualityPageText">
             <a href="#">Kompletní spoiler Avacyn Restored </a>
             včetně obrázků je na světě. Prohlédni si už nyní karty, které
@@ -20,8 +19,8 @@ export default function AktualityPage() {
             </a>
             platí již jen několik dní, proto si pospěš{" "}
             <b> a objednej ještě dnes!</b>
-            <div className="aktualityNext d-flex justify-content-center">
-              <NavLink to="/mysticshop/Aktualita">detail</NavLink>
+            <div className="aktualitaDetail d-flex justify-content-end">
+              <NavLink to="/mysticshop/AktualitaDetailPage">Detail</NavLink>
             </div>
           </p>
         </div>
