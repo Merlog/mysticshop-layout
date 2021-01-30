@@ -40,43 +40,43 @@ export default function KartaDetail() {
               <div className="col-3">
                 <div className="d-flex align-items-center legalitaWrapper illegal">
                   {Circle}
-                  <a href className="pl-1">Standard</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Standard</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <a href className="pl-1">Pioneer</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Pioneer</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper illegal">
                   {Circle}
-                  <a href className="pl-1">Modern</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Modern</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper illegal">
                   {Circle}
-                  <a href className="pl-1">Legacy</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Legacy</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper illegal">
                   {Circle}
-                  <a href className="pl-1">Vintage</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Vintage</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <a href className="pl-1">Brawl</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Brawl</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <a href className="pl-1">Historic</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Historic</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <a href className="pl-1">Pauper</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Pauper</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <a href className="pl-1">Penny</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Penny</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <a href className="pl-1">Commander</a>
+                  <NavLink to="/mysticshop/FormatPage" exact>Commander</NavLink>
                 </div>
               </div>
             </div>

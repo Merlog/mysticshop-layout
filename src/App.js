@@ -20,6 +20,7 @@ import RegistrationForm from "./pages/RegistrationForm";
 import Contact from "./pages/Contact";
 import BussinessConditions from "./pages/BussinessConditions";
 import MyAccount from "./pages/MyAccount";
+import FormatPage from "./pages/FormatPage";
 import BuyCards from "./pages/BuyCards";
 import SellCards from "./pages/SellCards";
 import Products from "./pages/Products";
@@ -184,6 +185,9 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/AktualitaDetailPage" exact>
             <AktualitaDetailPage />
+          </Route>
+          <Route path="/mysticshop/FormatPage" exact>
+            <FormatPage />
           </Route>
         </Switch>
       </div>
