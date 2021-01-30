@@ -22,18 +22,21 @@ export default function OrderList() {
           </thead>
           <tbody>
             <tr>
-              <NavLink to="/mysticshop/OrderDetail">
-                <th scope="row">1111</th>
-                <td className="text-center">1. 1. 2020</td>
-                <td className="text-center">zaplacená</td>
-                <td className="text-right">1 248 Kč</td>
+              <th scope="row">
+                <NavLink to="/mysticshop/OrderDetail">
+                  1111 
+
               </NavLink>
+              </th>
+              <td className="text-center">1. 1. 2020</td>
+              <td className="text-center">zaplacená</td>
+              <td className="text-right">1 248 Kč</td>
             </tr>
             <tr>
               <th scope="row">
-                <a href="/mysticshop/OrderDetail" className="link">
+                <NavLink to="/mysticshop/OrderDetail">
                   2222
-                </a>
+              </NavLink>
               </th>
               <td className="text-center">1. 5. 2020</td>
               <td className="text-center">zaplacená</td>
@@ -41,9 +44,9 @@ export default function OrderList() {
             </tr>
             <tr>
               <th scope="row">
-                <a href="/mysticshop/OrderDetail" className="link">
+                <NavLink to="/mysticshop/OrderDetail">
                   3333
-                </a>
+              </NavLink>
               </th>
               <td className="text-center">10. 9. 2020</td>
               <td className="text-center">zaplacená</td>
@@ -51,9 +54,9 @@ export default function OrderList() {
             </tr>
             <tr>
               <th scope="row">
-                <a href="/mysticshop/OrderDetail" className="link">
+                <NavLink to="/mysticshop/OrderDetail">
                   3333
-                </a>
+              </NavLink>
               </th>
               <td className="text-center">10. 9. 2020</td>
               <td className="text-center">zaplacená</td>
@@ -61,9 +64,9 @@ export default function OrderList() {
             </tr>
             <tr>
               <th scope="row">
-                <a href="/mysticshop/OrderDetail" className="link">
+                <NavLink to="/mysticshop/OrderDetail">
                   3333
-                </a>
+              </NavLink>
               </th>
 
               <td className="text-center">10. 9. 2020</td>
