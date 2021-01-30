@@ -40,43 +40,43 @@ export default function KartaDetail() {
               <div className="col-3">
                 <div className="d-flex align-items-center legalitaWrapper illegal">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Standard</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Standard</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Pioneer</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Pioneer</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper illegal">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Modern</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Modern</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper illegal">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Legacy</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Legacy</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper illegal">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Vintage</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Vintage</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Brawl</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Brawl</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Historic</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Historic</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Pauper</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Pauper</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Penny</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Penny</NavLink>
                 </div>
                 <div className="d-flex align-items-center legalitaWrapper">
                   {Circle}
-                  <NavLink to="/mysticshop/FormatPage" exact>Commander</NavLink>
+                  <NavLink to="/mysticshop/FormatPage" exact className="pl-1">Commander</NavLink>
                 </div>
               </div>
             </div>
