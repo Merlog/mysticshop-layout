@@ -9,7 +9,7 @@ export default function ResultsProducts(props) {
   const [listView, setListView] = useState(false);
 
   const productsGrid = [];
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 20; i++) {
     productsGrid.push(
       <div className="col-3 my-2">
         <NavLink to="/mysticshop/ProduktDetail" exact>
@@ -40,7 +40,7 @@ export default function ResultsProducts(props) {
   }
 
   const productsList = [];
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 20; i++) {
     productsList.push(
       <div className="col-12 my-2">
         <NavLink to="/mysticshop/ProduktDetail" exact>
@@ -75,15 +75,15 @@ export default function ResultsProducts(props) {
     <div className="row products">
       <div className="col-12">
         <div className="row title">
-          <div className="col-8">
+          <div className="col-6">
             <h2>Produkty / Doplňky</h2>
           </div>
-          <div className="col-3 d-flex justify-content-center align-items-center">
-            <label htmlFor="select">Seřadit:</label>
+          <div className="col-5 d-flex justify-content-center align-items-center">
+          <label htmlFor="selectOrder">Seřadit:</label>
             <select
               class="form-select form-select-sm"
               aria-label=".form-select-sm example"
-              id="select"
+              id="selectOrder"
             >
               <option selected value="1">
                 Od nejlevnějšího
@@ -92,8 +92,20 @@ export default function ResultsProducts(props) {
               <option value="3">A-Z</option>
               <option value="4">Z-A</option>
             </select>
+            <label htmlFor="selectQuantity">Zobrazit:</label>
+            <select
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+              id="selectQuantity"
+            >
+              <option selected value="1">
+                20
+              </option>
+              <option value="2">50</option>
+              <option value="3">100</option>
+            </select>
           </div>
-          <div className="col-1 justify-content-center align-items-center">
+          <div className="col-1 d-flex justify-content-center align-items-center">
             <button
               onClick={() => {
                 setListView(!listView);

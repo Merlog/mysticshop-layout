@@ -12,7 +12,7 @@ export default function ResultsCard(props) {
   const [listView, setListView] = useState(false);
 
   const cardsGrid = [];
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 20; i++) {
     cardsGrid.push(
       <div className="col-3 my-3">
         <NavLink to="/mysticshop/KartaDetail" exact>
@@ -58,7 +58,7 @@ export default function ResultsCard(props) {
   }
 
   const cardsList = [];
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 20; i++) {
     cardsList.push(
       <div className="col-12 my-2">
         <NavLink to="/mysticshop/KartaDetail" exact>
@@ -120,15 +120,15 @@ export default function ResultsCard(props) {
     <div className="row cards">
       <div className="col-12">
         <div className="row title">
-          <div className="col-8">
+          <div className="col-7">
             <h2>Výsledek hledání / Karty</h2>
           </div>
-          <div className="col-3 d-flex justify-content-center align-items-center">
-            <label htmlFor="select">Seřadit:</label>
+          <div className="col-4 d-flex justify-content-center align-items-center">
+            <label htmlFor="selectOrder">Seřadit:</label>
             <select
               class="form-select form-select-sm"
               aria-label=".form-select-sm example"
-              id="select"
+              id="selectOrder"
             >
               <option selected value="1">
                 Od nejlevnějšího
@@ -136,6 +136,18 @@ export default function ResultsCard(props) {
               <option value="2">Od nejdražšího</option>
               <option value="3">A-Z</option>
               <option value="4">Z-A</option>
+            </select>
+            <label htmlFor="selectQuantity">Zobrazit:</label>
+            <select
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+              id="selectQuantity"
+            >
+              <option selected value="1">
+                20
+              </option>
+              <option value="2">50</option>
+              <option value="3">100</option>
             </select>
           </div>
           <div className="col-1 d-flex justify-content-center align-items-center">
