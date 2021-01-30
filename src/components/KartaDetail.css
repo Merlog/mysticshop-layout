@@ -31,6 +31,10 @@
   font-weight: 600;
 }
 
+.kartaDetail .title {
+  min-height: 40px;
+}
+
 .kartaDetail .symbol {
   height: 24px;
   width: auto;
@@ -38,14 +42,44 @@
   margin-left: 10px;
 }
 
+.kartaDetail .edice {
+  min-height: 40px;
+}
+
+.kartaDetail .mana {
+  min-height: 40px;
+}
+
 .kartaDetail .mana img {
   height: 22px;
   width: auto;
 }
 
+.kartaDetail .stav {
+  min-height: 40px;
+}
+
 .kartaDetail .stav img {
   height: 25px;
   width: auto;
+}
+
+.kartaDetail .legalitaWrapper {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(77, 145, 77);
+}
+
+.kartaDetail .illegal {
+  color: rgb(253, 91, 91);
+}
+
+.kartaDetail .legalitaWrapper a {
+  color: black;
+}
+
+.kartaDetail .legalitaWrapper a:hover {
+  color: green;
 }
 
 .language {
@@ -61,6 +95,11 @@
 .language:hover {
   color: white;
   background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
+}
+
+.kartaDetail .cardText {
+  height: 220px;
+  overflow: scroll;
 }
 
 .kartaDetail .text p {
