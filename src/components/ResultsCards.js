@@ -36,6 +36,7 @@ export default function ResultsCard(props) {
                 <div className="mana">
                   <NavLink to="/mysticshop/StavKartyPage" exact>
                     <img src={Stav} className="" alt="stav" />
+                    "ikona pro foil zde"
                   </NavLink>
                 </div>
               </div>
@@ -97,6 +98,7 @@ export default function ResultsCard(props) {
                 <div className="mana">
                   <NavLink to="/mysticshop/StavKartyPage" exact>
                     <img src={Stav} className="" alt="stav" />
+                    "ikona pro foil zde"
                   </NavLink>
                 </div>
               </div>
