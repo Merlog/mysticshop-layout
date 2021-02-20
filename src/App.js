@@ -15,7 +15,6 @@ import Cart2 from "./pages/Cart2";
 import Cart3 from "./pages/Cart3";
 import ContactForm from "./pages/ContactForm";
 import OrderDetail from "./pages/OrderDetail";
-import OrderList from "./pages/OrderList";
 import RegistrationForm from "./pages/RegistrationForm";
 import Contact from "./pages/Contact";
 import BussinessConditions from "./pages/BussinessConditions";
@@ -132,16 +131,13 @@ export default function App() {
           <Route path="/mysticshop/RegistrationForm" exact>
             <RegistrationForm />
           </Route>
-          <Route path="/mysticshop/OrderList" exact>
-            <OrderList />
-          </Route>
           <Route path="/mysticshop/Contact" exact>
             <Contact />
           </Route>
           <Route path="/mysticshop/BussinessConditions" exact>
             <BussinessConditions />
           </Route>
-          <Route path="/mysticshop/MyAccount" exact>
+          <Route path="/mysticshop/MyAccount">
             <MyAccount />
           </Route>
           <Route path="/mysticshop/BuyCards" exact>

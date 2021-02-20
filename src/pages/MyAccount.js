@@ -1,47 +1,61 @@
-import { useState } from "react";
-import "./MyAccount.css";
+import { Switch, Route, NavLink } from "react-router-dom";
 import OrderList from "./OrderList";
 import UserDetail from "./UserDetail";
+import UserDiscount from "./UserDiscount";
+import UserBonus from "./UserBonus";
+import "./MyAccount.css";
 
 export default function MyAccount() {
-  const [orders, setOrders] = useState(false);
   return (
     <div className="row">
       <div className="col-2">
         <div className="accountMenu">
-          <button
-            onClick={() => {
-              setOrders(false);
-            }}
+          <NavLink
+            to="/mysticshop/MyAccount/UserDetail"
+            exact
+            className="accountLink"
           >
-            <h5
-              className={`accountTitle ${orders ? "" : "accountTitleActive"}`}
-            >
-              Můj účet
-            </h5>
-          </button>
-          <button
-            onClick={() => {
-              setOrders(true);
-            }}
+            Můj účet
+          </NavLink>
+          <NavLink
+            to="/mysticshop/MyAccount/OrderList"
+            exact
+            className="accountLink"
           >
-            <h5
-              className={`accountTitle ${orders ? "accountTitleActive" : ""}`}
-            >
-              Mé objednávky
-            </h5>
-          </button>
+            Mé objednávky
+          </NavLink>
+          <NavLink
+            to="/mysticshop/MyAccount/UserDiscount"
+            exact
+            className="accountLink"
+          >
+            Mé slevy
+          </NavLink>
+          <NavLink
+            to="/mysticshop/MyAccount/UserBonus"
+            exact
+            className="accountLink"
+          >
+            Bonus body
+          </NavLink>
         </div>
       </div>
-      {orders ? (
-        <div className="col-10">
-          <OrderList />
-        </div>
-      ) : (
-        <div className="col-10">
-          <UserDetail />
-        </div>
-      )}
+      <div className="col-10">
+        <Switch>
+          <Route path="/mysticshop/MyAccount/UserDetail" exact>
+            <UserDetail />
+          </Route>
+          <Route path="/mysticshop/MyAccount/UserDiscount" exact>
+            <UserDiscount />
+          </Route>
+          <Route path="/mysticshop/MyAccount/UserBonus" exact>
+            <UserBonus />
+          </Route>
+          <Route path="/mysticshop/MyAccount/OrderList" exact>
+            <OrderList />
+          </Route>
+        </Switch>
+      </div>
     </div>
   );
 }
