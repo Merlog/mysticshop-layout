@@ -81,7 +81,7 @@ export default function Header(props) {
                   {loggedIn && (
                     <>
                       <li className="list-inline-item">
-                        <NavLink to="/mysticshop/MyAccount" exact>
+                        <NavLink to="/mysticshop/MyAccount/UserDetail" exact>
                           Můj účet
                         </NavLink>
                       </li>

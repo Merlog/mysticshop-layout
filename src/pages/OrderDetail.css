@@ -1,0 +1,55 @@
+.order-detail {
+  background-color: white;
+  padding: 25px;
+}
+
+.order-detail-label {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.order-detail-table-header th {
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid #e5e5e5 !important;
+  background: #e9e8e8;
+  padding: 5px 10px;
+}
+
+.order-detail-table-header .suma th {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.order-detail-table .order-detail-table-body tr:nth-child(even) {
+  background: #f9f8f8;
+}
+
+.order-detail-table-body td {
+  border: none;
+  padding: 5px 10px;
+  vertical-align: middle !important;
+}
+
+.table-image-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.table-image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.table-image img {
+  height: auto;
+  max-height: 100%;
+}

@@ -9,16 +9,16 @@ export default function OrderList() {
           <thead className="order-list-header">
             <tr>
               <th scope="col">
-                <h4 className="mb-4">Číslo objednávky</h4>
+               Číslo objednávky
               </th>
               <th scope="col" className="text-center">
-                <h4 className="mb-4">Datum</h4>
+               Datum
               </th>
               <th scope="col" className="text-center">
-                <h4 className="mb-4">Stav</h4>
+               Stav
               </th>
               <th scope="col" className="text-right">
-                <h4 className="mb-4">Celkem</h4>
+               Celkem
               </th>
             </tr>
           </thead>

@@ -6,19 +6,25 @@
 }
 
 .order-list-header th {
+  font-size: 15px;
+  font-weight: 600;
   border: none;
-  border-bottom: 1px !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  background: #e9e8e8;
+  padding: 5px 10px;
 }
 
-.order-list-header h3 {
-  margin-bottom: 15px !important;
+.order-list-body td {
+  padding: 5px 10px;
+  vertical-align: middle !important;
 }
 
 .order-list-body a {
-  color: #59b20e;
+  color: black;
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .order-list-body a:hover {
-  color: green;
+  color: #59b20e;
 }
