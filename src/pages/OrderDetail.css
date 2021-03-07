@@ -29,6 +29,10 @@
   background: #f9f8f8;
 }
 
+.order-detail-table .order-detail-table-body tr:hover {
+  background-color: #ececec;
+}
+
 .order-detail-table-body td {
   border: none;
   padding: 5px 10px;

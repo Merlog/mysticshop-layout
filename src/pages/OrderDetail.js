@@ -21,7 +21,7 @@ export default function OrderDetail() {
               </small>
             </div>
             <span className="order-detail-label mb-4">Vyřízená</span>
-            <table className="table table-hover table-sm order-detail-table">
+            <table className="table table-sm order-detail-table">
               <thead className="order-detail-table-header">
                 <tr>
                   <th scope="col" className="text-left">
