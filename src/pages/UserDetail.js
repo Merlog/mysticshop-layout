@@ -5,6 +5,12 @@ export default function UserDetail() {
   const [passwordChange, setPasswordChange] = useState(false);
   const [detailsChange, setDetailsChange] = useState(false);
 
+  const handleAlert = () => {
+    alert(
+      "Opravdu si přejete odstranit svůj účet? Tato akce je nevratná. Váš účet nebude možné obnovit."
+    );
+  };
+
   return (
     <>
       <div className="row d-flex flex-column user-detail-section">
@@ -277,11 +283,11 @@ export default function UserDetail() {
           <h3 className="mb-4">Odstranit účet</h3>
           <hr />
           <div>
-            <strong>Opravdu si přejete odstranit svůj účet?</strong> <nbsp />
-            <small>Tato akce je nevratná. Váš účet nebude možné obnovit.</small>
-          </div>
-          <div>
-            <button type="submit" class="btn user-detail-button">
+            <button
+              type="submit"
+              onClick={() => handleAlert()}
+              class="btn user-detail-button"
+            >
               Smazat účet
             </button>
           </div>

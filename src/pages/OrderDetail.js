@@ -16,9 +16,6 @@ export default function OrderDetail() {
               <a href="https://trasovacilink.cz" target="blank">
                 Trasovací link <nbsp />
               </a>
-              <small>
-                (bude vidět pouze než bude objednávka doručena příjemci)
-              </small>
             </div>
             <span className="order-detail-label mb-4">Vyřízená</span>
             <table className="table table-sm order-detail-table">
@@ -27,10 +24,10 @@ export default function OrderDetail() {
                   <th scope="col" className="text-left">
                     Kusovky
                   </th>
-                  <th scope="col" className="text-center">
+                  <th scope="col" className="text-right">
                     Počet ks
                   </th>
-                  <th scope="col" className="text-center">
+                  <th scope="col" className="text-right">
                     Cena za ks
                   </th>
                   <th scope="col" className="text-right">
@@ -46,8 +43,8 @@ export default function OrderDetail() {
                     </div>
                     Karta xxxxxxxxx
                   </td>
-                  <td className="text-center">1 ks</td>
-                  <td className="text-center">120 Kč</td>
+                  <td className="text-right">1 ks</td>
+                  <td className="text-right">120 Kč</td>
                   <td className="text-right">120 Kč</td>
                 </tr>
                 <tr>
@@ -57,8 +54,8 @@ export default function OrderDetail() {
                     </div>
                     Karta2 xxxxxxxxx
                   </td>
-                  <td className="text-center">2 ks</td>
-                  <td className="text-center">80 Kč</td>
+                  <td className="text-right">2 ks</td>
+                  <td className="text-right">80 Kč</td>
                   <td className="text-right">160 Kč</td>
                 </tr>
                 <tr>
@@ -68,8 +65,8 @@ export default function OrderDetail() {
                     </div>
                     Karta2 xxxxxxxxx
                   </td>
-                  <td className="text-center">2 ks</td>
-                  <td className="text-center">80 Kč</td>
+                  <td className="text-right">2 ks</td>
+                  <td className="text-right">80 Kč</td>
                   <td className="text-right">160 Kč</td>
                 </tr>
                 <tr>
@@ -79,8 +76,8 @@ export default function OrderDetail() {
                     </div>
                     Karta2 xxxxxxxxx
                   </td>
-                  <td className="text-center">2 ks</td>
-                  <td className="text-center">80 Kč</td>
+                  <td className="text-right">2 ks</td>
+                  <td className="text-right">80 Kč</td>
                   <td className="text-right">160 Kč</td>
                 </tr>
                 <tr>
@@ -90,8 +87,8 @@ export default function OrderDetail() {
                     </div>
                     Karta2 xxxxxxxxx
                   </td>
-                  <td className="text-center">2 ks</td>
-                  <td className="text-center">80 Kč</td>
+                  <td className="text-right">2 ks</td>
+                  <td className="text-right">80 Kč</td>
                   <td className="text-right">160 Kč</td>
                 </tr>
               </tbody>
@@ -101,10 +98,10 @@ export default function OrderDetail() {
                   <th scope="col" className="text-left">
                     Zboží z katalogu
                   </th>
-                  <th scope="col" className="text-center">
+                  <th scope="col" className="text-right">
                     Počet ks
                   </th>
-                  <th scope="col" className="text-center">
+                  <th scope="col" className="text-right">
                     Cena za ks
                   </th>
                   <th scope="col" className="text-right">
@@ -120,8 +117,8 @@ export default function OrderDetail() {
                     </div>
                     Obal xxxxxx
                   </td>
-                  <td className="text-center">3 ks</td>
-                  <td className="text-center">40 Kč</td>
+                  <td className="text-right">3 ks</td>
+                  <td className="text-right">40 Kč</td>
                   <td className="text-right">120 Kč</td>
                 </tr>
                 <tr>
@@ -131,8 +128,8 @@ export default function OrderDetail() {
                     </div>
                     Herní box xxxxxxxxx
                   </td>
-                  <td className="text-center">1 ks</td>
-                  <td className="text-center">280 Kč</td>
+                  <td className="text-right">1 ks</td>
+                  <td className="text-right">280 Kč</td>
                   <td className="text-right">280 Kč</td>
                 </tr>
               </tbody>
@@ -145,7 +142,7 @@ export default function OrderDetail() {
                     Doprava a platba
                   </th>
                   <th scope="col"></th>
-                  <th scope="col" className="text-center">
+                  <th scope="col" className="text-right">
                     Typ
                   </th>
                   <th scope="col" className="text-right">
@@ -157,13 +154,13 @@ export default function OrderDetail() {
                 <tr>
                   <td className="text-left">Doprava</td>
                   <td></td>
-                  <td className="text-center">Zásilkovna ČR</td>
+                  <td className="text-right">Zásilkovna ČR</td>
                   <td className="text-right">59 Kč</td>
                 </tr>
                 <tr>
                   <td className="text-left">Platba</td>
                   <td></td>
-                  <td className="text-center">Dobírkou</td>
+                  <td className="text-right">Dobírkou</td>
                   <td className="text-right">30 Kč</td>
                 </tr>
               </tbody>
@@ -192,28 +189,81 @@ export default function OrderDetail() {
               <thead className="order-detail-table-header mt-2">
                 <tr>
                   <th scope="col" className="text-left">
-                    Fakturační údaje
+                    Extra
                   </th>
+                  <th scope="col" className="text-right"></th>
                 </tr>
               </thead>
               <tbody className="order-detail-table-body">
                 <tr>
-                  <td className="text-left">Jana Nováková</td>
+                  <td className="text-left">Bonusové body</td>
+                  <td className="text-right">+ 12b.</td>
                 </tr>
                 <tr>
-                  <td className="text-left">Přípotoční 28</td>
-                </tr>
-                <tr>
-                  <td className="text-left">100 00 Praha 1</td>
-                </tr>
-                <tr>
-                  <td className="text-left">Česká republika</td>
-                </tr>
-                <tr>
-                  <td className="text-left">+420 777 777 777</td>
+                  <td className="text-left">Dárek - obal zzzzz</td>
+                  <td className="text-right">0 Kč</td>
                 </tr>
               </tbody>
+              <div className="mt-5"></div>
             </table>
+            <div className="row">
+              <div className="col-6">
+                <table className="table table-sm order-detail-table-second">
+                  <thead className="order-detail-table-header mt-2">
+                    <tr>
+                      <th scope="col" className="text-left">
+                        Fakturační údaje
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="order-detail-table-body">
+                    <tr>
+                      <td className="text-left">Jana Nováková</td>
+                    </tr>
+                    <tr>
+                      <td className="text-left">Přípotoční 28</td>
+                    </tr>
+                    <tr>
+                      <td className="text-left">100 00 Praha 1</td>
+                    </tr>
+                    <tr>
+                      <td className="text-left">Česká republika</td>
+                    </tr>
+                    <tr>
+                      <td className="text-left">+420 777 777 777</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="col-6">
+                <table className="table table-sm order-detail-table-second">
+                  <thead className="order-detail-table-header mt-2">
+                    <tr>
+                      <th scope="col" className="text-left">
+                        Dodací údaje
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="order-detail-table-body">
+                    <tr>
+                      <td className="text-left">Jana Nováková</td>
+                    </tr>
+                    <tr>
+                      <td className="text-left">Přípotoční 28</td>
+                    </tr>
+                    <tr>
+                      <td className="text-left">100 00 Praha 1</td>
+                    </tr>
+                    <tr>
+                      <td className="text-left">Česká republika</td>
+                    </tr>
+                    <tr>
+                      <td className="text-left">+420 777 777 777</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
