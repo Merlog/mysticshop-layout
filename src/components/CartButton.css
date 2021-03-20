@@ -1,0 +1,26 @@
+.cart-navigace {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cart-button {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
+  border: none;
+  border-radius: 2px;
+  padding: 5px 15px;
+}
+
+.cart-button:hover {
+  color: white;
+  background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
+}
+
+.cart-button-large {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 20px;
+}
