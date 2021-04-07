@@ -13,6 +13,7 @@ import CookieAlert from "./components/CookieAlert";
 import Cart1 from "./pages/Cart1";
 import Cart2 from "./pages/Cart2";
 import Cart3 from "./pages/Cart3";
+import Cart4 from "./pages/Cart4";
 import ContactForm from "./pages/ContactForm";
 import OrderDetail from "./pages/OrderDetail";
 import RegistrationForm from "./pages/RegistrationForm";
@@ -46,21 +47,6 @@ export default function App() {
         }`}
     >
       <div className="row temporary">
-        <div>
-          <NavLink to="/mysticshop/Cart1" exact>
-            Cart1
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/mysticshop/Cart2" exact>
-            Cart2
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/mysticshop/Cart3" exact>
-            Cart3
-          </NavLink>
-        </div>
         <div>
           <NavLink to="/mysticshop/RegistrationForm" exact>
             Registration Form
@@ -124,6 +110,9 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/Cart3" exact>
             <Cart3 />
+          </Route>
+          <Route path="/mysticshop/Cart4" exact>
+            <Cart4 />
           </Route>
           <Route path="/mysticshop/ProduktDetail" exact>
             <ProduktDetailPage />
