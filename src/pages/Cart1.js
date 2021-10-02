@@ -1,9 +1,9 @@
-import Delete from "../assets/svg/delete.svg";
-import "./Cart.css";
-import CartButton from "../components/CartButton";
-import Booster from "./../assets/images/product-img/booster.jpg";
-import Karta from "./../assets/images/karta.jpg";
-import Stav from "../assets/images/stav.png";
+import Delete from '../assets/svg/delete.svg';
+import './Cart.css';
+import CartButton from '../components/CartButton';
+import Booster from './../assets/images/product-img/booster.jpg';
+import Karta from './../assets/images/karta.jpg';
+import Stav from '../assets/images/stav.png';
 
 export default function Cart1() {
   return (
@@ -17,8 +17,8 @@ export default function Cart1() {
           <div className="cart-wrapper">
             <div className="cart-header">
               <h3 className="mb-3">
-                Košík >>> Doprava a platba >>> Dodací údaje >>> Souhrn a potvrzení
-                objednávky
+                Košík >>> Doprava a platba >>> Dodací údaje >>> Souhrn a
+                potvrzení objednávky
               </h3>
               <div class="cart-items-number">5 ks</div>
             </div>

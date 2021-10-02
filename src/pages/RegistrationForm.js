@@ -1,163 +1,140 @@
-import { NavLink } from "react-router-dom";
+import CartButton from '../components/CartButton';
+import { NavLink } from 'react-router-dom';
+import './RegistrationForm.css';
 
 export default function RegistrationForm() {
   return (
-    <div className="row d-flex justify-content-center align-items-center my-3">
-      <div className="col-8 p-4">
-        <div className="row">
-          <div className="col-2 py-4">
-            <a
-              href="#"
-              className="btn btn-outline-success btn-sm align-baseline"
+    <div className="row registration">
+      <CartButton to="/LogIn" text="Zpět na přihlášení" />
+      <form
+        className="registrationForm"
+        onSubmit={() =>
+          alert(
+            'Registrace proběhla úspěšně. Na zadaný e-mail jsme odeslali potvrzení o registraci.'
+          )
+        }
+      >
+        <h2 class="mb-5 fw-normal">Registrační údaje</h2>
+        <div className="registrationFlex">
+          <div className="registrationFlexItem">
+            <input
+              type="email"
+              id="inputEmail"
+              class="form-control registrationInput"
+              placeholder="Email"
+              required=""
+              autofocus=""
+            />
+            <small
+              id="emailHelp"
+              className="form-text text-muted mb-4 registrationEmailText"
             >
-              Zpět
-            </a>
+              E-mail slouží zároveň jako uživatelské jméno.
+            </small>
           </div>
-          <div className="col-8 text-center py-4">
-            <h5>Registrační údaje</h5>
+          <div className="registrationFlexItem">
+            <input
+              type="password"
+              id="inputPassword"
+              class="form-control mb-5 registrationInput"
+              placeholder="Heslo"
+              required=""
+            />
+          </div>
+          <div className="registrationFlexItem">
+            <input
+              type="text"
+              id="inputFirstname"
+              class="form-control mb-5 registrationInput"
+              placeholder="Jméno"
+              required=""
+            />
+          </div>
+          <div className="registrationFlexItem">
+            <input
+              type="text"
+              id="inputLastname"
+              class="form-control mb-5 registrationInput"
+              placeholder="Příjmení"
+              required=""
+            />
+          </div>
+          <div className="registrationFlexItem">
+            <input
+              type="text"
+              id="inputStreet"
+              class="form-control mb-5 registrationInput"
+              placeholder="Ulice"
+              required=""
+            />
+          </div>
+          <div className="registrationFlexItem">
+            <input
+              type="text"
+              id="inputStreetNumber"
+              class="form-control mb-5 registrationInput"
+              placeholder="Číslo popisné/evidenční"
+              required=""
+            />
+          </div>
+          <div className="registrationFlexItem">
+            <input
+              type="text"
+              id="inputCity"
+              class="form-control mb-5 registrationInput"
+              placeholder="Město/Obec"
+              required=""
+            />
+          </div>
+          <div className="registrationFlexItem">
+            <input
+              type="number"
+              id="inputPostcode"
+              class="form-control mb-5 registrationInput"
+              placeholder="PSČ"
+              required=""
+            />
+          </div>
+          <div className="registrationFlexItem">
+            <input
+              type="text"
+              id="inputCountry"
+              class="form-control mb-5 registrationInput"
+              placeholder="Stát"
+              required=""
+            />
+          </div>
+          <div className="registrationFlexItem">
+            <input
+              type="number"
+              id="inputPhone"
+              class="form-control mb-5 registrationInput"
+              placeholder="Telefonní číslo"
+              required=""
+            />
           </div>
         </div>
-        <form>
-          <div className="form-row">
-            <div className="form-group col-12">
-              <label for="exampleInputEmail1">E-mail</label>
-              <input
-                type="email"
-                className="form-control form-control-sm"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                required
-              />
-              <small id="emailHelp" className="form-text text-muted">
-                E-mail slouží zároveň jako uživatelské jméno.
-              </small>
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="col-6 form-group">
-              <label for="exampleInputPassword1">Heslo</label>
-              <input
-                type="password"
-                className="form-control form-control-sm"
-                id="exampleInputPassword1"
-                required
-              />
-            </div>
-            <div className="col-6 form-group">
-              <label for="exampleInputPassword2">Heslo znovu</label>
-              <input
-                type="password"
-                className="form-control form-control-sm"
-                id="exampleInputPassword2"
-                required
-              />
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="col mb-3">
-              <h5 className="text-center my-3">Kontaktní údaje</h5>
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="col-6 form-group">
-              <label for="exampleInputPassword1">Jméno</label>
-              <input
-                type="text"
-                className="form-control form-control-sm"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div className="col-6 form-group">
-              <label for="exampleInputPassword2">Příjmení</label>
-              <input
-                type="text"
-                className="form-control form-control-sm"
-                id="exampleInputPassword2"
-              />
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="col-9 form-group">
-              <label for="exampleInputPassword2">Ulice</label>
-              <input
-                type="text"
-                className="form-control form-control-sm"
-                id="exampleInputPassword2"
-              />
-            </div>
-            <div className="col-3 form-group">
-              <label for="exampleInputPassword2">Číslo popisné/evidenční</label>
-              <input
-                type="text"
-                className="form-control form-control-sm"
-                id="exampleInputPassword2"
-              />
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="col-9 form-group">
-              <label for="exampleInputPassword2">Obec</label>
-              <input
-                type="text"
-                className="form-control form-control-sm"
-                id="exampleInputPassword2"
-              />
-            </div>
-            <div className="col-3 form-group">
-              <label for="exampleInputPassword2">PSČ</label>
-              <input
-                type="text"
-                className="form-control form-control-sm"
-                id="exampleInputPassword2"
-              />
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="col-9 form-group">
-              <label for="exampleInputPassword2">Stát</label>
-              <input
-                type="text"
-                className="form-control form-control-sm"
-                id="exampleInputPassword2"
-              />
-            </div>
-            <div className="col-3 form-group">
-              <label for="exampleInputPassword2">Telefonní číslo</label>
-              <input
-                type="text"
-                className="form-control form-control-sm"
-                id="exampleInputPassword2"
-              />
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="col-6 my-4 form-group">
-              <input type="checkbox" value="" id="defaultCheck1" />
-              <label className="font-weight-bolder pl-2" for="defaultCheck1">
-                Souhlasím s
-                <NavLink to="/mysticshop/BussinessConditions" exact>
-                  {" "}
-                  obchodními podmínkami
-                </NavLink>
-              </label>
-            </div>
-          </div>
-          <div className="form-row captcha">Captcha</div>
-          <div className="form-row">
-            <div className="col-12 d-flex justify-content-center mt-3">
-              <NavLink to={`${process.env.PUBLIC_URL}/`}>
-                <button
-                  type="button"
-                  className="btn btn-success px-4"
-                  onClick={() => alert("Registrace proběhla úspěšně")}
-                >
-                  Zaregistrovat
-                </button>
-              </NavLink>
-            </div>
-          </div>
-        </form>
-      </div>
+        <div className="bussinessConditions">
+          <input type="checkbox" value="" id="defaultCheck1" />
+          <label className="font-weight-bolder pl-2" for="defaultCheck1">
+            Souhlasím s&nbsp;
+            <NavLink
+              to="/mysticshop/BussinessConditions"
+              className="registrationLink"
+              exact
+            >
+              obchodními podmínkami
+            </NavLink>
+          </label>
+        </div>
+        <div className="captcha">Captcha</div>
+        <button
+          class="w-100 btn btn-success btn-lg mb-4 registrationSubmit"
+          type="submit"
+        >
+          Zaregistrovat se
+        </button>
+      </form>
     </div>
   );
 }

@@ -1,48 +1,38 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import './LogIn.css';
 
 export default function LogIn() {
   return (
-    <div className="row d-flex justify-content-center align-items-center my-3">
-      <form>
-        <h2 class="h3 mb-3 fw-normal">Přihlásit se</h2>
-        <label for="inputEmail" class="visually-hidden">
-          Email
-        </label>
+    <div className="row login">
+      <form className="loginForm">
+        <h2 class="mb-5 fw-normal">Přihlásit se</h2>
         <input
           type="email"
           id="inputEmail"
-          class="form-control"
+          class="form-control mb-4 loginInput"
           placeholder="Email"
           required=""
           autofocus=""
         />
-        <label for="inputPassword" class="visually-hidden">
-          Heslo
-        </label>
         <input
           type="password"
           id="inputPassword"
-          class="form-control"
+          class="form-control mb-5 loginInput"
           placeholder="Heslo"
           required=""
         />
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me" /> Zapamatovat
-          </label>
-        </div>
-        <button class="w-100 btn btn-success" type="submit">
+        <button
+          class="w-100 btn btn-success btn-lg mb-4 loginSubmit"
+          type="submit"
+        >
           Přihlásit
         </button>
-        <NavLink to="/mysticshop/ResetPassword">Zapomněli jste heslo?</NavLink>
-        <div className="my-4">
-          <h4>Ještě nemáte účet?</h4>
-          <NavLink to="/mysticshop/RegistrationForm">
-            <button className="w-100 btn btn-success">
-              Vytvořit účet / Zaregistrovat
-            </button>
-          </NavLink>
-        </div>
+        <NavLink to="/mysticshop/ResetPassword" className="loginInput mb-3">
+          Zapomněli jste heslo?
+        </NavLink>
+        <NavLink to="/mysticshop/RegistrationForm" className="loginInput mb-3">
+          Ještě nemáte účet?
+        </NavLink>
       </form>
     </div>
   );

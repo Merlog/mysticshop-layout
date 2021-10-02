@@ -1,0 +1,54 @@
+.registration {
+  display: flex;
+  flex-direction: column;
+}
+
+.registrationForm {
+  width: 100%;
+  background-color: white;
+  padding: 50px 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.registrationFlex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.registrationFlexItem {
+  flex: 50% 0;
+  max-width: 50%;
+}
+
+.registrationFlexItem:nth-child(odd) {
+  padding-right: 50px;
+}
+
+.registrationFlexItem:nth-child(even) {
+  padding-left: 50px;
+}
+
+.registrationEmailText {
+  text-align: left;
+}
+
+.bussinessConditions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.registrationLink {
+  color: #28a745;
+}
+
+.registrationLink:hover {
+  text-decoration: underline;
+  color: #28a745;
+}
+
+.registrationSubmit {
+  max-width: 200px;
+}

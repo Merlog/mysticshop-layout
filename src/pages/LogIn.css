@@ -1,0 +1,30 @@
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm {
+  width: 550px;
+  background-color: white;
+  padding: 50px 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loginSubmit {
+  max-width: 200px;
+}
+
+.loginInput {
+  display: block;
+}
+
+.loginLink {
+  display: block;
+  color: #28a745;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+  color: #28a745;
+}

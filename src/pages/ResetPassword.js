@@ -1,26 +1,30 @@
+import CartButton from '../components/CartButton';
+import './ResetPassword.css';
+
 export default function ResetPassword() {
   return (
-    <div className="row d-flex justify-content-center align-items-center my-3">
-      <form>
-        <h2 class="h3 mb-3 fw-normal">Zadejte prosím e-mailovou adresu</h2>
-        <label for="inputEmail" class="visually-hidden">
-          Email
-        </label>
+    <div className="row resetPassword">
+      <CartButton to="/mysticshop/LogIn" text="Zpět k přihlášení" />
+      <form
+        className="resetPasswordForm"
+        onSubmit={() =>
+          alert(
+            'Na zadanou adresu byl odeslán email s odkazem na resetování hesla.'
+          )
+        }
+      >
+        <h2 class="mb-5 fw-normal">Zadejte prosím e-mailovou adresu</h2>
         <input
           type="email"
           id="inputEmail"
-          class="form-control"
+          class="form-control mb-4 resetPasswordInput"
           placeholder="Email"
           required=""
           autofocus=""
         />
         <button
-          class="w-100 btn btn-success"
-          onClick={() =>
-            alert(
-              "Na zadanou adresu byl odeslán email s odkazem na resetování hesla."
-            )
-          }
+          type="submit"
+          class="w-100 btn btn-success btn-lg mb-4 resetPasswordSubmit"
         >
           Resetovat heslo
         </button>
