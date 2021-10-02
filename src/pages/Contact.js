@@ -1,23 +1,24 @@
-import ContactForm from "../pages/ContactForm";
+import ContactForm from '../pages/ContactForm';
+import './Contact.css';
 
 export default function Contact() {
   return (
-    <>
-      <div className="row">
-        <h2>Kontakt</h2>
-      </div>
-      <div className="row">
-        <div className="col-6">
+    <div className="contact">
+      <h2 className="mb-5">Kontakt</h2>
+      <div className="contactFlex">
+        <div className="contactFlexItem">
           <ContactForm />
         </div>
-        <div className="col-6">
+        <div className="contactFlexItem">
           <h4>
             Provozovatel e-shopu MysticShop.cz a adresa pro možnost osobního
             odběru objednávek
           </h4>
-          <p>Štefan Čonka</p>
-          <p>Jana Palacha 1636</p>
-          <p>27201 Kladno</p>
+          <div className="mb-4">
+            <p>Štefan Čonka</p>
+            <p>Jana Palacha 1636</p>
+            <p>27201 Kladno</p>
+          </div>
           <h5>
             NA TÉTO ADRESE SE NENACHÁZÍ KAMENNÝ OBCHOD A NENÍ MOŽNÉ ZDE PŘÍMO
             NAKUPOVAT!!
@@ -32,6 +33,6 @@ export default function Contact() {
           <p>e-mail: obchod@mysticshop­.cz</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

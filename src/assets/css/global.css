@@ -15,8 +15,13 @@ button {
   text-decoration: none;
 }
 
+a {
+  color: #28a745;
+}
+
 a:hover {
   text-decoration: none;
+  color: #28a745;
 }
 
 button {
@@ -69,4 +74,9 @@ input[type='search']::-webkit-search-resultscard-decoration {
   border: 1px solid #eaeaea;
   background-color: white;
   margin-bottom: 30px;
+}
+
+h4,
+h5 {
+  margin-bottom: 20px;
 }
