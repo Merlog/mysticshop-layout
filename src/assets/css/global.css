@@ -36,7 +36,37 @@ p {
   margin: 0;
 }
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  -moz-appearance: textfield;
+}
+
+input,
+select {
+  border: 1px solid #eee !important;
+  border-radius: 2px;
+}
+
 input:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #eee !important;
+}
+
+select {
+  padding: 5px 20px 5px 5px;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
 button:focus,
 .btn:focus {
   outline: none !important;
@@ -79,4 +109,8 @@ input[type='search']::-webkit-search-resultscard-decoration {
 h4,
 h5 {
   margin-bottom: 20px;
+}
+
+.form-control:disabled {
+  background-color: #ececec;
 }

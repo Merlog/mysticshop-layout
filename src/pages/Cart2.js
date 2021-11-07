@@ -1,7 +1,10 @@
-import "./Cart.css";
-import CartButton from "../components/CartButton";
+import './Cart.css';
+import CartButton from '../components/CartButton';
+import ArrowNext from '../assets/svg/arrow-next-material.svg';
+import { useState } from 'react';
 
 export default function Cart2() {
+  const [radioChecked, setRadioChecked] = useState(null);
   return (
     <>
       <div className="cart-navigation-wrapper">
@@ -13,8 +16,15 @@ export default function Cart2() {
           <div className="cart-wrapper">
             <div className="cart-header">
               <h3 className="mb-3">
-                Košík >>> Doprava a platba >>> Dodací údaje >>> Souhrn a
-                potvrzení objednávky
+                <span className="cart-header-nav">Košík</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav-active">Doprava a platba</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav">Dodací údaje</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav">
+                  Souhrn a potvrzení objednávky
+                </span>
               </h3>
             </div>
             <hr />
@@ -23,51 +33,52 @@ export default function Cart2() {
                 Zvolte prosím způsob dopravy:
               </h4>
               <div
-                class="btn-group-vertical cart-shipment-button"
+                class="btn-group-vertical cart-shipment-group"
                 role="group"
                 aria-label="Basic checkbox toggle button group"
+                id="group1"
               >
-                <div>
+                <div class="cart-shipment-button">
                   <input
-                    type="checkbox"
+                    type="radio"
                     class="btn-check"
-                    id="btncheck1"
+                    name="btnradio1"
+                    id="btnradio1"
                     autocomplete="off"
+                    onChange={(e) => setRadioChecked(e.target.id)}
                   />
-                  <label class="btn cart-shipment-label" for="btncheck1">
+                  <label class="btn cart-shipment-label" for="btnradio1">
                     Zásilkovna
+                    <strong>69 Kč</strong>
                   </label>
                 </div>
-                <div>69 Kč</div>
-              </div>
-              <div>
-                <label for="zasilkovna" className="mr-2">
-                  Zvolte si prosím pobočku
-                </label>
-                <select name="zasilkovna" id="zasilkovna">
-                  <option value="1">Na Poříčí 22, Praha 1</option>
-                  <option value="2">Jablonecká 8, Praha 4</option>
-                  <option value="3">Vysočanská 55, Praha 9</option>
-                  <option value="4">Na stráni 567, Praha 2</option>
-                </select>
-              </div>
-              <div
-                class="btn-group-vertical cart-shipment-button"
-                role="group"
-                aria-label="Basic checkbox toggle button group"
-              >
-                <div>
+                {radioChecked === 'btnradio1' && (
+                  <div>
+                    <label for="zasilkovna" className="mr-2">
+                      Zvolte si prosím pobočku
+                    </label>
+                    <select name="zasilkovna" id="zasilkovna">
+                      <option value="1">Na Poříčí 22, Praha 1</option>
+                      <option value="2">Jablonecká 8, Praha 4</option>
+                      <option value="3">Vysočanská 55, Praha 9</option>
+                      <option value="4">Na stráni 567, Praha 2</option>
+                    </select>
+                  </div>
+                )}
+                <div class="cart-shipment-button">
                   <input
-                    type="checkbox"
+                    type="radio"
                     class="btn-check"
-                    id="btncheck1"
+                    name="btnradio1"
+                    id="btnradio2"
                     autocomplete="off"
+                    onChange={(e) => setRadioChecked(e.target.id)}
                   />
-                  <label class="btn cart-shipment-label" for="btncheck1">
+                  <label class="btn cart-shipment-label" for="btnradio2">
                     Česká pošta - balík do ruky
+                    <strong>99 Kč</strong>
                   </label>
                 </div>
-                <div>89 Kč</div>
               </div>
             </div>
             <div className="cart-shipment">
@@ -75,40 +86,37 @@ export default function Cart2() {
                 Zvolte prosím způsob platby:
               </h4>
               <div
-                class="btn-group-vertical cart-shipment-button"
+                class="btn-group-vertical cart-shipment-group"
                 role="group"
                 aria-label="Basic checkbox toggle button group"
+                id="group2"
               >
-                <div>
+                <div class="cart-shipment-button">
                   <input
-                    type="checkbox"
+                    type="radio"
                     class="btn-check"
-                    id="btncheck1"
+                    name="btnradio2"
+                    id="btnradio3"
                     autocomplete="off"
                   />
-                  <label class="btn cart-shipment-label" for="btncheck1">
+                  <label class="btn cart-shipment-label" for="btnradio3">
                     Kartou online
+                    <strong>0 Kč</strong>
                   </label>
                 </div>
-                <div>0 Kč</div>
-              </div>
-              <div
-                class="btn-group-vertical cart-shipment-button"
-                role="group"
-                aria-label="Basic checkbox toggle button group"
-              >
-                <div>
+                <div class="cart-shipment-button">
                   <input
-                    type="checkbox"
+                    type="radio"
                     class="btn-check"
-                    id="btncheck1"
+                    name="btnradio2"
+                    id="btnradio4"
                     autocomplete="off"
                   />
-                  <label class="btn cart-shipment-label" for="btncheck1">
+                  <label class="btn cart-shipment-label" for="btnradio4">
                     Bankovním převodem
+                    <strong>29 Kč</strong>
                   </label>
                 </div>
-                <div>29 Kč</div>
               </div>
             </div>
             <div className="cart-next">

@@ -1,4 +1,5 @@
 import Delete from '../assets/svg/delete.svg';
+import ArrowNext from '../assets/svg/arrow-next-material.svg';
 import './Cart.css';
 import CartButton from '../components/CartButton';
 import Booster from './../assets/images/product-img/booster.jpg';
@@ -17,8 +18,15 @@ export default function Cart1() {
           <div className="cart-wrapper">
             <div className="cart-header">
               <h3 className="mb-3">
-                Košík >>> Doprava a platba >>> Dodací údaje >>> Souhrn a
-                potvrzení objednávky
+                <span className="cart-header-nav-active">Košík</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav">Doprava a platba</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav">Dodací údaje</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav">
+                  Souhrn a potvrzení objednávky
+                </span>
               </h3>
               <div class="cart-items-number">5 ks</div>
             </div>
@@ -50,8 +58,51 @@ export default function Cart1() {
                     <img src={Stav} className="" alt="stav" width="25px" />
                     <img src={Stav} className="" alt="foil" width="25px" />
                   </td>
-                  <td className="text-right">
-                    <input type="number" min="1" />
+                  <td className="text-right quantity-wrapper">
+                    <div className="quantity">
+                      <input
+                        type="number"
+                        min="1"
+                        step="1"
+                        value="1"
+                        className="cardInput"
+                      />
+                      <div className="quantity-nav">
+                        <div className="quantity-button quantity-up">+</div>
+                        <div className="quantity-button quantity-down">-</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="text-right">120 Kč</td>
+                  <td className="text-right delete">
+                    <button>
+                      <img src={Delete} alt="delete"></img>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-left cart-image-wrapper">
+                    <div className="cart-image">
+                      <img src={Karta} alt="recommended" />
+                    </div>
+                    Karta2 xxxxxxxxx
+                    <img src={Stav} className="" alt="stav" width="25px" />
+                    <img src={Stav} className="" alt="foil" width="25px" />
+                  </td>
+                  <td className="text-right quantity-wrapper">
+                    <div className="quantity">
+                      <input
+                        type="number"
+                        min="1"
+                        step="1"
+                        value="1"
+                        className="cardInput"
+                      />
+                      <div className="quantity-nav">
+                        <div className="quantity-button quantity-up">+</div>
+                        <div className="quantity-button quantity-down">-</div>
+                      </div>
+                    </div>
                   </td>
                   <td className="text-right">120 Kč</td>
                   <td className="text-right">
@@ -69,27 +120,20 @@ export default function Cart1() {
                     <img src={Stav} className="" alt="stav" width="25px" />
                     <img src={Stav} className="" alt="foil" width="25px" />
                   </td>
-                  <td className="text-right">
-                    <input type="number" min="1" />
-                  </td>
-                  <td className="text-right">120 Kč</td>
-                  <td className="text-right">
-                    <button>
-                      <img src={Delete} alt="delete"></img>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="text-left cart-image-wrapper">
-                    <div className="cart-image">
-                      <img src={Karta} alt="recommended" />
+                  <td className="text-right quantity-wrapper">
+                    <div className="quantity">
+                      <input
+                        type="number"
+                        min="1"
+                        step="1"
+                        value="1"
+                        className="cardInput"
+                      />
+                      <div className="quantity-nav">
+                        <div className="quantity-button quantity-up">+</div>
+                        <div className="quantity-button quantity-down">-</div>
+                      </div>
                     </div>
-                    Karta2 xxxxxxxxx
-                    <img src={Stav} className="" alt="stav" width="25px" />
-                    <img src={Stav} className="" alt="foil" width="25px" />
-                  </td>
-                  <td className="text-right">
-                    <input type="number" min="1" />
                   </td>
                   <td className="text-right">120 Kč</td>
                   <td className="text-right">
@@ -124,8 +168,20 @@ export default function Cart1() {
                     </div>
                     Obal xxxxxx
                   </td>
-                  <td className="text-right">
-                    <input type="number" min="1" />
+                  <td className="text-right quantity-wrapper">
+                    <div className="quantity">
+                      <input
+                        type="number"
+                        min="1"
+                        step="1"
+                        value="1"
+                        className="cardInput"
+                      />
+                      <div className="quantity-nav">
+                        <div className="quantity-button quantity-up">+</div>
+                        <div className="quantity-button quantity-down">-</div>
+                      </div>
+                    </div>
                   </td>
                   <td className="text-right">120 Kč</td>
                   <td className="text-right">
@@ -141,8 +197,20 @@ export default function Cart1() {
                     </div>
                     Herní box xxxxxxxxx
                   </td>
-                  <td className="text-right">
-                    <input type="number" min="1" />
+                  <td className="text-right quantity-wrapper">
+                    <div className="quantity">
+                      <input
+                        type="number"
+                        min="1"
+                        step="1"
+                        value="1"
+                        className="cardInput"
+                      />
+                      <div className="quantity-nav">
+                        <div className="quantity-button quantity-up">+</div>
+                        <div className="quantity-button quantity-down">-</div>
+                      </div>
+                    </div>
                   </td>
                   <td className="text-right">120 Kč</td>
                   <td className="text-right">
@@ -171,10 +239,9 @@ export default function Cart1() {
               <div className="row my-4">
                 <div className="col-3">
                   <input
-                    type="number"
+                    type="text"
                     className="form-control cart-input-extra"
                     placeholder="Zadejte počet kreditů"
-                    min="1"
                   />
                 </div>
                 <div>
@@ -184,7 +251,7 @@ export default function Cart1() {
                 </div>
               </div>
             </div>
-            <table className="table table-sm order-detail-table-second">
+            <table className="table table-sm order-detail-table-second order-detail-table-summary">
               <thead className="cart-content-thead mt-2">
                 <tr className="suma">
                   <th scope="col" className="text-left">

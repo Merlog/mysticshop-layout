@@ -84,7 +84,7 @@
 }
 
 .cart-shipment {
-  width: 60%;
+  width: 50%;
   margin: 20px 0;
 }
 
@@ -92,7 +92,12 @@
   margin-bottom: 20px;
 }
 
+.cart-shipment-group {
+  width: 100%;
+}
+
 .cart-shipment-button {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -100,13 +105,31 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
-  background-color: #e9e8e8;
-  padding: 2px 15px;
+  background-color: #ececec;
+  padding: 0;
   margin: 10px 0;
 }
 
+.cart-shipment-button > span {
+  white-space: nowrap;
+}
+
 .cart-shipment-label {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
   margin-bottom: 0;
+  padding: 6px 15px;
+  color: #212529;
+}
+
+.cart-shipment-label strong {
+  margin-left: auto;
+}
+
+.cart-shipment-label:hover {
+  background-color: #d1d1d1;
 }
 
 .cart-change-contact-info-button {
@@ -122,7 +145,6 @@
 }
 .cart-change-contact-info-button:hover {
   color: white;
-  font-weight: 600;
   background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
 }
 
@@ -131,10 +153,7 @@
   line-height: 24px;
   display: flex;
   align-items: center;
-}
-
-.cart-add-shipment-info label {
-  margin-left: 15px;
+  padding: 0;
 }
 
 .cart-summary-discounts,
@@ -149,4 +168,163 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+/* QUANTITY INPUT */
+
+.quantity-wrapper {
+  position: relative;
+}
+
+.quantity-wrapper input[type='number']::-webkit-inner-spin-button,
+.quantity-wrapper input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-wrapper input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.quantity-wrapper .quantity input {
+  width: 50px;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+}
+
+.quantity-wrapper .quantity input:focus {
+  border: 1px solid #eee !important;
+}
+
+.quantity-wrapper .quantity-nav {
+  height: 29px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-left: 1px solid #eee;
+  cursor: pointer;
+}
+
+.quantity-wrapper .quantity-button {
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.quantity-wrapper .quantity-down {
+  border-top: 1px solid #eee;
+}
+
+.delete {
+  width: 120px;
+}
+
+.cart-header-nav {
+  cursor: pointer;
+}
+.cart-header-nav:hover {
+  color: green;
+}
+
+.cart-header-nav-active {
+  color: green;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart-button-extra {
+  height: 100%;
+  color: white;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  background: linear-gradient(to bottom, #5ab20d 0%, #038004 100%);
+  border: none;
+  border-radius: 2px;
+  padding: 5px 15px;
+}
+
+.cart-button-extra:hover {
+  color: white;
+  background: linear-gradient(to bottom, #55a90c 0%, #026f03 100%);
+}
+
+.order-detail-table-summary {
+  font-size: 16px;
+}
+
+.cart-add-shipment-info input {
+  display: none;
+}
+
+.cart-summary-newsletter input {
+  display: none;
+}
+
+.cart-add-shipment-label,
+.cart-summary-newsletter-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-add-shipment-label:hover,
+.cart-summary-newsletter-label:hover {
+  color: green;
+}
+
+.cart-shipment-label:before,
+.cart-add-shipment-label:before,
+.cart-summary-newsletter-label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid #eee;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.cart-shipment-button input[type='radio']:checked ~ label:after,
+.cart-add-shipment-info input[type='checkbox']:checked ~ label:after,
+.cart-summary-newsletter input[type='checkbox']:checked ~ label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 23px;
+  width: 6px;
+  height: 14px;
+  border: solid green;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.cart-add-shipment-info input[type='checkbox']:checked ~ label:after {
+  top: 4px;
+  left: 9px;
+}
+
+.cart-summary-newsletter input[type='checkbox']:checked ~ label:after {
+  top: 3px;
+  left: 9px;
+}
+
+.suma th {
+  font-size: 16px;
+}
+
+.cart-summary {
+  width: 60%;
+}
+
+.cart-summary .text-center,
+.cart-summary .text-right {
+  width: 100px;
 }

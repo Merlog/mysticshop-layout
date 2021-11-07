@@ -1,7 +1,10 @@
-import "./Cart.css";
-import CartButton from "../components/CartButton";
+import './Cart.css';
+import CartButton from '../components/CartButton';
+import ArrowNext from '../assets/svg/arrow-next-material.svg';
+import { useState } from 'react';
 
 export default function Cart3() {
+  const [checkboxChecked, setCheckboxChecked] = useState(false);
   return (
     <>
       <div className="cart-navigation-wrapper">
@@ -13,8 +16,15 @@ export default function Cart3() {
           <div className="cart-wrapper">
             <div className="cart-header">
               <h3 className="mb-3">
-                Košík >>> Doprava a platba >>> Dodací údaje >>> Souhrn a
-                potvrzení objednávky
+                <span className="cart-header-nav">Košík</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav">Doprava a platba</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav-active">Dodací údaje</span>
+                <img src={ArrowNext} alt="next" />
+                <span className="cart-header-nav">
+                  Souhrn a potvrzení objednávky
+                </span>
               </h3>
             </div>
             <hr />
@@ -31,7 +41,7 @@ export default function Cart3() {
                     id="disabledTextInput"
                     class="form-control"
                     placeholder="Jméno"
-                    disabled
+                    disabled={!checkboxChecked}
                     required
                   />
                 </div>
@@ -48,7 +58,7 @@ export default function Cart3() {
                     id="disabledTextInput"
                     class="form-control"
                     placeholder="Příjmení"
-                    disabled
+                    disabled={!checkboxChecked}
                     required
                   />
                 </div>
@@ -65,7 +75,7 @@ export default function Cart3() {
                     id="disabledTextInput"
                     class="form-control"
                     placeholder="Javorová"
-                    disabled
+                    disabled={!checkboxChecked}
                     required
                   />
                 </div>
@@ -82,7 +92,7 @@ export default function Cart3() {
                     id="disabledTextInput"
                     class="form-control"
                     placeholder="111"
-                    disabled
+                    disabled={!checkboxChecked}
                     required
                   />
                 </div>
@@ -99,7 +109,7 @@ export default function Cart3() {
                     id="disabledTextInput"
                     class="form-control"
                     placeholder="Praha 1"
-                    disabled
+                    disabled={!checkboxChecked}
                     required
                   />
                 </div>
@@ -116,7 +126,7 @@ export default function Cart3() {
                     id="disabledTextInput"
                     class="form-control"
                     placeholder="101 00"
-                    disabled
+                    disabled={!checkboxChecked}
                     required
                   />
                 </div>
@@ -133,7 +143,7 @@ export default function Cart3() {
                     id="disabledTextInput"
                     class="form-control"
                     placeholder="Česká Republika"
-                    disabled
+                    disabled={!checkboxChecked}
                     required
                   />
                 </div>
@@ -150,11 +160,14 @@ export default function Cart3() {
                     id="disabledTextInput"
                     class="form-control"
                     placeholder="777 777 777"
-                    disabled
+                    disabled={!checkboxChecked}
                   />
                 </div>
               </div>
-              <button class="btn cart-change-contact-info-button">
+              <button
+                class="btn cart-change-contact-info-button"
+                onClick={() => setCheckboxChecked(true)}
+              >
                 Změnit kontaktní údaje
               </button>
               <div class="row form-check g-3 align-items-center">
@@ -164,7 +177,10 @@ export default function Cart3() {
                     class="form-check-input"
                     id="exampleCheck1"
                   />
-                  <label class="form-check-label" for="exampleCheck1">
+                  <label
+                    class="form-check-label cart-add-shipment-label"
+                    for="exampleCheck1"
+                  >
                     Dodací údaje jsou odlišné od kontaktních údajů
                   </label>
                 </div>
