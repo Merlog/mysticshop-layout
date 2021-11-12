@@ -1,26 +1,24 @@
-/* 
-  
-  COLORS:
-
-  #f3f3f3   light grey - background of the content
-  #333333   middle grey - top part of the header
-  #222323   dark grey - tabs in the header (main navigation) + footer background
-  #666666   grey - text in menus and footer
-
-  #ffffff   white - left menu background and text in main upper tabs in header
-
-  #59b20e   green - search button, kosik v headeru, active tab in the header (main nav), left menu nadpisy casti/kategorii
-  #68ac45   lighter green - slabsi zelena (napr. na mensi prvky jako potvrzovaci buttony, zvyrazneni neceho, atd.)
-
-  FONT: 
-  
-  'Open Sans', sans-serif
-
-  SIZES:
-
-  12px    horni veci v headru (prevodnik, ucet, atd.)
-  13px    main size in body, text in menus, footer copyright text
-  14px    nazvy produktu, tabs in header uppercase, text in footer uppercase
-  16px    nazvy kategorii/sekci na hlavni strance
-
-  */
+:root {
+  --color-green: #06ac06;
+  --color-green-darker: #047b04;
+  --color-gray-light: #999999;
+  --color-gray-lighter: #b3b3b3;
+  --color-gray: #4d4d4d;
+  --color-gray-dark: #333333;
+  --color-gray-darker: #1a1a1a;
+  --color-text: #262626;
+  --color-text-light: #808080;
+  --color-text-disabled: #d9d9d9;
+  --color-red: #ad160a;
+  --bg-green-gradient: linear-gradient(to bottom, #07c507 0%, #046204 100%);
+  --bg-green-gradient-hover: linear-gradient(
+    to bottom,
+    #06ac06 0%,
+    #026f03 100%
+  );
+  --bg-green-gradient-focus: linear-gradient(
+    to bottom,
+    #059405 0%,
+    #034a03 100%
+  );
+}

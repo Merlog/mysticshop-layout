@@ -34,6 +34,7 @@ import AktualityPage from './pages/AktualityPage';
 import LogIn from './pages/LogIn';
 import ResetPassword from './pages/ResetPassword';
 import Hlaska from './pages/Hlaska';
+import Prototypes from './pages/Prototypes';
 
 export default function App() {
   const [message, setMessage] = useState(false);
@@ -48,6 +49,11 @@ export default function App() {
       }${red ? ' appRed' : ''}`}
     >
       <div className="row temporary">
+        <div>
+          <NavLink to="/mysticshop/prototypes" exact>
+            Prototypes
+          </NavLink>
+        </div>
         <div>
           <NavLink to="/mysticshop/RegistrationForm" exact>
             Registration Form
@@ -177,6 +183,9 @@ export default function App() {
           </Route>
           <Route path="/mysticshop/Hlaska" exact>
             <Hlaska />
+          </Route>
+          <Route path="/mysticshop/Prototypes" exact>
+            <Prototypes />
           </Route>
         </Switch>
       </div>
