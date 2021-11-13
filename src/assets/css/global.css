@@ -65,7 +65,9 @@ button:focus,
 
 /* DEFAULT INPUTS */
 
-input[type='text'] {
+input[type='text'],
+select,
+input[type='number'] {
   display: block;
   height: 2.5rem;
   padding: 5px 10px;
@@ -76,7 +78,55 @@ input[type='text'] {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-input[type='text']:focus {
+select {
+  padding: 5px 20px 5px 5px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-number-wrapper {
+  position: relative;
+  width: 68px;
+}
+
+input[type='number'] {
+  max-width: 100%;
+  text-align: center;
+  padding-right: 32px;
+}
+
+.input-number-btn-wrapper {
+  height: 33px;
+  width: 22px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  border-left: 1px solid var(--color-text-disabled);
+}
+
+.input-number-btn {
+  height: 16px;
+  line-height: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input-number-btn:hover {
+  background: var(--bg-green-gradient-hover);
+  color: white;
+}
+
+.input-number-btn-down {
+  border-top: 1px solid var(--color-text-disabled);
+}
+
+input[type='text']:focus,
+select:focus,
+input[type='number']:focus {
   border: 1px solid var(--color-green);
   outline: none !important;
   box-shadow: none !important;
@@ -132,39 +182,6 @@ input[type='radio']:checked ~ .input-radio-label::after {
   height: 10px;
 }
 
-/* WYSIWYG */
-
-.warning {
-  color: var(--color-red);
-}
-
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* input,
-select {
-  border: 1px solid #eee !important;
-  border-radius: 2px;
-} */
-
-/* input:focus,
-select:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #eee !important;
-} */
-
-select {
-  padding: 5px 20px 5px 5px;
-}
-
-.container {
-  max-width: 1240px;
-}
-
 /* clears the 'X' from Internet Explorer */
 input[type='search']::-ms-clear {
   display: none;
@@ -185,14 +202,24 @@ input[type='search']::-webkit-search-resultscard-decoration {
   display: none;
 }
 
+/* WYSIWYG */
+
+.warning {
+  color: var(--color-red);
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1240px;
+}
+
+/* CAPTCHA */
+
 .captcha {
   width: 350px;
   height: 100px;
   border: 1px solid #eaeaea;
   background-color: white;
   margin-bottom: 30px;
-}
-
-.form-control:disabled {
-  background-color: #ececec;
 }

@@ -86,7 +86,8 @@ export default function Prototypes() {
           Checkbox
         </label>
         <br />
-        select box:{' '}
+        select box:
+        <br />
         <select name="cars" id="cars">
           <option value="volvo">Volvo</option>
           <option value="saab">Saab</option>
@@ -100,17 +101,11 @@ export default function Prototypes() {
         <br />
         number input with quantity:
         <br />
-        <div className="quantity">
-          <input
-            type="number"
-            min="1"
-            step="1"
-            value="1"
-            className="cardInput"
-          />
-          <div className="quantity-nav">
-            <div className="quantity-button quantity-up">+</div>
-            <div className="quantity-button quantity-down">-</div>
+        <div className="input-number-wrapper">
+          <input type="number" min="1" step="1" value="2" />
+          <div className="input-number-btn-wrapper">
+            <div className="input-number-btn input-number-btn-up">+</div>
+            <div className="input-number-btn input-number-btn-down">-</div>
           </div>
         </div>
       </div>
