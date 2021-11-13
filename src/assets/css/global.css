@@ -13,6 +13,16 @@ body {
 
 /* DEFAULT TYPOGRAPHY */
 
+h1,
+h2 {
+  margin-bottom: 21px;
+}
+
+h3,
+h4 {
+  margin-bottom: 14px;
+}
+
 /* DEFAULT LINK */
 
 a {
@@ -208,12 +218,6 @@ input[type='search']::-webkit-search-resultscard-decoration {
   color: var(--color-red);
 }
 
-/* CONTAINER */
-
-.container {
-  max-width: 1240px;
-}
-
 /* CAPTCHA */
 
 .captcha {
@@ -223,3 +227,16 @@ input[type='search']::-webkit-search-resultscard-decoration {
   background-color: white;
   margin-bottom: 30px;
 }
+
+/* CONTAINER + WHITE BOX */
+
+.container {
+  max-width: 1240px;
+}
+
+.white-box-wrapper {
+  background-color: white;
+  padding: 25px;
+}
+
+/* STATIC PAGES */

@@ -1,11 +1,9 @@
-import "./LoyaltyProgram.css";
+import StaticPage from '../components/StaticPage';
 
 export default function GDPR() {
   return (
-    <div className="row">
-      <div className="col-12">
-        <h2 className="loyaltyTitle">GDPR</h2>
-      </div>
-    </div>
+    <StaticPage>
+      <h2 className="">GDPR</h2>
+    </StaticPage>
   );
 }
