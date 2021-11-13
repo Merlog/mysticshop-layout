@@ -1,0 +1,41 @@
+.cards-search {
+  border: 1px solid var(--color-gray);
+  border-radius: 1px;
+  padding: 25px;
+}
+
+.cards-search-row {
+  margin: 8px 0;
+}
+
+.cards-search-row > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.cards-search-row > div label {
+  margin-bottom: 0;
+}
+
+.cards-search-row small {
+  display: flex;
+  align-items: center;
+}
+
+.inline-group {
+  display: flex;
+  align-items: center;
+}
+
+.inline-group input {
+  width: 100%;
+}
+
+.inline-group small {
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.cards-search-input-number-wrapper {
+  width: 88px;
+}

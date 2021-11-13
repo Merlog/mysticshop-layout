@@ -89,6 +89,7 @@ input[type='number'] {
 }
 
 select {
+  width: 100%;
   padding: 5px 20px 5px 5px;
 }
 
@@ -239,4 +240,39 @@ input[type='search']::-webkit-search-resultscard-decoration {
   padding: 25px;
 }
 
-/* STATIC PAGES */
+/* PAGINATION - changing default bootstrap styles */
+
+.pagination {
+  border-radius: 2px;
+}
+
+.page-item.active .page-link {
+  background-color: var(--bg-green-gradient);
+  border: 1px solid var(--color-green);
+  color: var(--color-green);
+}
+
+.page-link {
+  color: var(--color-green);
+  border: 1px solid var(--color-gray-lighter);
+}
+
+.page-link:hover {
+  color: var(--color-green);
+}
+
+.page-link:focus {
+  box-shadow: 0 0 0 2px #06ac062d;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* CARDS SEARCH */
