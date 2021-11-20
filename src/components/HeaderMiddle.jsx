@@ -2,25 +2,12 @@ import "./HeaderMiddle.css";
 import { NavLink } from "react-router-dom";
 import cart from "./../assets/svg/cart-material.svg";
 import cart2 from "./../assets/svg/cart-material2.svg";
-import Search from "./../assets/svg/search-material.svg";
-import Search2 from "./../assets/svg/search-material2.svg";
+import SearchCustom from "./SearchCustom";
 
 export default function HeaderMiddle() {
   return (
     <div className="col-12 navMidle mb-3">
-      <div className="col-6">
-        <form className="form-inline my-2 searchWrapper">
-          <input
-            className="form-control w-100 search"
-            type="search"
-            placeholder="Vyhledat"
-          ></input>
-          <button className="btn searchButton" type="submit">
-            <img src={Search} alt="search" className="dark"></img>
-            <img src={Search2} alt="search" className="light"></img>
-          </button>
-        </form>
-      </div>
+      <SearchCustom />
       <div className="col-6 d-flex flex-row justify-content-between bonusCartWraper">
         <div className="bonus">
           <NavLink to="/mysticshop/MyAccount" exact>

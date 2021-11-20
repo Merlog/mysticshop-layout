@@ -1,0 +1,26 @@
+.SearchCustom {
+  position: relative;
+}
+
+.SearchCustomContent {
+  display: none;
+  position: absolute;
+  height: auto;
+  max-height: 400px;
+  min-width: 500px;
+  width: 500px;
+  top: 42px;
+  left: 35px;
+  color: #333;
+  border: solid 1px #333;
+  background-color: #fff;
+  z-index: 9999999;
+  flex-direction: column;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.SearchCustomResults .SearchCustomContent {
+  display: flex;
+}

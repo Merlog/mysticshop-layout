@@ -45,7 +45,6 @@
   z-index: 11111;
   color: white;
   text-align: center;
-  /* z nejakeho duvodu musi mit relative, jinak neni vubec videt */
   position: relative;
   padding: 10px;
   margin: 0;
